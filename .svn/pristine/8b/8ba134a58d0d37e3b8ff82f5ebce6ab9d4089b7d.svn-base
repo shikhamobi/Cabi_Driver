@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signinlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tool_bar_color"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/include_headler"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tool_bar" />
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/shadow"
+        android:visibility="gone"
+        android:layout_below="@+id/slide_lay"
+        android:foreground="@drawable/background_shadow">
+        <!-- YOUR STUFF HERE -->
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|bottom"
+
+        android:background="@color/appbg">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:background="@color/tool_bar_color">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/logoparnersign"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                />
+
+
+
+            <EditText
+                android:id="@+id/phoneEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tool_bar_color"
+                android:hint="@string/phone"
+                android:inputType="number"
+                android:maxLength="13"
+                android:layout_below="@+id/imageview"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/mobileno"
+                android:drawablePadding="5dp"
+                android:textColorHint="@color/white" />
+
+            <View
+                android:id="@+id/viewborder"
+                android:layout_below="@+id/phoneEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/passwordlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewborder"
+                android:background="@color/tool_bar_color">
+
+
+
+                <TextView
+                    android:id="@+id/hidePwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="9dp"
+                    android:background="@color/tool_bar_color"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:text="@string/show"
+                    android:textColor="@color/block"     />
+
+
+                <EditText
+                    android:id="@+id/passwordEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tool_bar_color"
+                    android:hint="@string/password"
+                    android:maxLength="32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/hidePwd"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/password"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+
+            <View
+                android:id="@+id/viewborderdown"
+                android:layout_below="@+id/passwordlay"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/forgotpswdTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_below="@+id/viewborderdown"
+                android:padding="2dp"
+                android:text="@string/forgotpswd"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/doneBtn1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_bottom"
+            android:background="@color/bt_green"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/s_signin"
+            android:textSize="16sp"
+            android:textColor="@drawable/text_color_black_to_white" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

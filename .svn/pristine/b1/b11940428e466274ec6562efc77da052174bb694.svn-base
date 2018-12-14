@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchlay"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/pickup_pinlay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/search_icon_ar"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/drop_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="8dp"
+
+            android:src="@drawable/location" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pickupp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pickup_pinlay"
+        android:background="@drawable/search_only_pickup"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/lay_pick_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pick_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/plus1"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/currentlocTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center"
+            android:hint="@string/picklocation"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/pickup_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:src="@drawable/dot"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pickup_drop_Sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pickupp"
+        android:background="@color/linebottom_light" />
+
+    <LinearLayout
+        android:id="@+id/dropppp"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/pickup_drop_Sep"
+        android:layout_toLeftOf="@id/pickup_pinlay"
+        android:background="@drawable/search_drop_ar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/droplocTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:marqueeRepeatLimit="2"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/drop_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/drop_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:src="@drawable/close" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

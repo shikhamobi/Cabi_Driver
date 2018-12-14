@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_headler"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tool_bar" />
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/shadow"
+        android:visibility="visible"
+        android:layout_below="@+id/slide_lay"
+        android:foreground="@drawable/background_shadow">
+        <!-- YOUR STUFF HERE -->
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/invite_main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/appbg"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/linebottom_light"/>
+
+                <TextView
+                    android:id="@+id/driverRat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="@string/invite_frdrides"
+                    android:textColor="@color/textviewcolor_light" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/driverRat"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/referalcdeTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/textviewcolor_dark"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/linebottom_light" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/referalamtTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="25dp"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="20dp"
+                            android:text="@string/invite_youearn"
+                            android:textColor="@color/textviewcolor_light"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.cabi.driver.utils.RoundedImageView
+                android:id="@+id/profileimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loadingimage" />
+
+
+        </FrameLayout>
+
+        <!-- <FrameLayout
+             android:id="@+id/top"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_gravity="center">
+
+
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:background="@color/appbg"
+                 android:orientation="vertical"
+                 android:padding="2dp">
+
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/transparent"
+                     android:gravity="center"
+                     android:orientation="vertical">
+
+                     <cabiutils.RoundedImageView
+                         android:id="@+id/profileImg"
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_gravity="center"
+                         android:layout_margin="10dp"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/loadingimage" />
+
+                     <TextView  android:textSize="@dimen/tab_texts"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:text="@string/invite_frdrides"
+                         android:textColor="@color/textviewcolor_light"
+                          />
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal"
+                     android:padding="10dp">
+
+                     <LinearLayout
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:id="@+id/referalamtTxt"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                             android:textSize="38sp" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:text="@string/invite_youearn"
+                             android:textColor="@color/textviewcolor_light"
+                             android:textSize="17sp" />
+                     </LinearLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:layout_marginBottom="3dp"
+                         android:layout_marginTop="3dp"
+                         android:background="@color/linebottom_light" />
+
+                     <TextView
+                         android:id="@+id/referalcdeTxt"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:text=""
+                         android:textColor="@color/textviewcolor_dark"
+                         android:textSize="26sp" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+
+ </FrameLayout>-->
+
+
+        <TextView
+            android:id="@+id/shareVia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check"
+            android:layout_gravity="bottom"
+            android:background="@color/button_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/invite_sharevia"
+            android:textColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/wallet_history"
+            android:layout_below="@+id/shareVia">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+
+                <TextView
+                    android:id="@+id/ifacebookTxt"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/invite_fb"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite_fb"
+                    android:textColor="@color/textviewcolor_light" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:id="@+id/itwitterTxt"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/invite_twitter"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite_twitter"
+                    android:textColor="@color/textviewcolor_light" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:id="@+id/iemailTxt"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/invite_email"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite_email"
+                    android:textColor="@color/textviewcolor_light" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:id="@+id/iwhatsappTxt"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/invite_whatsapp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite_whatsapp"
+                    android:textColor="@color/textviewcolor_light" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:id="@+id/ismsTxt"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/invite_sms"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/invite_sms"
+                    android:textColor="@color/textviewcolor_light" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/wallet_history"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/button_color"
+            android:gravity="center"
+            android:paddingBottom="05dp"
+            android:paddingLeft="20dp"
+
+            android:paddingTop="10dp"
+            android:text="@string/wallet_history"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/invite_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

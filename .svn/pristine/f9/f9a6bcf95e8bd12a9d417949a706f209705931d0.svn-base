@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_media_action.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_media_cancel_action.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v11/notification_template_big_media.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v11/notification_template_big_media.xml"
+    }
+]

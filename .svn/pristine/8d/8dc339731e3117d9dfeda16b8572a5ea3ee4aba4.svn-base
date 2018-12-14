@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/developer/Documents/cabi/trunk/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f35bee26255279bc7130ee02c419b80af3eacc34">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_48bb28d61bd344b1a2c22c41c38fccc1f19265c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/991f307661a5e47a396439254885121fc435cca0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f63291c198bf572a4b24353ec91e8dc112f5e7f3">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_252df2b49c69e4a276ca32e15fe9448ad2a90d2a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/2bff52ce91009601dbbbfd7eb189abfe52a72adc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02cc9f2e5899415add52bc716602b6b38e7eeb99">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9ea9dfdc62da457661a877dcfd0fa655e52016a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/f546e80e4316cb96981828699afb960ee324d042/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b42cf2134829f715edfa2adaf0ee246631322dba">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cce29ccc5751b11300a656c25151ad7f4a59949b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_32ba3f8646f47a0bca4937ae9e9a14f63225af45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Documents/cabi/trunk/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d6bec6bb621e36ffd5dba0d13d1d0ecd76b37a87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/bf1a5f93b0f12d3b6d55691cec975e63ee2262d1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f7717617e707ecfcc79ce539d4eada8f6b5e340/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/287ab240ab4c51ccd3eb7ee3257040e471d042db/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e914c2d16be297ff64720ed6bbada4202301fca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/8b78cd2b0940c15d5e7a8635abbe50851922efff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_826d31ec490ba262927eb2c93cd8aca197774e88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/8b5fac286f72130f778604e8d44b2559798cd819/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed6b455e3dd7bbf1ff31f8df0b41e2f0d87f3ace">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_741a35b588bcd4c6a08f115cdb4474c166cddeb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/7bd44ba49379a155c866f2f6f8cbecb4af37902e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ff77725723167163d69439e3fd077bd0899babf">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2dbdd0af5595abcb9056a04b5b59c584dc8675fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Documents/cabi/trunk/app/libs/jsoup-1.7.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="99351550d1fa2e8147319dbafd3f3a79d4f4c6e5">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/jsoup-1.7.1_8125addee95168826eb937e3d630b318b0ff8ff9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/0911ccf72375a31a378bff94fb4c6b08419f4af1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7006c3f8a6bd033672d9f538a35daff7618b4c7">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1513909b6b6df4954d6e2b7ba0fbc71e30f01834/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Documents/cabi/trunk/app/libs/retrofit-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/retrofit-1.9.0_8bd688a4fb7eaaf06d555cb8e9e283f26ba20bcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a780da3c9e4c69d44622f72bdce71b260ed53e21">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c17480a169487a3f8fabf15b7c90319e6bfb6500/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Documents/cabi/trunk/app/libs/universal-image-loader-1.9.0-with-sources.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="20b122feb5eed14e4b9fa16a3421f2656b74ce9f">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/universal-image-loader-1.9.0-with-sources_078ba3d2ee8efcfee12517eee5dedb2e3388229d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.0/ff93baa2e2e6ca507fc6ec731f61751dd0d865e7/MPAndroidChart-v3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ff93baa2e2e6ca507fc6ec731f61751dd0d865e7">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v3.0.0_0ec87f8b1362c7d65798b05fa69d7b6430c6507e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/developer/Documents/cabi/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_71884202bb1857d9ceed46c041248c4cb56ac706/classes.dex" />
+    </item>
+
+</items>

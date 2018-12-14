@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:id="@+id/chartact"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/slide_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/tool_bar_color">
+
+        <TextView
+            android:id="@+id/slideImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_green_to_white"
+            android:padding="5dp"
+            android:text="@string/back"
+            android:textColor="@drawable/text_color_black_to_white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/backbtn"
+            android:gravity="left"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+
+
+
+        <ImageView
+            android:id="@+id/headicon"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/headerTxt"
+            android:gravity="center"
+            android:src="@drawable/headicon"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_shift"
+            android:background="@drawable/shiftbg"
+            android:text="Online"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:minWidth="70dp"
+            android:maxWidth="120dp"
+            android:minHeight="30dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/shadow"
+        android:visibility="visible"
+        android:layout_below="@+id/slide_lay"
+        android:foreground="@drawable/background_shadow">
+        <!-- YOUR STUFF HERE -->
+    </FrameLayout>
+
+    <include
+        layout="@layout/home_top_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+  <ScrollView
+      android:id="@+id/earnings_layout"
+      android:layout_width="match_parent"
+      android:scrollbars="none"
+      android:visibility="gone"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:id="@+id/uilay"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="7dp"
+        android:background="@drawable/border_bg"
+        android:padding="2dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/lasttrip_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_hdr"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/textviewcolor_light"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:id="@+id/trip_history_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_history"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textColor="@color/button_accept"
+                />
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/linebottom_light"
+                android:layout_below="@+id/lasttrip_header"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:weightSum="4"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trips"
+                    android:id="@+id/trips"
+                    android:textColor="@color/textviewcolor_light"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$54.54"
+                    android:textColor="@color/button_accept"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+
+                    android:id="@+id/amt"
+                    android:textSize="34sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Estimated"
+                    android:gravity="end"
+                    android:textColor="@color/textviewcolor_light"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="05dp"
+                    android:layout_marginTop="05dp"
+                    android:layout_below="@+id/amt"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+
+
+           <!-- <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trips"
+                    android:id="@+id/trips"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$54.54"
+                    android:textColor="@color/button_accept"
+                    android:gravity="right"
+                    android:id="@+id/amt"
+                    android:textSize="28sp"
+                    />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Estimated"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+          <HorizontalScrollView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="07dp"
+              android:scrollbars="none"
+              android:background="@color/white">
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/dates"
+              android:weightSum="1"
+              android:background="@color/white"
+              android:orientation="horizontal">
+           <!--  <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Oct 1-7"
+                 android:layout_weight="0.20"
+                 android:layout_gravity="center"
+                 android:id="@+id/oct_first"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Oct 1-7"
+                  android:layout_marginLeft="25dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0.20"
+
+                  android:id="@+id/oct_sec"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Oct 1-7"
+                  android:layout_marginLeft="25dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0.20"
+
+                  android:id="@+id/oct_thir"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Oct 1-7"
+                  android:layout_marginLeft="25dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0.20"
+
+                  android:id="@+id/oct_four"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Oct 1-7"
+                  android:layout_marginLeft="25dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="0.20"
+
+                  android:id="@+id/oct_five"/>-->
+          </LinearLayout>
+          </HorizontalScrollView>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.25dp"
+              android:background="#bfbfbf"/>
+
+          <com.github.mikephil.charting.charts.BarChart
+              android:id="@+id/chart1"
+              android:layout_width="match_parent"
+              android:layout_height="223dp"
+              />
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginBottom="12dp"
+              android:padding="8dp"
+              android:layout_margin="7dp"
+              android:background="@drawable/border_bg"
+              android:orientation="horizontal">
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="26sp"
+                  android:textColor="@color/textviewcolor_dark"
+                  android:layout_weight="1"
+                  android:gravity="start"
+                  android:id="@+id/week_amt"
+                  android:text="$54.54"/>
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/Week"
+                  android:paddingLeft="10dp"
+                  android:layout_weight="1"
+                  android:gravity="end"
+                  android:layout_gravity="center"
+                  android:textSize="15sp"
+                  />
+
+
+          </LinearLayout>
+          <RelativeLayout
+              android:id="@+id/triphistory_lay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/border_bg"
+              android:layout_margin="7dp">
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/trip_hist"
+                  android:layout_alignParentRight="true"
+                  android:background="@drawable/triphistory_icon"
+                  android:layout_margin="10dp"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/trip_history"
+                  android:gravity="right"
+                  android:id="@+id/triphistory"
+                  android:layout_marginLeft="35dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignLeft="@+id/trip_hist"
+                  android:layout_toLeftOf="@+id/trip_hist"
+                  android:textColor="@color/textviewcolor_dark"
+                  android:paddingLeft="10dp"
+                  android:layout_marginTop="05dp"
+                  android:textSize="16sp"/>
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/tap_triphistory"
+                  android:layout_below="@+id/triphistory"
+                  android:layout_marginTop="3dp"
+                  android:gravity="right"
+                  android:layout_marginBottom="05dp"
+                  android:layout_toLeftOf="@+id/trip_hist"
+                  android:paddingLeft="10dp"
+                  android:id="@+id/trip_history"
+                  android:layout_marginLeft="45dp"
+                  android:textSize="14sp"
+                  />
+          </RelativeLayout>
+      </LinearLayout>
+
+  </ScrollView>
+
+    <ImageView
+        android:id="@+id/charlay_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+</LinearLayout>

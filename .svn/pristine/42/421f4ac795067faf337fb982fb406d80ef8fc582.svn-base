@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/res/layout-v21/place_autocomplete_fragment.xml"
+    }
+]

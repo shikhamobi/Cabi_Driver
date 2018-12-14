@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable-ar-sw600dp-mdpi/ic_launcher.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-ar-sw600dp-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable-ar-sw600dp-mdpi/arrow.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-ar-sw600dp-mdpi/arrow.png"
+    }
+]

@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/include_headler.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/include_headler.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/activity_successtransaction.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/activity_successtransaction.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/paytest.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/paytest.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/listview.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/listview.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/mystatus_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/mystatus_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/trip_history.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/trip_history.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/simple_menu_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/simple_menu_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/accept_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/accept_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/list_booking_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/list_booking_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/trip_detailslayout.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/trip_detailslayout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/signin.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/signin.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/withdrawrequestdialog.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/withdrawrequestdialog.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/activity_failedtransaction.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/activity_failedtransaction.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/forgot_popup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/forgot_popup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/paypopup_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/paypopup_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/chart_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/chart_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/signup_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/signup_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/home_top_navigation.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/home_top_navigation.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/withdraw_history.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/withdraw_history.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/slide_lay1.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/slide_lay1.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/invitefriend_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/invitefriend_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/ongoing_bottom.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/ongoing_bottom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/payuncard_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/payuncard_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/me_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/me_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/withdrawreq.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/withdrawreq.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/include_transit.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/include_transit.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/alert_view.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/alert_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/withdrawfilter.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/withdrawfilter.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/taxidetail_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/taxidetail_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/include_bottom_home.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/include_bottom_home.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/withdraw_menu.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/withdraw_menu.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/upcoming_list_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/upcoming_list_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/street_pickup_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/street_pickup_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/pick_drop.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/pick_drop.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/past_booking_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/past_booking_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/notification_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/notification_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/farecalc_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/farecalc_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/trip_details.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/trip_details.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/fileupload_popup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/fileupload_popup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/netcon_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/netcon_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/trip_history_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/trip_history_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/include_details.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/include_details.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/menu_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/menu_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ar/home_layout.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ar/home_layout.xml"
+    }
+]

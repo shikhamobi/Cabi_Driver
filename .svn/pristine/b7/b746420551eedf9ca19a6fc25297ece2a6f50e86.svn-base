@@ -1,0 +1,562 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_booking_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_booking_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/remarks.9.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/remarks.9.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_alertpopup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_alertpopup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/underline.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/underline.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/rating1.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/rating1.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_edittext_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_edittext_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_auth_dialog_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable/ucrop_shadow_upside.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/success_rect_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/success_rect_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_forget_popup_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_forget_popup_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_rect_trans.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_rect_trans.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_ic_crop.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable/ucrop_vector_ic_crop.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logopartner.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logopartner.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_rect.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_rect.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_drop_ar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_drop_ar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/back_black_to_white.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/back_black_to_white.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/dash_profile_background.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/dash_profile_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_bggrey.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_bggrey.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/custom_ratingbar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/custom_ratingbar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_icon_ar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_icon_ar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/cash.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/cash.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_icon.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_timer_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_timer_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_logo.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_login_logo.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/failure_rect_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/failure_rect_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/curvedbg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/curvedbg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/back_green_to_white.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/back_green_to_white.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/rect_red.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/rect_red.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_pickup_ar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_pickup_ar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ratingbar_filled.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/ratingbar_filled.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_favicon_blue.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_favicon_blue.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/text_color_black_to_white.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/text_color_black_to_white.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/fare_bg.9.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/fare_bg.9.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/rect_home_bottom.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/rect_home_bottom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logo_transparent.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logo_transparent.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_pickup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_pickup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_header_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_auth_dialog_header_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/shiftbg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/shiftbg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/map_info.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/map_info.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logout.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logoparnersign.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logoparnersign.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/shiftbggrey.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/shiftbggrey.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_decline.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_decline.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader_animated.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable/ucrop_vector_loader_animated.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_select_bgred.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_select_bgred.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/border_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/border_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/navigation_tab.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/navigation_tab.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/loadingimage.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/loadingimage.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/headicon.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/headicon.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/dash_ongoing_trip.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/dash_ongoing_trip.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_alertview.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_alertview.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logo.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logo.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/cust_progress.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/cust_progress.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_timer_select_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_timer_select_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/cancelbg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/cancelbg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_login_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/design_ic_visibility.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/drawable/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/border_select.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/border_select.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_cancel_background.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ratingbar_empty.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/ratingbar_empty.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_black_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_black_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_send_button_icon.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_send_button_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_drop.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_drop.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/updownline.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/updownline.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/search_only_pickup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/search_only_pickup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/draw_select_bg.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/draw_select_bg.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/green_to_white.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/green_to_white.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/marker2.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/marker2.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/logos.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/logos.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/noimage.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/noimage.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/credit_card.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/credit_card.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable/ucrop_vector_loader.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/background_shadow.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/background_shadow.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/drawable/com_facebook_button_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/ic_navigation_icon.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/ic_navigation_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/time_pickup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable/time_pickup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/drawable/abc_btn_check_material.xml"
+    }
+]

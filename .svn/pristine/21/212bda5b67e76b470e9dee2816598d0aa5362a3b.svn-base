@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_visibility_ground_overlay.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_visibility_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_poly_style_boolean_alpha.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_poly_style_boolean_alpha.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_basic_folder.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_basic_folder.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/loading_anim.gif",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/raw/loading_anim.gif"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_nested_folders.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_nested_folders.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_document_nest.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_document_nest.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_ground_overlay.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_cdata.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_cdata.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_unsupported.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_unsupported.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_poly_style_boolean_numeric.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_poly_style_boolean_numeric.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_ground_overlay_color.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_ground_overlay_color.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_nested_multigeometry.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_nested_multigeometry.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_default_balloon.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_default_balloon.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_multiple_placemarks.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_multiple_placemarks.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_basic_placemark.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_basic_placemark.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_ballon_gx_prefix.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_ballon_gx_prefix.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_draw_order_ground_overlay.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_draw_order_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_unknwown_folder.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_unknwown_folder.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_extended_data.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_extended_data.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/video.mp4",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/raw/video.mp4"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_multigeometry_placemarks.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_multigeometry_placemarks.kml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/raw/amu_inline_style.kml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/raw/amu_inline_style.kml"
+    }
+]

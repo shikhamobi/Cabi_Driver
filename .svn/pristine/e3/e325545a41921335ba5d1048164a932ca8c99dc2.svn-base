@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ar-xhdpi/arrow.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-ar-xhdpi/arrow.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ar-xhdpi/ic_launcher.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-ar-xhdpi/ic_launcher.png"
+    }
+]

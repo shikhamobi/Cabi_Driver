@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ru/accept_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ru/accept_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/debug/layout-ru/simple_menu_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout-ru/simple_menu_header.xml"
+    }
+]

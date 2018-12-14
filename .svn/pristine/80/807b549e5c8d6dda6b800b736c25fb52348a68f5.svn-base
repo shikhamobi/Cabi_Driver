@@ -1,0 +1,370 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/backbtn.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/backbtn.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/fare_uncard.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/fare_uncard.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/runfavourite.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/runfavourite.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/list_icon_timer_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/list_icon_timer_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star1.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star1.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/wallet.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/wallet.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/cabisplash.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/cabisplash.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/mobileno.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/mobileno.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/cancel.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/cancel.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/no_file.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/no_file.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/earnings_focus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/earnings_focus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star2.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star2.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/o_slide_navigationunfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/o_slide_navigationunfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/withdraw_history.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/withdraw_history.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/invite_sms.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/invite_sms.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/credit_card_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/credit_card_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/logo.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/logo.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/st_pickup_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/st_pickup_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/header.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/header.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/headicon.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/headicon.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/email.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/email.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/bg2.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/bg2.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/myjobs_focus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/myjobs_focus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/arrow_down.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/arrow_down.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/fare_cash.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/fare_cash.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/menu_icon.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/menu_icon.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star6.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star6.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/fare_card.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/fare_card.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/driver_img.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/driver_img.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/splash.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/splash.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star3.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star3.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/gps_navigator.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/gps_navigator.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/invite_fb.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/invite_fb.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/bg1.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/bg1.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/o_slide_navigationfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/o_slide_navigationfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/mapmove.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/mapmove.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/map_info.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/map_info.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/fare_wallet.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/fare_wallet.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/on_btn.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/on_btn.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/logout.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/logout.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/inner_loading.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/inner_loading.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/earnings_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/earnings_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/splashnew.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/splashnew.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/phone_bg.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/phone_bg.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/ic_launcher.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/home_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/home_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/newcard_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/newcard_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/about.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/about.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/st_pickup_focus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/st_pickup_focus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/password.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/password.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/statistics.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/statistics.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/invite_twitter.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/invite_twitter.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/back.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/back.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/o_dollar_symbol.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/o_dollar_symbol.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/mappin.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/mappin.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/profile_focus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/profile_focus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/small_logo.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/small_logo.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star4.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star4.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/dot.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/dot.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/headerlogo.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/headerlogo.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/conform_pwd2.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/conform_pwd2.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/minus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/minus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/o_slide_menuheader.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/o_slide_menuheader.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/plus1.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/plus1.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/off_btn.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/off_btn.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/cash_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/cash_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/bottom.9.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/bottom.9.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/star5.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/star5.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/flag_green.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/flag_green.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/trackmytaxi.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/trackmytaxi.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/rfavourite.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/rfavourite.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/app_icon.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/app_icon.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/cashcard.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/cashcard.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/invite_email.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/invite_email.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/pwd.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/pwd.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/view.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/view.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/filter.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/filter.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/home_focus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/home_focus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/profile_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/profile_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/triphistory_icon.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/triphistory_icon.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/credit_card.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/credit_card.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/flag_red.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/flag_red.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/wallet2.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/wallet2.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/cash.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/cash.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/close.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/close.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/sec_bg.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/sec_bg.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/pickup.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/pickup.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/firstname.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/firstname.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/profile_img.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/profile_img.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/invite_whatsapp.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/invite_whatsapp.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/myjobs_unfocus.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/myjobs_unfocus.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-mdpi/user.png",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-mdpi/user.png"
+    }
+]

@@ -1,0 +1,542 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/home_top_navigation.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/home_top_navigation.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/date_time_picker_dialog.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/date_time_picker_dialog.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/trip_detailslayout.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/trip_detailslayout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/splash_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/splash_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/notification_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/progress_bar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/progress_bar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/include_details.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/include_details.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/signin.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/signin.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_layout_scale_wheel.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_layout_scale_wheel.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/fileupload_popup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/fileupload_popup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_item.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_view.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/past_booking_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/past_booking_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/include_bottom_home.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/include_bottom_home.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/taxidetail_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/taxidetail_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/pick_drop.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/pick_drop.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_item_subheader.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/forgot_popup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/forgot_popup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/place_autocomplete_fragment.xml",
+        "source": "/home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdrawrefhistoryitem.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdrawrefhistoryitem.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/slide_lay1.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/slide_lay1.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_item_separator.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/chart_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/chart_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/list_booking_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/list_booking_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/me_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/me_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_layout_tab_icon.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/mystatus_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/mystatus_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/simple_menu_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/simple_menu_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_large.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_controls.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_controls.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_text_input_password_icon.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/custom_marker_view.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/custom_marker_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/alert_view.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/alert_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/amu_info_window.xml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/layout/amu_info_window.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_aspect_ratio.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_aspect_ratio.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/changepass_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/changepass_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ongoing_bottom.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/ongoing_bottom.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdrawrequestdialog.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdrawrequestdialog.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_item_header.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_bottom_navigation_item.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/signup_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/signup_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/payuncard_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/payuncard_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdrawreq.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdrawreq.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdraw_history.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdraw_history.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/listview.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/listview.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/com_facebook_login_fragment.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/walletlay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/walletlay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/date_picker_dialog.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/date_picker_dialog.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_layout_tab_text.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdrawfilter.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdrawfilter.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/taxi__search_list_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/taxi__search_list_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/place_autocomplete_progress.xml",
+        "source": "/home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_menu.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/include_transit.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/include_transit.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/netcon_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/netcon_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/home_layout.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/home_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/taxi_location_fragment.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/taxi_location_fragment.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/paypopup_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/paypopup_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/no_data.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/no_data.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_activity_photobox.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_activity_photobox.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/menu_header.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/menu_header.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/street_pickup_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/street_pickup_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/upcoming_list_item.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/upcoming_list_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/amu_text_bubble.xml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/layout/amu_text_bubble.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/farecalc_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/farecalc_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/select_dialog_item_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/invitefriend_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/invitefriend_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/amu_webview.xml",
+        "source": "/home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/res/layout/amu_webview.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_dialog_title_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/include_headler.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/include_headler.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_menu_item_action_area.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/accept_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/accept_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/referal_popup.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/referal_popup.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_layout_snackbar.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/ucrop_layout_rotate_wheel.xml",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/layout/ucrop_layout_rotate_wheel.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/com_facebook_activity_layout.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/activity_webview.xml",
+        "source": "/home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/res/layout/activity_webview.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/trip_history_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/trip_history_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_small.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/withdraw_menu.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/withdraw_menu.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/place_autocomplete_item_prediction.xml",
+        "source": "/home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/res/layout/place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_layout_snackbar_include.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/res/layout/place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_round.xml",
+        "source": "/home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/dummytest.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/dummytest.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/lang_list.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/lang_list.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/design_navigation_menu_item.xml",
+        "source": "/home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/trip_history.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/trip_history.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/trip_details.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/trip_details.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/canceltrip_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/canceltrip_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/map_lay.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/layout/map_lay.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/layout/abc_expanded_menu_layout.xml"
+    }
+]

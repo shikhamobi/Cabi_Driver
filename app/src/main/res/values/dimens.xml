@@ -1,0 +1,34 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="map_dot_marker_size">8dp</dimen>
+    <dimen name="tab_text">24sp</dimen>
+    <dimen name="tab_texts">20sp</dimen>
+    <dimen name="tool_bar_tab">72dp</dimen>
+    <dimen name="tool_bar">56dp</dimen>
+    <dimen name="tool_bar_bottom">48dp</dimen>
+    <dimen name="largetext">18dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="taxi__search_padding_medium">8dp</dimen>
+    <dimen name="radius">113dp</dimen>
+    <dimen name="taxi__container_margin">6dp</dimen>
+    <dimen name="taxi__search_padding_large">16dp</dimen>
+    <dimen name="taxi__button_height">48dp</dimen>
+</resources>

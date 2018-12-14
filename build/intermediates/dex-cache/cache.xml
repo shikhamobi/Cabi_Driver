@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/7add011477f110bc430fc836e84b53deddead8f8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2c2714e8bd74750d4cfec7bffc62aa910269b017/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/bc7078596c63678f3463392ece0086d80b779879/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3767d6b5380485fbd30695d37e1e7d45f69e262e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/bc0a7f66922301bc798bf1df8fae28125e2d1e25/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a378e212ca6c2d0057fd23a50479017963152422/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/bb552a02912310b779438f1f1f00e938ca649017/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fc387427a76c6a9fba40a490e48d244a989690c8">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be713e53bae8cde1c87f75e3270c9d51ad782a4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/7b9934d48b253c11fbbb6b4f3924aadeb57e33eb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f8fa9708f01c7f7d2da936fc5e3b5b47dcadb77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/eaa7dd0018d8a641b16a69123c0a29dbc62005e4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f7b0e8bbef30cef79d7bb54bd4f671e3663bc7f4">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e5c8ffd3496d4c7a66d071f6e138717e25cbb63c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/libs/retrofit-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/2/retrofit-1.9.0_6366495b95aee2ed67aaefe85657ad00aa8abcee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.41/d0cfb3ef897c00449e5e696355db9506225fb507/kotlin-stdlib-jdk7-1.2.41.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d0cfb3ef897c00449e5e696355db9506225fb507">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/kotlin-stdlib-jdk7-1.2.41_c3f8ec95253ef082bb7751c94baa2e5398cbe905/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/d7a27d78e527fa3f25b9fafa8e27bf33be833c1e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_59c01c714d264623c47b4f839fe96bcfc6e7cc8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9665a80a810d92100ee71592e2d3ab0b5f91927f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3ed0feebcab5af059d2a7fc1ecf819c580fe1885/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_d8f784d30d3c412ae2306c50dc55a3aaec13b111/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/020413eefc44502d75441068569e48d0506c2373/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e972e4a15423d73cb1951c0fc32e919b252b447/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9534fbe580d09b5fc8b9d57407be3554fb33bb98/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="474cccf169297d49fff89fd35b7634a7a9d1031c">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0426060c63a95c7433c7e1128e3530152f5971c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/libs/jsoup-1.7.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="99351550d1fa2e8147319dbafd3f3a79d4f4c6e5">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/2/jsoup-1.7.1_b1def713ac48936f6695f1a0cdfa29eda4c10aa3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/0.8.3/854b49396e1e9f9bb0ab025062ddb49c4ed65ca1/engine.io-client-0.8.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="854b49396e1e9f9bb0ab025062ddb49c4ed65ca1">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-0.8.3_e0e4e4129ee896dc52a9e83ff4fb0cdd2fec56c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/0e7b49f9d0bf58bbf8e84f70358d2c2b8331e420/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e77ffa091c317add00f041b0f152412099b9939">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fec553c0494f80f53182cb7771a5456beb166eba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.4.1_7935763955b4a347604df504643b62ff3d0acb6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_da7256b204cfaf03d49a22072948cf4988d167ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/0f03f3af623fa89000e1e4b68a349deb2db231d1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a780da3c9e4c69d44622f72bdce71b260ed53e21">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_346e28d3d19a2b6ff00ddd80f15075066acbe682/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/86e0ec0ec2810a8188a9f5db8d455a26a8e78474/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="02cc9f2e5899415add52bc716602b6b38e7eeb99">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_acfd331bddf9276592a4a3c4ef8ea39a65bc3937/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/7e34f009642702250bccd9e5255866f408962a05/kotlin-stdlib-1.2.41.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7e34f009642702250bccd9e5255866f408962a05">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/kotlin-stdlib-1.2.41_28f6cb8780afacd5b34d8dcc947c7adf3014b598/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/428dfd71e5e417f3f95634e830c12aefd8b657a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_30c31a29948d59be6e68e42c79661102fbc27d26/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/84ff9c5f363fffe8ba724c5f5cf2df7b7697da39/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_38e1677669033cb5857b4ce5f60c19a8bb985a3f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/4ef941fa6d029c4e7055c7c9f537d09b2011bee2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a088319b51721ced5735a6cb586b663057760e08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/e0ccdc4e3022c4430fe3b477d68be7c58740d5da/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e7c2e811efcb65fcd94b026cdfd7376a936e2ee8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/library/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d2c5ea4af75b8a808049dc2734a7e04cd9d32be1">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/4/classes_f616de22e7f4a79059235d27909f90af7ca94362/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_f01da328875bbe88a84dc4dda8ca9e8eec931c53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9d3f0730076f780655071f675cdaceb9d0059989/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2867444a6e9e1d54938e04c34a22d712359362d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/b03aa78fdbe1692988e423c1194e15076eb098aa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_af1cf34ff020107c90c86d063839a21e8d0e07e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/12493ee26a8cb5031b826d8b3f4b7e27a47c1328/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_641c3320fb74fcd803f89fc6a15298c35e5d9b38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/f9f6d734c426a6a1024aeec475dcaca77ca37e8d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b7006c3f8a6bd033672d9f538a35daff7618b4c7">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e111f70a7777ad6f90ebe0cb18ca73ac7825f27d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/d524280793f1ebab0136c7d7a317ab3ddb4f668b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b7df0ffe5464968e16430eaefc0c9a4f93418d80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/e59772c8155c753a65cbded6f5a7bf2b3f31ae42/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed6b455e3dd7bbf1ff31f8df0b41e2f0d87f3ace">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_67231f5cdda671a2347d4ed0d70a7ce3b4af29e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_aaa23af23edc720dc6664a5c17bca7bd87954efd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/7bf20c9d5bbc2c37b7322a4e671bd24b6755e444/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9b8544d0c4d3a508ffc7da674ac79d5dc5d79395">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee2e565f44e7efd75a4567801bddad9cb6fa7522/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/da3ee3c11f5c2e224e0c3c97172cf9a509e97d8c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c72a7d1edd5ab194fa2e19239be559dbbce15661/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_12dddcfccf9abbe4b8f8fcf2b1bf5200792047ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_8996fa0a15e71acb04b9683ada4a66a276cae15b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/69c9a09023c05c6a9513ada2dadfb46cfa5b520b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="48ab283a4cda3b78eda2c149b588cb0aa0c66cc9">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8592058644d9a661dd872a47fbf03ea5eda2abb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/c6780d2fad2f682f581057d4c493cec05823981c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_480e4021958b00859c7d381a31b3198794f795b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/122aca9794b85da01743a910912d6d5ced5e1c96/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42c5ee016c8815db37d662f18c497aee13150f9e">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e914c1f45ffc603bd2996470388c3d064392e8cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/simple-xml-2.7.1_2252e6c2b9150e185e1055ec4542f8cb493568a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/3648a681904ee6158d9e978b64594378f2aeb0b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b42cf2134829f715edfa2adaf0ee246631322dba">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bca0435ed24658c3b4119276f42d2b5f8ae7f29c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/libs/universal-image-loader-1.9.0-with-sources.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="20b122feb5eed14e4b9fa16a3421f2656b74ce9f">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/2/universal-image-loader-1.9.0-with-sources_a77e34fadb12369c73ac23f692f13f04e3f229d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/f40fcaee7285eb6218f320f25995c350534a1182/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d618a2e7372f71e690c760bbf69150e82571b553/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/ec6936baef6726856eed87483fb5cb4245c79053/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="863b37c463df79f340b5d83bbbfc63ad25612e01">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b05a703babea4cd08090dac87cef08435310fdde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_9b002096bf4fc5914b2c51726ea7385063023031/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/a8b7f6aa5a86f9f8a019b4ee173bc6a876156b42/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7ff77725723167163d69439e3fd077bd0899babf">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_72aaf4f57c1a992c9f2274f0b8d5df89afa70702/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/b35c43f32be0f991281574228845687b20e3a41a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8e5684fd47a8c5a90ae74047c0c544b376013924/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/00984831de3ac4e13b138f8cdfb07515d52ef1bf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a6e54ce5f04d7a30fc9b8a4ab13edd5ec04f1cf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/1a317580f2d898b1c9ee9b4e38bf266f8ab59f2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f63291c198bf572a4b24353ec91e8dc112f5e7f3">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_97e34ac7be5dc2dfac1ec2e26cb3221ace85e815/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/d770a2ec65cba59a372e2e175e83f50324bdeb80/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2a833a01434cf189fb07d7f054fb16a49889f79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9277c7829180d41ba794ae3c54818d7007b01e16/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2c60ae5fbd4660b2b02e52ff411e88166545fe5b">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4dde57b62394c8cb943257d1a8e42fab44982b28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9fce6c5187657a0ace84dab2cb75cfc146ca8b2a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e882de9205d458dbbea7e58f885614ffb49df6e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.android/build-cache/9f46bd21434da8e30e6bfc972458138b56346a49/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_77d13861885d22ee7acefee717968acea034e08a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.0/ff93baa2e2e6ca507fc6ec731f61751dd0d865e7/MPAndroidChart-v3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ff93baa2e2e6ca507fc6ec731f61751dd0d865e7">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v3.0.0_0ec87f8b1362c7d65798b05fa69d7b6430c6507e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_4cc525ed5fa556544d218a2a26ad71309699f880/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/AndroidStudio_3.0/android-studio/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/annotations-13.0_a8456b7b16331c4746a9aa7fe8176681c38d6116/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.5.0/4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83/okhttp-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.5.0_19a0c685ca6e147b56909fef123979092b0d97c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/0.8.3/b30500232ff0668a47c9f91f02e6935457a52fb5/socket.io-client-0.8.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b30500232ff0668a47c9f91f02e6935457a52fb5">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/socket.io-client-0.8.3_9545227fce55a9549e4d47dabb27702fc72d1db8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/developer/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/home/developer/Music/cabi/cabi_driver_git_new/cabi_Andr_Driv/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_c7db66ddf05bef130d48cc0616ed0a708ee19d00/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,75 @@
+package com.cabi.driver.utils;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+
+import java.text.DecimalFormat;
+import java.util.Locale;
+
+/**
+ *This common class to store the require data by using SharedPreferences.
+ */
+public class SessionSave
+{
+	public static void saveSession(String key, String value, Context context)
+	{
+		Editor editor = context.getSharedPreferences("KEY", Activity.MODE_PRIVATE).edit();
+		editor.putString(key, value);
+		editor.commit();
+	}
+
+	public static String getSession(String key, Context context)
+	{
+		SharedPreferences prefs = context.getSharedPreferences("KEY", Activity.MODE_PRIVATE);
+		return prefs.getString(key, "");
+	}
+
+	public static void clearSession(Context context)
+	{
+		Editor editor = context.getSharedPreferences("KEY", Activity.MODE_PRIVATE).edit();
+		editor.clear();
+		editor.commit();
+	}
+
+	public static void setDistance(double distance,Context con)
+	{
+		Editor editor=con.getSharedPreferences("DIS",con.MODE_PRIVATE).edit();
+		editor.putFloat("DISTANCE", (float)distance);
+		editor.commit();
+	}
+
+//	public static float getDistance(Context con)
+//	{
+//		SharedPreferences sharedPreferences=con.getSharedPreferences("DIS", con.MODE_PRIVATE);
+//		return sharedPreferences.getFloat("DISTANCE", 0);
+//
+//	}
+	public static float getDistance(Context con)
+	{
+
+		DecimalFormat df = new DecimalFormat(".###");
+//		SharedPreferences sharedPreferences=con.getSharedPreferences("DIS", con.MODE_PRIVATE);
+		return Float.parseFloat((getDistanceString(con)));
+
+	}
+
+	public static String getDistanceString(Context con){
+		SharedPreferences sharedPreferences=con.getSharedPreferences("DIS", con.MODE_PRIVATE);
+		return  String.format(Locale.UK, "%.2f", sharedPreferences.getFloat("DISTANCE", 0));
+	}
+	public static void setWaitingTime(Long time,Context con)
+	{
+		Editor editor=con.getSharedPreferences("long",con.MODE_PRIVATE).edit();
+		editor.putLong("LONG", time);
+		editor.commit();
+	}
+
+	public static long getWaitingTime(Context con)
+	{
+		SharedPreferences sharedPreferences=con.getSharedPreferences("long", con.MODE_PRIVATE);
+		return sharedPreferences.getLong("LONG", 0);
+
+	}
+}

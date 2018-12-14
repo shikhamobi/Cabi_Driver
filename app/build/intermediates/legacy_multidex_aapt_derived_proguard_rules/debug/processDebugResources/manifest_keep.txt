@@ -1,0 +1,2 @@
+# Referenced at /home/mobiweb/shikha data/cabi_Andr_Driv/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:66
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }

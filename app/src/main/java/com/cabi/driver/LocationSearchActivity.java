@@ -1,0 +1,868 @@
+package com.cabi.driver;
+
+import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.cabi.driver.adapter.PlacesAutoCompleteAdapter;
+import com.cabi.driver.adapter.Taxi_searchList_adapter;
+import com.cabi.driver.data.CommonData;
+import com.cabi.driver.data.SearchListData;
+import com.cabi.driver.service.FourSquareService;
+import com.cabi.driver.service.LocationUpdate;
+import com.cabi.driver.service.ServiceGenerator;
+import com.cabi.driver.utils.CL;
+import com.cabi.driver.utils.Colorchange;
+import com.cabi.driver.utils.FontHelper;
+import com.cabi.driver.utils.NC;
+import com.cabi.driver.utils.SessionSave;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.location.places.PlaceBuffer;
+import com.google.android.gms.location.places.Places;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+
+import static com.cabi.driver.SplashAct.CURRENT_COUNTRY_ISO_CODE;
+
+/**
+ * this class is used to search the places by autocomplete suggestions
+ */
+public class LocationSearchActivity extends MainActivity implements Taxi_searchList_adapter.LocationListItemClick, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+
+    private LatLngBounds latLngBounds = new LatLngBounds(new LatLng(23.63936, 68.14712), new LatLng(28.20453, 97.34466));
+    EditText Edit_Location;
+    private String jsonurl;
+    private static final String TAG_RESULT = "predictions";
+    private paserdata autoPaserdata;
+    RecyclerView rv;
+    Taxi_searchList_adapter adapter;
+    private GetGeoCoderAddress geoObject;
+    private String PLACE_ID;
+    private String type;
+    private ImageButton locationsearch_clear;
+    private ImageView btn_back;
+
+
+    private LocationRequest locationRequest;
+    private GoogleApiClient mGoogleApiClient;
+    private PlacesAutoCompleteAdapter mAutoCompleteAdapter;
+
+
+    private ExploreAsyncTask explore;
+    private boolean isFourSquare = false;
+    private String formattedDate;
+
+    @Override
+    public int setLayout() {
+        return R.layout.taxi_location_fragment;
+    }
+
+    @Override
+    public void Initialize() {
+        FontHelper.applyFont(this, findViewById(R.id.top));
+        Colorchange.ChangeColor((ViewGroup) findViewById(R.id.top), this);
+        Edit_Location = (EditText) findViewById(R.id.taxi__locationsearch_edittext_search);
+        Edit_Location.setHintTextColor(CL.getColor(R.color.textviewcolor_light));
+        Edit_Location.setTextColor(CL.getColor(R.color.black));
+        // Edit_Location.setLongClickable(false);
+        btn_back = (ImageView) findViewById(R.id.back_icon);
+        locationsearch_clear = (ImageButton) findViewById(R.id.taxi__locationsearch_imagebutton_clear);
+
+        Glide.with(this).load(SessionSave.getSession("image_path", this) + "headerLogo.png").diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true).into((ImageView) findViewById(R.id.header_titleTxt));
+        locationsearch_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Edit_Location.setText("");
+            }
+        });
+        rv = (RecyclerView) findViewById(R.id.taxi__locationsearch_listview_locations);
+        rv.setLayoutManager(new LinearLayoutManager(LocationSearchActivity.this));
+
+        Bundle b = getIntent().getExtras();
+        if (b != null) {
+            type = b.getString("type");
+        }
+        if (type.equals("D")) {
+            Edit_Location.setHint(NC.getString(R.string.enter_dest));
+        } else {
+            Edit_Location.setHint(NC.getString(R.string.enter_pickup));
+        }
+        if (SessionSave.getSession("isFourSquare", LocationSearchActivity.this).trim().equals("1")) {
+            isFourSquare = false;
+        }
+        if (!isFourSquare) {
+
+            buildGoogleApiClient();
+            Double lat = 0.0;
+            Double lon = 0.0;
+            if (!SessionSave.getSession("PLAT", LocationSearchActivity.this).trim().equals("")) {
+                lat = Double.parseDouble(SessionSave.getSession("PLAT", LocationSearchActivity.this));
+                lon = Double.parseDouble(SessionSave.getSession("PLNG", LocationSearchActivity.this));
+            }
+
+            latLngBounds = getBoundingBox(lat, lon, 50000);
+            AutocompleteFilter typeFilter;
+            if (CURRENT_COUNTRY_ISO_CODE.equals(""))
+                typeFilter = new AutocompleteFilter.Builder().setTypeFilter(AutocompleteFilter.TYPE_FILTER_NONE).build();
+            else
+                typeFilter = new AutocompleteFilter.Builder().
+                        setCountry(CURRENT_COUNTRY_ISO_CODE).setTypeFilter(AutocompleteFilter.TYPE_FILTER_NONE).build();
+//            AutocompleteFilter typeFilter = new AutocompleteFilter.Builder()
+//                    .setTypeFilter(Place.TYPE_COUNTRY)
+//                    .setCountry(MyStatus.CURRENT_COUNTRY_CODE)
+//                    .build();
+            mAutoCompleteAdapter = new PlacesAutoCompleteAdapter(LocationSearchActivity.this, R.layout.taxi__search_list_item,
+                    mGoogleApiClient,
+                    latLngBounds, typeFilter);
+
+            rv.setLayoutManager(new WrapContentLinearLayoutManager(LocationSearchActivity.this));
+            rv.setAdapter(mAutoCompleteAdapter);
+
+        } else {
+            Calendar c = Calendar.getInstance();
+            SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");
+            formattedDate = df.format(c.getTime());
+
+        }
+
+
+//        Edit_Location.addTextChangedListener(new TextWatcher() {
+//            String search_text[];
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // TODO Auto-generated method stub
+//                search_text = Edit_Location.getText().toString().split(",");
+//                //AIzaSyBNauDRNOX6bhZWGWK09gjzyJ_bAq1sIKY
+//                jsonurl = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + search_text[0].replace(" ", "%20") + "&components=country:"
+//                        + SplashAct.CURRENT_COUNTRY_CODE + "&radius=1000&sensor=true&key=AIzaSyDewldf9PLpuky-ALFglTIhNdU5mp82G9k&components=&language=" + SessionSave.getSession("Lang", LocationSearchActivity.this);
+////                    jsonurl = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + search_text[0].replace(" ", "%20") + "&radius=1000&sensor=true&key=" + SessionSave.getSession("android_google_api_key", BookTaxiAct.this) + "&components=&language=" + SessionSave.getSession("Lang", BookTaxiAct.this);
+////                names = new ArrayList<String>();
+////                Place_id_type = new ArrayList<String>();
+//                System.out.println("json_" + jsonurl);
+//                if (autoPaserdata != null) {
+//                    autoPaserdata.cancel(true);
+//                    autoPaserdata = null;
+//                }
+//                autoPaserdata = new paserdata();
+//                autoPaserdata.execute();
+//                // }
+//            }
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//                // TODO Auto-generated method stub
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+
+
+        Edit_Location.addTextChangedListener(new TextWatcher() {
+            String search_text[];
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                // Check FourSquare is enabled or Not
+                if (!isFourSquare) {
+                    if (s != null && s.length() > 0) {
+                        mAutoCompleteAdapter.getFilter().filter(s);
+
+                        rv.setVisibility(View.VISIBLE);
+                        rv.getAdapter().notifyDataSetChanged();
+                    } else {
+                        rv.setVisibility(View.GONE);
+                    }
+                } else {
+                    if (s != null && s.length() > 0) {
+                        if (explore != null) {
+                            explore.cancel(true);
+                            explore = null;
+                        }
+                        explore = new ExploreAsyncTask();
+                        explore.execute(s.toString());
+
+                        rv.setVisibility(View.VISIBLE);
+
+                    } else {
+                        rv.setVisibility(View.GONE);
+                    }
+
+                }
+
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // TODO Auto-generated method stub
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        rv.addOnItemTouchListener(
+                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+
+                        view = getCurrentFocus();
+                        if (view != null) {
+                            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
+                            if (imm.isAcceptingText()) {
+                                InputMethodManager im = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                                im.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+                            }
+                        }
+
+                        if (isFourSquare) {
+
+                            Edit_Location.setText(CommonData.SEARCH_LIST_ITEM.get(position).getAdd1() + " , " + CommonData.SEARCH_LIST_ITEM.get(position).getAdd2());
+
+//                            Location.Latitude = Double.valueOf(CommonData.SEARCH_LIST_ITEM.get(position).getLat());
+//                            TaxiUtil.Longitude = Double.valueOf(CommonData.SEARCH_LIST_ITEM.get(position).getLng());
+//                            TaxiUtil.Address = Edit_Location.getText().toString();
+
+                            Bundle conData = new Bundle();
+                            conData.putString("param_result", CommonData.SEARCH_LIST_ITEM.get(position).getAdd1() + " , " + CommonData.SEARCH_LIST_ITEM.get(position).getAdd2());
+                            conData.putDouble("lat", Double.valueOf(CommonData.SEARCH_LIST_ITEM.get(position).getLat()));
+                            conData.putDouble("lng", Double.valueOf(CommonData.SEARCH_LIST_ITEM.get(position).getLng()));
+                            Intent intent = new Intent();
+                            intent.putExtras(conData);
+                            setResult(RESULT_OK, intent);
+                            finish();
+
+
+                        } else {
+                            try {
+
+                                final PlacesAutoCompleteAdapter.PlaceAutocomplete item = mAutoCompleteAdapter.getItem(position);
+                                final String placeId = String.valueOf(item.placeId);
+
+                                PendingResult<PlaceBuffer> placeResult = Places.GeoDataApi
+                                        .getPlaceById(mGoogleApiClient, placeId);
+
+                                placeResult.setResultCallback(new ResultCallback<PlaceBuffer>() {
+                                    @Override
+                                    public void onResult(@NonNull PlaceBuffer places) {
+                                        if (places.getCount() == 1) {
+
+                                            Edit_Location.setText(places.get(0).getAddress());
+
+//                                            TaxiUtil.Latitude = places.get(0).getLatLng().latitude;
+//                                            TaxiUtil.Longitude = places.get(0).getLatLng().longitude;
+//                                            TaxiUtil.Address = Edit_Location.getText().toString();
+
+                                            Bundle conData = new Bundle();
+                                            conData.putString("param_result", places.get(0).getAddress().toString());
+                                            conData.putDouble("lat", places.get(0).getLatLng().latitude);
+                                            conData.putDouble("lng", places.get(0).getLatLng().longitude);
+                                            Intent intent = new Intent();
+                                            intent.putExtras(conData);
+                                            setResult(RESULT_OK, intent);
+                                            finish();
+
+                                        } else {
+                                            Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+
+                    }
+                })
+        );
+
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+//                final Intent i = new Intent(LocationSearchActivity.this, MainHomeFragmentActivity.class);
+//                startActivity(i);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
+                if (imm.isAcceptingText()) {
+                    InputMethodManager im = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    im.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+                }
+                finish();
+            }
+        });
+
+    }
+
+    @Override
+    public void onClick(int pos) {
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
+            if (imm.isAcceptingText()) {
+                InputMethodManager im = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                im.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+            }
+        }
+//        try {
+//            String res = TaxiUtil.SEARCH_LIST_ITEM.get(pos).getAdd1() + "," + TaxiUtil.SEARCH_LIST_ITEM.get(pos).getAdd2();
+//            PLACE_ID = TaxiUtil.SEARCH_LIST_ITEM.get(pos).getPlace_id();
+//            Edit_Location.setText(res);
+//
+//
+//            TaxiUtil.Latitude = location.getLatitude();
+//            TaxiUtil.Longitude = location.getLongitude();
+//            if (Edit_Location.getText().toString().trim().length() > 0) {
+//
+//                TaxiUtil.Address = Edit_Location.getText().toString();
+//                //vaildAddress = Edit_Location.getText().toString();
+//            }
+//            Bundle conData = new Bundle();
+//            conData.putString("param_result", strAddress);
+//            conData.putDouble("lat", TaxiUtil.Latitude);
+//            conData.putDouble("lng", TaxiUtil.Longitude);
+//            Intent intent = new Intent();
+//            intent.putExtras(conData);
+//            setResult(RESULT_OK, intent);
+//            finish();
+//
+////            finishWithResult(res);
+//        } catch (Exception e) {
+//            // e.printStackTrace();
+//        }
+
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+        locationRequest = LocationRequest.create();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(5000); // Update location every second
+        // location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        if (mGoogleApiClient.isConnected())
+            LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, locationRequest, LocationSearchActivity.this);
+        else
+            mGoogleApiClient.connect();
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+
+    }
+
+    /**
+     * this class is used to get address from places api
+     */
+
+    public class paserdata extends AsyncTask<Void, Integer, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            // TODO Auto-generated method stub
+            try {
+                JSONObject json = GetAddress(jsonurl.toString());
+                if (json != null) {
+                    CommonData.SEARCH_LIST_ITEM.clear();
+                    // Getting Array of Contacts
+                    JSONArray contacts = json.getJSONArray(TAG_RESULT);
+                    for (int i = 0; i < contacts.length(); i++) {
+                        SearchListData data = new SearchListData();
+                        JSONObject c = contacts.getJSONObject(i);
+                        try {
+                            JSONArray desc = c.getJSONArray("terms");
+                            //System.out.println("_________NNN" + desc);
+                            //  int startIntex = desc.indexOf(",");
+                            String address1 = desc.getJSONObject(0).getString("value");
+                            String address2 = "";
+                            for (int h = 1; h < desc.length(); h++)
+                                address2 = address2 + desc.getJSONObject(h).getString("value") + (h != (desc.length() - 1) ? "," : "");
+                            //System.out.println("_________NNN" + address1 + "___" + address2);
+                            data.setAdd2(address2);
+                            data.setAdd1(address1);
+                            data.setPlace_id(c.getString("place_id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        CommonData.SEARCH_LIST_ITEM.add(data);
+//
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+
+            try {
+                if (adapter == null) {
+                    adapter = new Taxi_searchList_adapter(LocationSearchActivity.this);
+                    rv.setVisibility(View.VISIBLE);
+                    rv.setAdapter(adapter);
+                }
+                rv.getAdapter().notifyDataSetChanged();
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+        }
+
+        private JSONObject GetAddress(String Url) {
+            String json_s = "";
+            try {
+
+                java.net.URL url = new java.net.URL(Url);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                InputStream is = new BufferedInputStream(conn.getInputStream());
+
+
+                try {
+                    //   BufferedReader reader = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                    StringBuilder sb = new StringBuilder();
+                    String line = null;
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line + "\n");
+                    }
+                    json_s = sb.toString();
+                    is.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                JSONObject json = new JSONObject(json_s);
+
+                return json;
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+            return null;
+        }
+
+
+    }
+
+    private void finishWithResult(String pos) {
+
+        getLocationFromAddress(pos);
+
+    }
+
+
+    public class GetGeoCoderAddress extends AsyncTask<String, Void, Void> {
+        private final String Urlcoreconfig;
+        private String jsonResult;
+        String lat, lng;
+        private String json_s;
+
+        public GetGeoCoderAddress(String url) {
+            this.Urlcoreconfig = url;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            try {
+//                HttpClient httpclient = new DefaultHttpClient();
+//                HttpGet httppost = new HttpGet(Urlcoreconfig);
+//                HttpResponse response = httpclient.execute(httppost);
+//                jsonResult = inputStreamToString(response.getEntity().getContent()).toString();
+//                System.out.println("sureshhhhhhhhh " + jsonResult);
+//                JSONObject json = new JSONObject(jsonResult);
+
+
+                java.net.URL url = new java.net.URL(Urlcoreconfig);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//            conn.setRequestMethod("POST");
+//            byte[] postDataBytes = j.toString().getBytes("UTF-8");
+                //    conn.getOutputStream().write(postDataBytes);
+                InputStream is = new BufferedInputStream(conn.getInputStream());
+
+
+                try {
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
+                    StringBuilder sb = new StringBuilder();
+                    String line = null;
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line + "\n");
+                    }
+                    json_s = sb.toString();
+                    is.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                JSONObject json = new JSONObject(json_s);
+
+
+              //  System.out.println("json_ " + json);
+                json = json.getJSONObject("result");
+                json = json.getJSONObject("geometry");
+                json = json.getJSONObject("location");
+                lat = json.getString("lat");
+                lng = json.getString("lng");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+//            TaxiUtil.Latitude = Double.valueOf(lat);
+//            TaxiUtil.Longitude = Double.valueOf(lng);
+//            TaxiUtil.Address = Edit_Location.getText().toString();
+            Bundle conData = new Bundle();
+            conData.putString("param_result", Edit_Location.getText().toString());
+            conData.putDouble("lat", Double.valueOf(lat));
+            conData.putDouble("lng", Double.valueOf(lng));
+            Intent intent = new Intent();
+            intent.putExtras(conData);
+            setResult(RESULT_OK, intent);
+            finish();
+            // vaildAddress = Edit_Location.getText().toString();
+        }
+    }
+
+
+    @Override
+    protected void onStop() {
+
+
+        super.onStop();
+    }
+
+    public void getLocationFromAddress(String strAddress) {
+
+        Geocoder coder = new Geocoder(this);
+        List<Address> address;
+        try {
+            address = coder.getFromLocationName(strAddress, 5);
+
+            if (!address.isEmpty()) {
+                Address location = address.get(0);
+                location.getLatitude();
+                location.getLongitude();
+              //  System.out.println("LAT-------->" + location.getLatitude());
+              //  System.out.println("LON-------->" + location.getLongitude());
+                // TaxiUtil.Latitude = location.getLatitude();
+                // TaxiUtil.Longitude = location.getLongitude();
+                if (Edit_Location.getText().toString().trim().length() > 0) {
+
+                    // TaxiUtil.Address = Edit_Location.getText().toString();
+                    //vaildAddress = Edit_Location.getText().toString();
+                }
+                Bundle conData = new Bundle();
+                conData.putString("param_result", strAddress);
+                conData.putDouble("lat", location.getLatitude());
+                conData.putDouble("lng", location.getLatitude());
+                Intent intent = new Intent();
+                intent.putExtras(conData);
+                setResult(RESULT_OK, intent);
+                finish();
+            } else {
+                if (Edit_Location.getText().toString().trim().length() > 0) {
+                    //  TaxiUtil.Address = Edit_Location.getText().toString();
+                    String encode_url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + PLACE_ID + "&key=AIzaSyBNauDRNOX6bhZWGWK09gjzyJ_bAq1sIKY";
+                   // System.out.println("encode_url" + encode_url);
+                    if (geoObject != null)
+                        geoObject.cancel(true);
+                    geoObject = new GetGeoCoderAddress(encode_url);
+                    geoObject.execute();
+                }
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            //vaildAddress = "";
+            e.printStackTrace();
+            ShowToast(LocationSearchActivity.this, "Please try again..."+e.getLocalizedMessage());
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // if (Edit_Location.getText().toString().trim().equals("")) {
+        //    startActivity(new Intent(this, MainHomeFragmentActivity.class));
+        getWindow().setSoftInputMode(
+                WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
+        );
+//        final Intent i = new Intent(LocationSearchActivity.this, MainHomeFragmentActivity.class);
+//        startActivity(i);
+        finish();
+
+//        } else
+//            super.onBackPressed();
+    }
+
+    class WrapContentLinearLayoutManager extends LinearLayoutManager {
+        public WrapContentLinearLayoutManager(Context context) {
+            super(context);
+        }
+
+        @Override
+        public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
+            try {
+                super.onLayoutChildren(recycler, state);
+            } catch (IndexOutOfBoundsException e) {
+                // Log.e("probe", "meet a IOOBE in RecyclerView");
+            }
+        }
+    }
+
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .addApi(Places.GEO_DATA_API)
+                .build();
+
+        mGoogleApiClient.connect();
+
+    }
+
+    private class ExploreAsyncTask extends AsyncTask<String, Void, String> {
+
+        String result = null;
+        String city;
+        String state;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            FourSquareService client = new ServiceGenerator("https://api.foursquare.com/v2/", LocationSearchActivity.this, true).createService(FourSquareService.class);
+            Call<Object> coreResponse = client.requestExplore(formattedDate,
+                    /*LocationUpdate.latitude1*/0.0 + "," + /*LocationUpdate.longitude1*/0.0, params[0], SessionSave.getSession("android_foursquare_api_key", LocationSearchActivity.this));
+            coreResponse.enqueue(new Callback<Object>() {
+                @Override
+                public void onResponse(Call<Object> call, retrofit2.Response<Object> response) {
+                    Object dataResponse = null;
+
+                    try {
+                        if (response.body() != null) {
+                            dataResponse = response.body();
+
+                            Gson gson = new Gson();
+                            result = gson.toJson(dataResponse);
+
+                        }
+
+                        try {
+                            if (result != null) {
+
+
+                                JSONObject json = new JSONObject(result);
+
+                                CommonData.SEARCH_LIST_ITEM.clear();
+
+
+                                if (json.getJSONObject("meta").getInt("code") == 200) {
+
+                                   // Log.d("doInBackground ", "Success: ");
+
+                                    JSONArray minivenues = json.getJSONObject("response").getJSONArray("minivenues");
+                                    for (int i = 0; i < minivenues.length(); i++) {
+                                        SearchListData data = new SearchListData();
+
+                                        JSONObject c = minivenues.getJSONObject(i);
+
+                                        String address = c.getString("name");
+                                        data.setAdd1(address);
+                                        data.setPlace_id(c.getString("id"));
+
+
+                                        JSONObject location = c.getJSONObject("location");
+                                        // if(location.has(""))
+                                        String lat = location.getString("lat");
+                                        String lng = location.getString("lng");
+
+                                        data.setLat(lat);
+                                        data.setLng(lng);
+
+
+                                        if (location.has("city")) {
+                                            city = location.getString("city");
+                                        }
+                                        if (location.has("state")) {
+                                            state = location.getString("state");
+                                        }
+
+                                        if (city != null && state != null) {
+                                            data.setAdd2(city + " , " + state);
+                                        } else if (city != null) {
+                                            data.setAdd2(city);
+                                        } else if (state != null) {
+                                            data.setAdd2(state);
+                                        }
+
+
+                                        CommonData.SEARCH_LIST_ITEM.add(data);
+                                    }
+
+                                    try {
+                                        if (adapter == null) {
+                                            adapter = new Taxi_searchList_adapter(LocationSearchActivity.this);
+                                            rv.setLayoutManager(new WrapContentLinearLayoutManager(LocationSearchActivity.this));
+                                            rv.setVisibility(View.VISIBLE);
+                                            rv.setAdapter(adapter);
+                                        }
+
+                                        if (CommonData.SEARCH_LIST_ITEM != null && CommonData.SEARCH_LIST_ITEM.size() > 0) {
+                                            rv.setVisibility(View.VISIBLE);
+                                            rv.getAdapter().notifyDataSetChanged();
+                                        } else {
+                                            rv.setVisibility(View.GONE);
+                                        }
+
+                                    } catch (Exception e) {
+                                        // TODO: handle exception
+                                        e.printStackTrace();
+                                    }
+
+
+                                }
+
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    if (dataResponse != null) {
+                       // System.out.println("rrc_____" + dataResponse);
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<Object> call, Throwable t) {
+                    t.printStackTrace();
+                }
+            });
+
+            return result;
+        }
+
+    }
+
+    private LatLngBounds getBoundingBox(final double pLatitude, final double pLongitude, final int pDistanceInMeters) {
+
+        final double[] boundingBox = new double[4];
+
+        final double latRadian = Math.toRadians(pLatitude);
+
+        final double degLatKm = 110.574235;
+        final double degLongKm = 110.572833 * Math.cos(latRadian);
+        final double deltaLat = pDistanceInMeters / 1000.0 / degLatKm;
+        final double deltaLong = pDistanceInMeters / 1000.0 /
+                degLongKm;
+
+        final double minLat = pLatitude - deltaLat;
+        final double minLong = pLongitude - deltaLong;
+        final double maxLat = pLatitude + deltaLat;
+        final double maxLong = pLongitude + deltaLong;
+
+        boundingBox[0] = minLat;
+        boundingBox[1] = minLong;
+        boundingBox[2] = maxLat;
+        boundingBox[3] = maxLong;
+
+
+        return new LatLngBounds(new LatLng(minLat, minLong), new LatLng(maxLat, maxLong));
+    }
+}

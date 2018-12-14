@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

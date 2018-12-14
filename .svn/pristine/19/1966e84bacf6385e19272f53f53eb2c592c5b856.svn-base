@@ -1,0 +1,774 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:2:1-313:12
+	package
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:7:5-30
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:6:5-28
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:5:5-35
+uses-sdk
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:9:5-11:41
+MERGED from [com.android.support:multidex:1.0.1] /home/developer/.android/build-cache/472d1a4c95ac7a46520878f340ca8911c7c156b6/output/AndroidManifest.xml:18:5-42
+MERGED from [trunk:library:1.2.0] /home/developer/Documents/cabi/trunk/library/build/intermediates/bundles/default/AndroidManifest.xml:8:5-10:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /home/developer/.android/build-cache/2bff52ce91009601dbbbfd7eb189abfe52a72adc/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /home/developer/.android/build-cache/f546e80e4316cb96981828699afb960ee324d042/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /home/developer/.android/build-cache/7bd44ba49379a155c866f2f6f8cbecb4af37902e/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /home/developer/.android/build-cache/8b5fac286f72130f778604e8d44b2559798cd819/output/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /home/developer/.android/build-cache/8b78cd2b0940c15d5e7a8635abbe50851922efff/output/AndroidManifest.xml:23:5-43
+MERGED from [trunk:aa:unspecified] /home/developer/.android/build-cache/0911ccf72375a31a378bff94fb4c6b08419f4af1/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.1] /home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:customtabs:25.3.1] /home/developer/.android/build-cache/b7d0b3e6e064a89ae918c7bb6ad5fc33a0b1168e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.6.0] /home/developer/.android/build-cache/5a92516e02ba57c691a66032c8e310a58f686718/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.6.0] /home/developer/.android/build-cache/9362fefd179656ba038ed960557ede9fbfe14026/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.6.0] /home/developer/.android/build-cache/ba72aaabc740a7504a5368c79bf1e94c14b1e387/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.6.0] /home/developer/.android/build-cache/1aa3d0e06f78ee0bcddcd7408593de8cae5ca31e/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid-license:11.6.0] /home/developer/.android/build-cache/368a3f33aa82ffdff9d1e42ad3c27b24b0c6f429/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gcm-license:11.6.0] /home/developer/.android/build-cache/511d5588d14537f5bb356f252ecf99e8d974c66e/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places:11.6.0] /home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.6.0] /home/developer/.android/build-cache/2de66be7ac4a1faf9baaa7eb15df83203ac33051/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] /home/developer/.android/build-cache/218bd11a8d77dea9c2763df3b07a1035134c5cad/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] /home/developer/.android/build-cache/6daa2879fccfb4aee4b3d75bf59295962ded0069/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-license:11.6.0] /home/developer/.android/build-cache/1c5030f61595a6e2f9c09ef0d36f52c1ce471c9e/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] /home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:design:25.0.0] /home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.0.0] /home/developer/.android/build-cache/bf1a5f93b0f12d3b6d55691cec975e63ee2262d1/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.0.0] /home/developer/.android/build-cache/287ab240ab4c51ccd3eb7ee3257040e471d042db/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/developer/.android/build-cache/d0ec55c48a9e3bbcd93cf3796bd92444330ca423/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/developer/.android/build-cache/e78c50b9d04bcb3850ba940334286e50bffa8e65/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/developer/.android/build-cache/5144968bf1ce8499ac5eb5c11f32f54946c6245a/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.6.0] /home/developer/.android/build-cache/052d93a2c389c8a0555baee3e3b61277387241e7/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.0] /home/developer/.android/build-cache/7494cea32c7077f9a3f30629881f6700a60e3810/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-crash:11.6.0] /home/developer/.android/build-cache/991f307661a5e47a396439254885121fc435cca0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-crash-license:11.6.0] /home/developer/.android/build-cache/75e4da409e537ce6f13214409057d04a54088757/output/AndroidManifest.xml:4:5-43
+MERGED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:8:5-44
+MERGED from [com.google.firebase:firebase-core:11.6.0] /home/developer/.android/build-cache/e521831b1c177e3ee860d3a7463578bb5e8d8a7d/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] /home/developer/.android/build-cache/6029bda4228981faa09e23816148349ecde5a537/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] /home/developer/.android/build-cache/3f2225d11c1da5e778a4f56706e0453145265b6f/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] /home/developer/.android/build-cache/ec44842e11f66771ee1a516edad96d28df2113d4/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] /home/developer/.android/build-cache/898c9ca2232bd24c9c7f3f87fdc636a4511e4df2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/developer/.android/build-cache/97eb0b09f6592ab84b6bccdb783590fd4ecd0879/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/developer/.android/build-cache/d513392a9d3b4ea5cf5b0bef726a6b44ad84a9ca/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/developer/.android/build-cache/24faf3c212e7c72d6b346324495145488ac8f8f4/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/developer/.android/build-cache/e86ef1cb998472b48ff2151e4c28510d5f77772c/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/developer/.android/build-cache/1eb1f631a1128143a583fe46928be77f98e4b859/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/developer/.android/build-cache/7318affd87a129469baa6f69fb080759acbfd7c8/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] /home/developer/.android/build-cache/4d2be46fe3b9963fd8c2c12deda8d180a7c2dcdd/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] /home/developer/.android/build-cache/b248318404adc19f58d4722fd2b8079738c0c44f/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] /home/developer/.android/build-cache/0929fbcdad3741c3eea68e23dd853ebd7397ae34/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] /home/developer/.android/build-cache/b69c0bf959528d1fe17531e9ec35e9242d99efe9/output/AndroidManifest.xml:4:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.0.0] /home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:11:9-38
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:10:9-35
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.telephony
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:19:5-21:36
+	android:required
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:21:9-33
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:20:9-50
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:22:5-69
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:22:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:23:5-75
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:23:22-72
+uses-permission#com.cabi.driver.permission.MAPS_RECEIVE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:24:22-76
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:25:5-98
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:25:22-95
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.6.0] /home/developer/.android/build-cache/2de66be7ac4a1faf9baaa7eb15df83203ac33051/output/AndroidManifest.xml:19:5-78
+MERGED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:27:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:28:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /home/developer/.android/build-cache/2bff52ce91009601dbbbfd7eb189abfe52a72adc/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /home/developer/.android/build-cache/f546e80e4316cb96981828699afb960ee324d042/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /home/developer/.android/build-cache/7bd44ba49379a155c866f2f6f8cbecb4af37902e/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /home/developer/.android/build-cache/8b5fac286f72130f778604e8d44b2559798cd819/output/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /home/developer/.android/build-cache/8b78cd2b0940c15d5e7a8635abbe50851922efff/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-gcm:11.6.0] /home/developer/.android/build-cache/ba72aaabc740a7504a5368c79bf1e94c14b1e387/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.6.0] /home/developer/.android/build-cache/1aa3d0e06f78ee0bcddcd7408593de8cae5ca31e/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.6.0] /home/developer/.android/build-cache/2de66be7ac4a1faf9baaa7eb15df83203ac33051/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-crash:11.6.0] /home/developer/.android/build-cache/991f307661a5e47a396439254885121fc435cca0/output/AndroidManifest.xml:18:5-66
+MERGED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:28:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:29:5-76
+MERGED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:29:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:30:5-79
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:30:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:31:5-76
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:31:22-73
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:32:5-80
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:32:22-77
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:33:5-80
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:33:22-77
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:39:5-82
+MERGED from [com.google.android.gms:play-services-gcm:11.6.0] /home/developer/.android/build-cache/ba72aaabc740a7504a5368c79bf1e94c14b1e387/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.6.0] /home/developer/.android/build-cache/1aa3d0e06f78ee0bcddcd7408593de8cae5ca31e/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:39:22-79
+uses-permission#com.cabi.driver.permission.C2D_MESSAGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:40:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:40:22-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:41:5-68
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:41:22-65
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:42:5-81
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:42:22-78
+uses-feature#0x00020000
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:45:5-47:35
+MERGED from [com.google.android.gms:play-services-maps:11.6.0] /home/developer/.android/build-cache/2de66be7ac4a1faf9baaa7eb15df83203ac33051/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:46:9-41
+	android:required
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:47:9-32
+uses-feature#android.hardware.location.gps
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:48:5-50:35
+	android:required
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:50:9-32
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:49:9-53
+uses-permission#android.permission.GET_TASKS
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:52:5-68
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:52:22-65
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:53:5-72
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:53:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:54:5-73
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:54:22-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:55:5-81
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:55:22-78
+application
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:57:5-311:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /home/developer/.android/build-cache/2bff52ce91009601dbbbfd7eb189abfe52a72adc/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /home/developer/.android/build-cache/f546e80e4316cb96981828699afb960ee324d042/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /home/developer/.android/build-cache/7bd44ba49379a155c866f2f6f8cbecb4af37902e/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /home/developer/.android/build-cache/8b5fac286f72130f778604e8d44b2559798cd819/output/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /home/developer/.android/build-cache/8b78cd2b0940c15d5e7a8635abbe50851922efff/output/AndroidManifest.xml:27:5-20
+MERGED from [trunk:aa:unspecified] /home/developer/.android/build-cache/0911ccf72375a31a378bff94fb4c6b08419f4af1/output/AndroidManifest.xml:11:5-14:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:customtabs:25.3.1] /home/developer/.android/build-cache/b7d0b3e6e064a89ae918c7bb6ad5fc33a0b1168e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-location:11.6.0] /home/developer/.android/build-cache/5a92516e02ba57c691a66032c8e310a58f686718/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location-license:11.6.0] /home/developer/.android/build-cache/9362fefd179656ba038ed960557ede9fbfe14026/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.6.0] /home/developer/.android/build-cache/ba72aaabc740a7504a5368c79bf1e94c14b1e387/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.6.0] /home/developer/.android/build-cache/1aa3d0e06f78ee0bcddcd7408593de8cae5ca31e/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid-license:11.6.0] /home/developer/.android/build-cache/368a3f33aa82ffdff9d1e42ad3c27b24b0c6f429/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gcm-license:11.6.0] /home/developer/.android/build-cache/511d5588d14537f5bb356f252ecf99e8d974c66e/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places:11.6.0] /home/developer/.android/build-cache/b23d125125839be17f1e7e483b9886f040426d51/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.6.0] /home/developer/.android/build-cache/2de66be7ac4a1faf9baaa7eb15df83203ac33051/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] /home/developer/.android/build-cache/218bd11a8d77dea9c2763df3b07a1035134c5cad/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.6.0] /home/developer/.android/build-cache/6daa2879fccfb4aee4b3d75bf59295962ded0069/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-license:11.6.0] /home/developer/.android/build-cache/1c5030f61595a6e2f9c09ef0d36f52c1ce471c9e/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] /home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/AndroidManifest.xml:7:5-11:19
+MERGED from [com.android.support:design:25.0.0] /home/developer/.android/build-cache/f4b4c09b9d1b11287993482113741926f34a9f40/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.0.0] /home/developer/.android/build-cache/287ab240ab4c51ccd3eb7ee3257040e471d042db/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/developer/.android/build-cache/d0ec55c48a9e3bbcd93cf3796bd92444330ca423/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/developer/.android/build-cache/e78c50b9d04bcb3850ba940334286e50bffa8e65/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/developer/.android/build-cache/5144968bf1ce8499ac5eb5c11f32f54946c6245a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-messaging:11.6.0] /home/developer/.android/build-cache/052d93a2c389c8a0555baee3e3b61277387241e7/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.0] /home/developer/.android/build-cache/7494cea32c7077f9a3f30629881f6700a60e3810/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-crash:11.6.0] /home/developer/.android/build-cache/991f307661a5e47a396439254885121fc435cca0/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-crash-license:11.6.0] /home/developer/.android/build-cache/75e4da409e537ce6f13214409057d04a54088757/output/AndroidManifest.xml:5:5-20
+MERGED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:14:5-24:19
+MERGED from [com.google.firebase:firebase-core:11.6.0] /home/developer/.android/build-cache/e521831b1c177e3ee860d3a7463578bb5e8d8a7d/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] /home/developer/.android/build-cache/6029bda4228981faa09e23816148349ecde5a537/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] /home/developer/.android/build-cache/3f2225d11c1da5e778a4f56706e0453145265b6f/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] /home/developer/.android/build-cache/ec44842e11f66771ee1a516edad96d28df2113d4/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] /home/developer/.android/build-cache/898c9ca2232bd24c9c7f3f87fdc636a4511e4df2/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/developer/.android/build-cache/97eb0b09f6592ab84b6bccdb783590fd4ecd0879/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/developer/.android/build-cache/d513392a9d3b4ea5cf5b0bef726a6b44ad84a9ca/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/developer/.android/build-cache/24faf3c212e7c72d6b346324495145488ac8f8f4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/developer/.android/build-cache/e86ef1cb998472b48ff2151e4c28510d5f77772c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/developer/.android/build-cache/1eb1f631a1128143a583fe46928be77f98e4b859/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/developer/.android/build-cache/7318affd87a129469baa6f69fb080759acbfd7c8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] /home/developer/.android/build-cache/4d2be46fe3b9963fd8c2c12deda8d180a7c2dcdd/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] /home/developer/.android/build-cache/b248318404adc19f58d4722fd2b8079738c0c44f/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] /home/developer/.android/build-cache/0929fbcdad3741c3eea68e23dd853ebd7397ae34/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] /home/developer/.android/build-cache/b69c0bf959528d1fe17531e9ec35e9242d99efe9/output/AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:62:9-49
+		REJECTED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:63:9-36
+		REJECTED from [trunk:aa:unspecified] /home/developer/.android/build-cache/0911ccf72375a31a378bff94fb4c6b08419f4af1/output/AndroidManifest.xml:13:9-35
+		REJECTED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:18:9-35
+	android:hardwareAccelerated
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:60:9-43
+	android:allowBackup
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:59:9-35
+	android:icon
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:61:9-45
+	android:theme
+		ADDED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:19:9-41
+	tools:replace
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:64:9-71
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:58:9-68
+		REJECTED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:15:9-59
+activity#com.cabi.driver.SplashAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:72:9-81:20
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:75:13-49
+	android:label
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:74:13-39
+		INJECTED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:76:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:73:13-53
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:77:13-80:29
+action#android.intent.action.MAIN
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:78:17-69
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:78:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:79:17-77
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:79:27-74
+activity#com.cabi.driver.StreetPickUpAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:82:9-87:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:84:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:87:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:86:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:83:13-59
+activity#com.cabi.driver.LocationSearchActivity
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:88:9-93:64
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:90:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:93:13-61
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:92:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:89:13-66
+activity#com.cabi.driver.TripHistoryAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:99:9-104:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:101:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:104:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:103:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:100:13-58
+activity#com.cabi.driver.TripDetails
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:105:9-110:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:107:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:110:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:108:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:106:13-55
+activity#com.cabi.driver.UserLoginAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:111:9-117:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:114:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:113:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:117:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:115:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:112:13-56
+activity#com.cabi.driver.JobdoneAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:118:9-123:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:120:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:123:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:121:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:119:13-54
+activity#com.cabi.driver.InviteFriendAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:124:9-129:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:126:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:129:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:128:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:125:13-59
+activity#com.cabi.driver.OngoingAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:130:9-136:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:133:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:132:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:136:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:135:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:131:13-54
+activity#com.cabi.driver.MeAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:137:9-142:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:140:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:142:13-64
+	android:configChanges
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:139:13-186
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:141:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:138:13-49
+activity#com.cabi.driver.NotificationAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:143:9-149:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:146:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:145:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:149:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:147:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:144:13-59
+activity#com.cabi.driver.FarecalcAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:150:9-155:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:152:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:155:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:153:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:151:13-55
+activity#com.cabi.driver.PayuncardAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:156:9-161:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:158:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:161:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:159:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:157:13-56
+activity#com.cabi.driver.CanceltripAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:162:9-167:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:164:13-49
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:167:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:166:13-53
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:163:13-57
+activity#com.cabi.driver.MyStatus
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:168:9-174:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:171:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:170:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:174:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:173:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:169:13-52
+activity#com.cabi.driver.WithdrawHistoryAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:175:9-181:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:178:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:177:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:181:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:180:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:176:13-62
+activity#com.facebook.FacebookActivity
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:182:9-186:14
+MERGED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:185:13-53
+	android:configChanges
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:184:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:183:13-57
+activity#com.cabi.driver.WithDrawMenuAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:187:9-193:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:191:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:189:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:193:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:192:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:188:13-59
+activity#com.cabi.driver.WithdrawReqAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:194:9-199:67
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:197:13-49
+	android:launchMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:196:13-44
+	android:windowSoftInputMode
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:199:13-64
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:198:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:195:13-58
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:200:9-203:54
+	android:screenOrientation
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:202:13-49
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:203:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:201:13-60
+provider#com.facebook.FacebookContentProvider
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:205:9-208:39
+	android:authorities
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:207:13-90
+	android:exported
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:208:13-36
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:206:13-64
+receiver#com.cabi.driver.utils.NetworkStatus
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:210:9-214:20
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:210:19-69
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:211:13-213:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:212:17-79
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:212:25-76
+receiver#com.cabi.driver.utils.GpsStatus
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:215:9-219:20
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:215:19-65
+intent-filter#android.location.PROVIDERS_CHANGED
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:216:13-218:29
+action#android.location.PROVIDERS_CHANGED
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:217:17-77
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:217:25-74
+service#com.cabi.driver.service.WaitingTimerRun
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:221:9-75
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:221:18-72
+service#com.cabi.driver.service.LocationUpdate
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:222:9-74
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:222:18-71
+uses-library#com.google.android.maps
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:224:9-226:39
+	android:required
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:226:13-36
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:225:13-51
+meta-data#com.google.android.gms.version
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:228:9-230:69
+MERGED from [com.google.maps.android:android-maps-utils:0.4.4] /home/developer/.android/build-cache/7cdb8f8e249d63d8b8033ea12a5066f56763ef9b/output/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] /home/developer/.android/build-cache/898c9ca2232bd24c9c7f3f87fdc636a4511e4df2/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:230:13-66
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:229:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:236:9-238:48
+	android:value
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:238:13-45
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:237:13-58
+meta-data#io.fabric.ApiKey
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:247:9-249:72
+	android:value
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:249:13-69
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:248:13-44
+activity#com.cabi.driver.earningchart.EarningsAct
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:251:9-253:63
+	android:theme
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:253:13-51
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:252:13-68
+provider#android.support.v4.content.FileProvider
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:255:9-263:20
+	android:authorities
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:257:13-61
+	android:grantUriPermissions
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:259:13-47
+	android:exported
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:258:13-37
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:256:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:260:13-262:58
+	android:resource
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:262:17-55
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:261:17-67
+service#com.cabi.driver.service.AuthService
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:265:9-71
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:265:18-68
+service#com.cabi.driver.service.ForegroundEnablingService
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:285:9-288:47
+	android:enabled
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:287:13-35
+	android:exported
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:288:13-36
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:286:13-77
+service#com.cabi.driver.MyFirebaseInstanceIDService
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:291:9-295:19
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:291:18-76
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:292:13-294:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:293:17-80
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:293:25-77
+service#com.cabi.driver.service.FirebaseService
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:297:9-301:19
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:297:18-72
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:298:13-300:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:299:17-78
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:299:25-75
+activity#com.cabi.driver.SuccessTransationActivity
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:302:9-304:20
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:303:13-69
+activity#com.cabi.driver.FailedTransationActivity
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:305:9-307:20
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:306:13-68
+activity#com.cabi.driver.Paytest
+ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:308:9-310:20
+	android:name
+		ADDED from /home/developer/Documents/cabi/trunk/app/src/main/AndroidManifest.xml:309:13-51
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:44:9-47:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:46:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.25.0] /home/developer/.android/build-cache/6274b02746c643df5a0d1b9c55c2614b1e81430a/output/AndroidManifest.xml:45:13-70
+meta-data#android.support.VERSION
+ADDED from [com.android.support:customtabs:25.3.1] /home/developer/.android/build-cache/b7d0b3e6e064a89ae918c7bb6ad5fc33a0b1168e/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/developer/.android/build-cache/d0ec55c48a9e3bbcd93cf3796bd92444330ca423/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/developer/.android/build-cache/3df9bc703bd172bca30833e4a382b333aabf4a87/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/developer/.android/build-cache/e78c50b9d04bcb3850ba940334286e50bffa8e65/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/developer/.android/build-cache/5144968bf1ce8499ac5eb5c11f32f54946c6245a/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/developer/.android/build-cache/97eb0b09f6592ab84b6bccdb783590fd4ecd0879/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/developer/.android/build-cache/d513392a9d3b4ea5cf5b0bef726a6b44ad84a9ca/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/developer/.android/build-cache/24faf3c212e7c72d6b346324495145488ac8f8f4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/developer/.android/build-cache/e86ef1cb998472b48ff2151e4c28510d5f77772c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/developer/.android/build-cache/1eb1f631a1128143a583fe46928be77f98e4b859/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/developer/.android/build-cache/7318affd87a129469baa6f69fb080759acbfd7c8/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:customtabs:25.3.1] /home/developer/.android/build-cache/b7d0b3e6e064a89ae918c7bb6ad5fc33a0b1168e/output/AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:customtabs:25.3.1] /home/developer/.android/build-cache/b7d0b3e6e064a89ae918c7bb6ad5fc33a0b1168e/output/AndroidManifest.xml:23:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] /home/developer/.android/build-cache/295f1a42cca667724058c33d6b6dfdf022b3a466/output/AndroidManifest.xml:19:19-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.6.0] /home/developer/.android/build-cache/052d93a2c389c8a0555baee3e3b61277387241e7/output/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.6.0] /home/developer/.android/build-cache/052d93a2c389c8a0555baee3e3b61277387241e7/output/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.6.0] /home/developer/.android/build-cache/052d93a2c389c8a0555baee3e3b61277387241e7/output/AndroidManifest.xml:23:18-87
+activity#com.telr.mobile.sdk.activty.WebviewActivity
+ADDED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:20:9-23:40
+	android:noHistory
+		ADDED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:23:13-37
+	android:configChanges
+		ADDED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:22:13-74
+	android:name
+		ADDED from [trunk:telrlibrary-release:unspecified] /home/developer/.android/build-cache/ff859edc4bd44964775bcac2ab5b8cfbc1f94d93/output/AndroidManifest.xml:21:13-71
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] /home/developer/.android/build-cache/c2c394358f5f96f3f81a4420b35326f2c46e39e9/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] /home/developer/.android/build-cache/120e59cbac6d54e7ef32dd138d7594ff1a8fe510/output/AndroidManifest.xml:33:16-90
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:25:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:25:17-71
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:31:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:31:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:31:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:31:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:32:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:33:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:33:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:34:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:40:9-44:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:40:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] /home/developer/.android/build-cache/cfd047b7d1c89dd0d65f4002edbf7fe36ab32e51/output/AndroidManifest.xml:40:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.6.0] /home/developer/.android/build-cache/1c232fa33d4f689c210d4293b4107bf388aaf170/output/AndroidManifest.xml:6:79-143

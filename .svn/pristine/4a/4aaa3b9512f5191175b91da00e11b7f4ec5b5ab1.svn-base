@@ -1,0 +1,725 @@
+package com.cabi.driver.earningchart;
+
+import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.cabi.driver.MeAct;
+import com.cabi.driver.MyStatus;
+import com.cabi.driver.R;
+import com.cabi.driver.StreetPickUpAct;
+import com.cabi.driver.TripHistoryAct;
+import com.cabi.driver.data.apiData.ApiRequestData;
+import com.cabi.driver.interfaces.APIResult;
+import com.cabi.driver.service.APIService_Retrofit_JSON;
+import com.cabi.driver.service.CoreClient;
+import com.cabi.driver.service.NonActivity;
+import com.cabi.driver.service.ServiceGenerator;
+import com.cabi.driver.utils.CL;
+import com.cabi.driver.utils.Colorchange;
+import com.cabi.driver.utils.FontHelper;
+import com.cabi.driver.utils.NC;
+import com.cabi.driver.utils.SessionSave;
+import com.cabi.driver.utils.drawable_program.Drawables_program;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
+import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+
+/**
+ * This class is used to show driver earning details based on date
+ */
+public class EarningsAct extends AppCompatActivity {
+
+    BarChart mChart;
+    ArrayList<BarEntry> yVals1;
+    Earningresponse data;
+    TextView trips, eAmt, et, weekAmt, tripHist;
+    private LinearLayout date, uiLay;
+    boolean flag;
+    private ImageView chart_loading;
+    private LinearLayout home_lay, earnings_lay, profile_lay, streetpick_lay;
+    private ImageView earnings_iv;
+    private TextView btn_shift;
+    String checked = "OUT";
+    private RelativeLayout triphistory_lay;
+    NonActivity nonactiityobj = new NonActivity();
+    private ScrollView earnings_layout;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.chart_lay);
+        btn_shift = (TextView) findViewById(R.id.btn_shift);
+        initalize();
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        },100);
+
+    }
+
+    public void initalize() {
+        mChart = (BarChart) findViewById(R.id.chart1);
+        date = (LinearLayout) findViewById(R.id.dates);
+
+        trips = (TextView) findViewById(R.id.trips);
+        eAmt = (TextView) findViewById(R.id.amt);
+
+        FontHelper.applyFont(this, findViewById(R.id.chartact));
+        earnings_layout = (ScrollView) findViewById(R.id.earnings_layout);
+        earnings_iv = (ImageView) findViewById(R.id.earnings_iv);
+        earnings_iv.setImageResource(R.drawable.earnings_focus);
+        home_lay = (LinearLayout) findViewById(R.id.home_lay);
+        earnings_lay = (LinearLayout) findViewById(R.id.earnings_lay);
+        profile_lay = (LinearLayout) findViewById(R.id.profile_lay);
+        streetpick_lay = (LinearLayout) findViewById(R.id.streetpick_lay);
+
+        triphistory_lay = (RelativeLayout) findViewById(R.id.triphistory_lay);
+        uiLay = (LinearLayout) findViewById(R.id.uilay);
+
+
+        weekAmt = (TextView) findViewById(R.id.week_amt);
+        tripHist = (TextView) findViewById(R.id.trip_history);
+
+
+        chart_loading = (ImageView) findViewById(R.id.charlay_loading);
+        chart_loading.setVisibility(View.VISIBLE);
+
+        GlideDrawableImageViewTarget imageViewTarget = new GlideDrawableImageViewTarget(chart_loading);
+        Glide.with(EarningsAct.this)
+                .load(R.raw.loading_anim)
+                .into(imageViewTarget);
+        Colorchange.ChangeColor((ViewGroup) (((ViewGroup) EarningsAct.this
+                .findViewById(android.R.id.content)).getChildAt(0)), EarningsAct.this);
+
+        Glide.with(this).load(SessionSave.getSession("image_path", this) + "earningsFocus.png").placeholder(R.drawable.earnings_focus).error(R.drawable.earnings_focus).into((ImageView) findViewById(R.id.earnings_iv));
+
+
+        ImageView headerlogo = (ImageView) findViewById(R.id.headicon);
+
+       // Glide.with(this).load(SessionSave.getSession("image_path", this) + "headerLogo.png").diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true).into((ImageView) findViewById(R.id.headicon));
+
+        headerlogo.setVisibility(View.VISIBLE);
+
+        mChart.setDrawBarShadow(false);
+        mChart.setDrawValueAboveBar(true);
+
+        mChart.getDescription().setEnabled(false);
+
+
+        mChart.setMaxVisibleValueCount(60);
+
+
+        mChart.setPinchZoom(false);
+
+
+        mChart.setDrawGridBackground(false);
+        mChart.setDrawValueAboveBar(true);
+        Weekaxisformatter xAxisFormatter = new Weekaxisformatter();
+
+        XAxis xAxis = mChart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setDrawGridLines(false);
+        xAxis.setGranularity(1f);
+
+        xAxis.setValueFormatter(xAxisFormatter);
+        IAxisValueFormatter custom = new MyAxisValueFormatter(SessionSave.getSession("site_currency", EarningsAct.this));
+
+        YAxis leftAxis = mChart.getAxisLeft();
+        leftAxis.setLabelCount(8, false);
+        leftAxis.setValueFormatter(custom);
+        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
+        leftAxis.setSpaceTop(25f);
+
+        leftAxis.setAxisMinimum(0f);
+        leftAxis.setDrawAxisLine(false);
+        YAxis rightAxis = mChart.getAxisRight();
+        rightAxis.setDrawGridLines(false);
+        rightAxis.setGranularityEnabled(true);
+        rightAxis.setGranularity(0.1f);
+        rightAxis.setLabelCount(8, false);
+        rightAxis.setValueFormatter(custom);
+        rightAxis.setSpaceTop(15f);
+        rightAxis.setAxisMinimum(0f);
+        rightAxis.setDrawAxisLine(false);
+        rightAxis.setDrawLabels(false);
+
+
+        XYMarkerView mv = new XYMarkerView(this, xAxisFormatter, SessionSave.getSession("site_currency", EarningsAct.this));
+        mv.setChartView(mChart);
+        mChart.setMarker(mv);
+        mChart.getLegend().setEnabled(false);
+
+        setData();
+
+
+        //Setting driver shift status
+        if (SessionSave.getSession("shift_status", EarningsAct.this).equals("IN")) {
+
+            Drawables_program.shift_on(btn_shift);
+            btn_shift.setText(NC.getString(R.string.online));
+
+            nonactiityobj.startServicefromNonActivity(EarningsAct.this);
+
+        } else {
+
+            Drawables_program.shift_bg_grey(btn_shift);
+            btn_shift.setText(NC.getString(R.string.offline));
+
+            nonactiityobj.stopServicefromNonActivity(EarningsAct.this);
+        }
+
+
+        earnings_lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Intent intent = new Intent(EarningsAct.this, EarningsAct.class);
+                // startActivity(intent);
+                //finish();
+
+            }
+        });
+
+        home_lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(EarningsAct.this, MyStatus.class);
+                startActivity(intent);
+                // finish();
+            }
+        });
+
+        profile_lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EarningsAct.this, MeAct.class);
+                startActivity(intent);
+                // finish();
+            }
+        });
+
+        streetpick_lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EarningsAct.this, StreetPickUpAct.class);
+                startActivity(intent);
+                //  finish();
+            }
+        });
+
+        btn_shift.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                btn_shift.setClickable(false);
+                new RequestingCheckBox();
+            }
+        });
+
+        triphistory_lay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(EarningsAct.this, TripHistoryAct.class);
+                startActivity(intent);
+
+            }
+        });
+
+    }
+
+//    @Override
+//    public void onBackPressed() {
+//
+//        super.onBackPressed();
+//
+//        Intent intent = new Intent(EarningsAct.this, MyStatus.class);
+//        startActivity(intent);
+//        finish();
+//    }
+
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
+
+        //setting driver shift update
+        if (SessionSave.getSession("shift_status", EarningsAct.this).equals("IN")) {
+
+            Drawables_program.shift_on(btn_shift);
+            btn_shift.setText(NC.getString(R.string.online));
+
+            nonactiityobj.startServicefromNonActivity(EarningsAct.this);
+
+        } else {
+
+            Drawables_program.shift_bg_grey(btn_shift);
+            btn_shift.setText(NC.getString(R.string.offline));
+
+            nonactiityobj.stopServicefromNonActivity(EarningsAct.this);
+        }
+    }
+
+/*    private void setData() {
+
+
+        yVals1 = new ArrayList<BarEntry>();
+
+//        for (int i = (int) start; i < start +count + 1; i++) {
+//            float mult = (range+1 );
+//            float val = (float) (Math.random() * mult);
+//            yVals1.add(new BarEntry(i, val));
+//        }
+
+
+        CoreClient client = new ServiceGenerator().createService(CoreClient.class);
+        ApiRequestData.Earnings request = new ApiRequestData.Earnings();
+
+        request.setDriver_id(SessionSave.getSession("Id", EarningsAct.this));
+
+        Call<Earningresponse> response = client.callData(request);
+        response.enqueue(new Callback<Earningresponse>() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onResponse(Call<Earningresponse> call, Response<Earningresponse> response) {
+                if (response.isSuccessful()) {
+                    data = response.body();
+                    System.out.println("***__" + data);
+                    if (data.status == 1) {
+
+                        uiLay.setVisibility(View.VISIBLE);
+
+                        chart_loading.setVisibility(View.GONE);
+                        date.removeAllViews();
+
+                        for (int i = 0; i < data.weekly_earnings.size(); i++) {
+                            et = new TextView(EarningsAct.this);
+                            et.setText(data.weekly_earnings.get(i).date_text + "\t");
+                            et.setClickable(true);
+                            et.setId(i);
+                            et.setPadding(10,10,10,10);
+                            et.setTag(i);
+                            et.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int i = (int) view.getTag();
+                                    String str = String.valueOf(et.getTag(i));
+
+                                    et.setTextColor(getResources().getColor(R.color.red));
+                                    System.out.println("ccc" + i);
+//                                    mChart.clearValues();
+                                    mChart.notifyDataSetChanged();
+                                    setmChart(i);
+                                }
+                            });
+
+                            date.addView(et);
+
+                            trips.setText(data.today_earnings.get(0).total_trips + " " + NC.getResources().getString(R.string.trips1));
+                            eAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + data.today_earnings.get(0).total_amount);
+                            weekAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + data.this_week_earnings);
+                        }
+
+                        System.out.println("__________result");
+
+                    }
+
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<Earningresponse> call, Throwable t) {
+                Log.e("error", "", t.fillInStackTrace());
+
+                Toast.makeText(EarningsAct.this, "aaa", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+    }*/
+
+
+    /**
+     * Getting Earnings detail API call and response parsing.
+     */
+    private void setData() {
+
+
+        yVals1 = new ArrayList<BarEntry>();
+
+
+        CoreClient client = new ServiceGenerator(EarningsAct.this).createService(CoreClient.class);
+        ApiRequestData.Earnings request = new ApiRequestData.Earnings();
+
+        request.setDriver_id(SessionSave.getSession("Id", EarningsAct.this));
+
+
+        Call<Earningresponse> response = client.callData(ServiceGenerator.COMPANY_KEY, request, ServiceGenerator.DYNAMIC_AUTH_KEY);
+        response.enqueue(new Callback<Earningresponse>() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onResponse(Call<Earningresponse> call, Response<Earningresponse> response) {
+
+               // Log.d("response", "response" + response);
+
+                if (response.isSuccessful() && EarningsAct.this != null) {
+                    data = response.body();
+                  //  System.out.println("***__" + data);
+                    if (data != null) {
+                        if (data.status == 1) {
+                            earnings_layout.setVisibility(View.VISIBLE);
+                            date.removeAllViews();
+
+                            for (int i = 0; i < data.weekly_earnings.size(); i++) {
+                                TextView et = new TextView(EarningsAct.this);
+                                et.setText(data.weekly_earnings.get(i).date_text + "\t");
+                                et.setClickable(true);
+                                et.setId(i);
+                                et.setPadding(15, 15, 10, 10);
+
+                                et.setTag(i);
+                                if (i == 0) {
+                                    //et.setTextColor(Color.rgb(244, 66, 66));
+                                    et.setTextColor(CL.getColor(R.color.highlightcolor));
+                                    setmChart(0);
+                                }
+//asdf
+                                et.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        int i = (int) view.getTag();
+                                        //  System.out.println("ccc" + i);
+                                        mChart.notifyDataSetChanged();
+                                        weekAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + " " + data.weekly_earnings.get(i).this_week_earnings);
+                                        //  System.out.println("_______________" + date.getChildCount());
+                                        for (int j = 0; j < date.getChildCount(); j++) {
+                                            TextView v = (TextView) date.getChildAt(j);
+//                                        v.setTextColor(MainActivity.this,ContextCompat.getColor((R.color.light_gray));
+                                            v.setTextColor(Color.GRAY);
+                                        }
+
+                                        ((TextView) view).setTextColor(CL.getColor(R.color.highlightcolor));
+                                        date.invalidate();
+                                        setmChart(i);
+                                    }
+                                });
+
+                                date.addView(et);
+                                try {
+                                    //if(data.)
+                                    trips.setText(data.today_earnings.get(0).total_trips + " " + NC.getResources().getString(R.string.trips1));
+                                    eAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + " " + data.today_earnings.get(0).total_amount);
+                                } catch (Exception e) {
+
+                                }
+                                if (data.weekly_earnings.get(0).this_week_earnings != null)
+                                    weekAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + " " + data.weekly_earnings.get(0).this_week_earnings);
+                                else
+                                    weekAmt.setText("" + SessionSave.getSession("site_currency", EarningsAct.this) + " 0");
+                            }
+
+
+                            //System.out.println("__________result");
+
+
+                        } else {
+                            Toast.makeText(EarningsAct.this, getString(R.string.server_error), Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        Toast.makeText(EarningsAct.this, getString(R.string.server_error), Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<Earningresponse> call, Throwable t) {
+              //  Log.e("error", "", t.fillInStackTrace());
+
+                //  Toast.makeText(EarningsAct.this, "aaa", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+    }
+
+
+    /**
+     * Setting Barchart values
+     */
+    void setmChart(int x) {
+
+        try {
+            //  if (data.weekly_earnings.size() > 3) {
+
+            yVals1.clear();
+
+            for (int i = 0; i < data.weekly_earnings.get(x).trip_amount.size(); i++) {
+              //  System.out.println("NNCCCCC_______"+(data.weekly_earnings.get(x).trip_amount.get(i).toString()));
+                yVals1.add(new BarEntry(i, Float.valueOf(data.weekly_earnings.get(x).trip_amount.get(i).toString())));
+
+            }
+
+
+//            System.out.println("__________naga"+data.weekly_earnings.get(x).day_list.toArray().length);
+//            System.out.println("__________naga"+data.weekly_earnings.get(x).trip_amount.toArray().length);
+
+            Weekaxisformatter.mMonths = data.weekly_earnings.get(x).day_list;
+            mChart.invalidate();
+//               }else {
+//
+//                   Weekaxis.mMonths1 = data.weekly_earnings.get(x).day_list.toArray();
+//               }
+        } catch (Exception e) {
+         //   Log.e("thro", "", e.fillInStackTrace());
+        }
+
+
+        BarDataSet set1;
+
+
+        set1 = new BarDataSet(yVals1, "");
+        set1.setDrawValues(true);
+
+        ArrayList<IBarDataSet> dataSets;
+        dataSets = new ArrayList<IBarDataSet>();
+
+
+        dataSets.add(set1);
+
+        BarData datas = new BarData(dataSets);
+        datas.setValueFormatter(new MyAxisValueFormatter(SessionSave.getSession("site_currency", EarningsAct.this) + " "));
+        datas.setValueTextSize(10f);
+        datas.setBarWidth(0.5f);
+        mChart.invalidate();
+        mChart.setData(null);
+        mChart.setData(datas);
+        mChart.setFitBars(false);
+
+        mChart.invalidate();
+    }
+
+
+    /**
+     * Driver Shift API call and response parsing.
+     */
+
+    private class RequestingCheckBox implements APIResult {
+        public RequestingCheckBox() {
+
+            try {
+                if (btn_shift.getText().toString().equals(NC.getString(R.string.online)))
+                    checked = "OUT";
+                else
+                    checked = "IN";
+
+                JSONObject j = new JSONObject();
+                j.put("driver_id", SessionSave.getSession("Id", EarningsAct.this));
+                j.put("shiftstatus", checked);
+                j.put("reason", "");
+             //   Log.e("shiftbefore ", j.toString());
+                j.put("update_id", SessionSave.getSession("Shiftupdate_Id", EarningsAct.this));
+
+                String requestingCheckBox = "type=driver_shift_status";
+                if (isOnline())
+                    new APIService_Retrofit_JSON(EarningsAct.this, this, j, false).execute(requestingCheckBox);
+                else {
+                    btn_shift.setClickable(true);
+                    alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + NC.getResources().getString(R.string.check_net_connection), "" + NC.getResources().getString(R.string.ok), "");
+                    if (checked.equals("IN")) {
+                        btn_shift.setText(NC.getString(R.string.online));
+                        Drawables_program.shift_on(btn_shift);
+                    } else {
+                        btn_shift.setText(NC.getString(R.string.offline));
+                        Drawables_program.shift_bg_grey(btn_shift);
+
+                    }
+                }
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        public void getResult(boolean isSuccess, final String result) {
+
+            try {
+
+              //  Log.e("driverstatus", result);
+
+                if (isSuccess && EarningsAct.this != null) {
+                    btn_shift.setClickable(true);
+
+                    JSONObject object = new JSONObject(result);
+                    if (object.getInt("status") == 1) {
+                        if (checked.equals("IN")) {
+                            alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + object.getString("message"), "" + NC.getResources().getString(R.string.ok), "");
+                            btn_shift.setText(NC.getString(R.string.online));
+                            Drawables_program.shift_on(btn_shift);
+                            SessionSave.saveSession("shift_status", "IN", EarningsAct.this);
+                            SessionSave.saveSession("Shiftupdate_Id", object.getJSONObject("detail").getString("update_id"), EarningsAct.this);
+                       //     Log.e("sess", SessionSave.getSession("shift_status", EarningsAct.this));
+
+                            nonactiityobj.startServicefromNonActivity(EarningsAct.this);
+                        } else {
+                            alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + object.getString("message"), "" + NC.getResources().getString(R.string.ok), "");
+                            btn_shift.setText(NC.getString(R.string.offline));
+                            Drawables_program.shift_bg_grey(btn_shift);
+                            SessionSave.saveSession("shift_status", "OUT", EarningsAct.this);
+                      //      Log.e("sess", SessionSave.getSession("shift_status", EarningsAct.this));
+                            nonactiityobj.stopServicefromNonActivity(EarningsAct.this);
+                        }
+                    } else if (object.getInt("status") == -4) {
+                        alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + object.getString("message"), "" + NC.getResources().getString(R.string.ok), "");
+//                        btn_shift.setText(NC.getString(R.string.online));
+//                        Drawables_program.shift_on(btn_shift);
+                    } else {
+                        alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + object.getString("message"), "" + NC.getResources().getString(R.string.ok), "");
+                        if (checked.equals("IN")) {
+                            btn_shift.setText(NC.getString(R.string.online));
+                            Drawables_program.shift_on(btn_shift);
+                        } else {
+                            btn_shift.setText(NC.getString(R.string.offline));
+                            Drawables_program.shift_bg_grey(btn_shift);
+                        }
+                    }
+                } else {
+
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+
+                            Toast toast = Toast.makeText(EarningsAct.this, getString(R.string.please_check_internet), Toast.LENGTH_SHORT);
+                            toast.setGravity(Gravity.CENTER, 0, 0);
+                            toast.show();
+                        }
+                    });
+                    btn_shift.setClickable(true);
+                    // alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + NC.getResources().getString(R.string.check_net_connection), "" + NC.getResources().getString(R.string.ok), "");
+                    if (checked.equals("IN")) {
+                        btn_shift.setText(NC.getString(R.string.online));
+                        Drawables_program.shift_on(btn_shift);
+                    } else {
+                        btn_shift.setText(NC.getString(R.string.offline));
+                        Drawables_program.shift_bg_grey(btn_shift);
+                    }
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+              //  System.out.println("thambiError" + ex.getLocalizedMessage());
+                btn_shift.setClickable(true);
+                alert_view(EarningsAct.this, "" + NC.getResources().getString(R.string.message), "" + NC.getResources().getString(R.string.server_error), "" + NC.getResources().getString(R.string.ok), "");
+                if (checked.equals("IN")) {
+                    btn_shift.setText(NC.getString(R.string.online));
+                    Drawables_program.shift_on(btn_shift);
+                } else {
+                    btn_shift.setText(NC.getString(R.string.offline));
+                    Drawables_program.shift_bg_grey(btn_shift);
+                }
+            }
+        }
+    }
+
+    /**
+     * To check internet connectivity
+     */
+    public boolean isOnline() {
+
+        ConnectivityManager connectivity = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivity != null) {
+            NetworkInfo[] info = connectivity.getAllNetworkInfo();
+            if (info != null)
+                for (int i = 0; i < info.length; i++)
+                    if (info[i].getState() == NetworkInfo.State.CONNECTED) {
+                        return true;
+                    }
+        }
+        return false;
+    }
+
+    public Dialog alertDialog;
+
+    /**
+     * To show alert dialog
+     */
+    public void alert_view(Context mContext, String title, String message, String success_txt, String failure_txt) {
+        if (alertDialog != null)
+            if (alertDialog.isShowing())
+                alertDialog.dismiss();
+        final View view = View.inflate(mContext, R.layout.alert_view, null);
+        alertDialog = new Dialog(mContext, R.style.NewDialog);
+        alertDialog.setContentView(view);
+        alertDialog.setCancelable(true);
+        FontHelper.applyFont(mContext, alertDialog.findViewById(R.id.alert_id));
+        alertDialog.show();
+        final TextView title_text = (TextView) alertDialog.findViewById(R.id.title_text);
+        final TextView message_text = (TextView) alertDialog.findViewById(R.id.message_text);
+        final Button button_success = (Button) alertDialog.findViewById(R.id.button_success);
+        final Button button_failure = (Button) alertDialog.findViewById(R.id.button_failure);
+        button_failure.setVisibility(View.GONE);
+        title_text.setText(title);
+        message_text.setText(message);
+        button_success.setText(success_txt);
+        button_success.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                // TODO Auto-generated method stub
+                alertDialog.dismiss();
+            }
+        });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        // super.onBackPressed();
+
+        Intent intent = new Intent(EarningsAct.this, MyStatus.class);
+        startActivity(intent);
+        finish();
+    }
+
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_bgcolor">#F5F5F5</color>
+    <color name="appbg">#f6f6f6</color>
+    <color name="appbgdark">#6f6f6f</color>
+
+
+    <color name="header_text">#404041</color>
+
+    <color name="popup_heading">#47bf28</color>
+    <color name="pastbookingcashtext">#47bf28</color>
+    <color name="shiftoncolor">#5E9A04</color>
+    <color name="shiftoffcolor">#9C9C9C</color>
+
+
+    <color name="highlightcolor">#FF0000</color>
+
+    <!--<color name="highlightcolor">#1d3248</color>-->
+
+    <color name="textviewcolor_dark">#666666</color>
+    <color name="textviewcolor_light">#a2a2a2</color>
+
+    <color name="linebottom_light">#a2a2a2</color>
+    <color name="linebottom_dark">#646464</color>
+
+    <color name="bordercolor">#979797</color>
+
+    <color name="notificationbg">#A6000000</color>
+
+    <color name="hintcolor">#666666</color>
+
+    <color name="button_accept">#ee3324</color>
+    <color name="button_reject">#8E1F16</color>
+
+    <!--<color name="button_accept">#1d3248</color>
+    <color name="button_reject">#f7ab28</color>-->
+
+
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#88676767</color>
+
+    <color name="btnaccept">#87dc1f</color>
+
+    <color name="trip_history_text_grey">#5F5F5F</color>
+
+
+    <color name="light_white">#BDBDBD</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="pastbookingcard">#87cefa</color>
+    <color name="invite_gray">#a3a3a3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+   <!-- <color name="button_color">#27a9e1</color>
+    <color name="tool_bar_color">#27a9e1</color>
+    <color name="bg">#eeeeee</color>-->
+
+    <color name="button_color">#3b9908</color>
+    <color name="tool_bar_color">#27a9e1</color>
+    <color name="bg">#eeeeee</color>
+    <color name="bt_green">#3b9908</color>
+</resources>
+
+

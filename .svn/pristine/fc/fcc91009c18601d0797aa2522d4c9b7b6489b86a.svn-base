@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_angle.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_angle.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_scale.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_scale.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_rotate.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_rotate.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/search_only_pickup_ar.xml",
+        "source": "/home/developer/Documents/cabi/trunk/app/src/main/res/drawable-ldpi/search_only_pickup_ar.xml"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_reset.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_reset.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_next.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_next.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_done.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_done.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_cross.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_cross.png"
+    },
+    {
+        "merged": "/home/developer/Documents/cabi/trunk/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ucrop_ic_crop.png",
+        "source": "/home/developer/.android/build-cache/0fd4b7f5fa49d1f3556eb37938a488db9d6221b5/output/res/drawable-ldpi-v4/ucrop_ic_crop.png"
+    }
+]

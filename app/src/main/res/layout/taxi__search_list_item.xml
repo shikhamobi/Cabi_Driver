@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="taxi__search_listitem_textview_tagline"
+        android:textColor="@color/textviewcolor_light"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/taxi__search_listitem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/underline"
+        android:layout_marginLeft="@dimen/taxi__search_padding_medium"
+        android:layout_marginRight="@dimen/taxi__search_padding_medium"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/taxi__search_listitem_textview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="16.0dip"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/taxi__search_listitem_textview_subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:text="sub_title"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="16.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@null"
+            android:padding="@dimen/taxi__search_padding_medium"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/taxi__search_padding_medium"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="right|center"
+                android:singleLine="true"
+                android:text="taxi__fare"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="right|center"
+                android:singleLine="true"
+                android:text="taxi__desc"
+                android:textColor="@color/textviewcolor_dark" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

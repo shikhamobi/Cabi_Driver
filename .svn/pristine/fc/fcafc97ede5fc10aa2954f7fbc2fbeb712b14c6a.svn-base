@@ -1,0 +1,344 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="05dp"
+    android:layout_marginLeft="05dp"
+    android:layout_marginRight="05dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:clickable="false"
+        android:focusable="false">
+        <ImageView
+            android:id="@+id/mov_cur_loc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:paddingBottom="05dp"
+            android:paddingLeft="05dp"
+            android:paddingTop="1dp"
+            android:src="@drawable/mapmove"
+            app:layout_anchor="@+id/design_bottom_sheet"
+            app:layout_anchorGravity="top|right|end" />
+
+        <LinearLayout
+            android:id="@+id/design_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            app:behavior_hideable="false"
+            app:behavior_peekHeight="120dp"
+            app:elevation="4dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <LinearLayout
+                android:id="@+id/trip_detailslay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="03dp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/bottom_sheet_behavior">
+
+                <LinearLayout
+                    android:id="@+id/firstlay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bg"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/lasttrip_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/trip_history_header"
+                            android:padding="6dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/trip_history_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:paddingTop="2dp"
+                            android:text="@string/trip_history"
+                            android:textColor="@color/button_accept"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="45dp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/lasttrip_header"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/linebottom_light" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="05dp"
+                            android:layout_weight=".2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/first_tripdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+
+                            <TextView
+                                android:id="@+id/first_tripmodel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/first_tripamt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="$0.0"
+                                android:textColor="@color/button_accept"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/trip_Amount"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/second_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="06dp"
+                    android:layout_marginTop="06dp"
+                    android:background="@drawable/border_bg"
+                    android:padding="2dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="05dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/second_tripdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:text="Last Trip"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+
+                            <TextView
+                                android:id="@+id/second_tripmodel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/trip_history"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/second_tripamt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="$54.54"
+                                android:textColor="@color/button_accept"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingBottom="05dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/trip_Amount"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/third_lay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="06dp"
+                    android:layout_marginTop="06dp"
+                    android:background="@drawable/border_bg"
+                    android:padding="2dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="05dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/third_tripdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:text="Last Trip"
+                                android:textColor="@color/textviewcolor_light"
+
+                                android:textSize="13sp" />
+
+
+                            <TextView
+                                android:id="@+id/third_tripmodel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/trip_history"
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/third_tripamt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="$54.54"
+                                android:textColor="@color/button_accept"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingBottom="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/trip_Amount"
+
+                                android:textColor="@color/textviewcolor_light"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="Colon">:</string>
+    <string name="Comments">Комментарии</string>
+    <string name="Estimated">Оценочная сумма</string>
+    <string name="Hreferal">Промо-код</string>
+    <string name="Last2trip">Последние 2 поездки</string>
+    <string name="Last3trip">Последние 3 поездки</string>
+    <string name="Lasttrip">Последняя поездка</string>
+    <string name="Referalwithdraw_request">Запрос на получение отзыва</string>
+    <string name="Tax">налог</string>
+    <string name="Trip_Request">Запрос на поездку</string>
+    <string name="Week">На этой неделе</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Перейти вверх"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Другие параметры"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Показать все"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Выбрать приложение"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"ОТКЛ."</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ВКЛ."</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Поиск"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Удалить запрос"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Поисковый запрос"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Поиск"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Отправить запрос"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Голосовой поиск"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Свернуть"</string>
+    <string name="above">Выше</string>
+    <string name="accept">ACCEPT</string>
+    <string name="accept_time">30 СЕКУНД ЛЕВЫЕ ПРИНИМАЮТ</string>
+    <string name="actual_distance">Общее расстояние</string>
+    <string name="add">Добавить</string>
+    <string name="address_cant_fetch">Извините, мы не можем получить ваше текущее местоположение</string>
+    <string name="address_output_string"/>
+    <string name="amount">Количество</string>
+    <string name="and_earn">и зарабатывать</string>
+    <string name="app_buildversion">Версия</string>
+    <string name="app_name">Taximobility</string>
+    <string name="app_namemanifest">Таксимобильный водитель</string>
+    <string name="arabic">العربية</string>
+    <string name="arvd_destination">Конец поездки</string>
+    <string name="back">назад</string>
+    <string name="back_home">Вернуться домой</string>
+    <string name="bankcomm"> *</string>
+    <string name="bankstmt">Банк A / C используется для оплаты комиссии</string>
+    <string name="below">Ниже</string>
+    <string name="brand_type">Тип бренда</string>
+    <string name="btn_share">ДОЛЯ</string>
+    <string name="c_chnpwd">Изменить пароль</string>
+    <string name="c_conpwd">Подтвердите Пароль</string>
+    <string name="c_newpwd">новый пароль</string>
+    <string name="c_oldpwd">Старый пароль</string>
+    <string name="c_tryagain">Попробуй еще раз!</string>
+    <string name="call">Вызов</string>
+    <string name="call_passeneger">Вызов</string>
+    <string name="camera">камера</string>
+    <string name="cancel">Отмена</string>
+    <string name="cancel_in_going_trip">Вы действительно хотите отменить поездку?</string>
+    <string name="cancell">Отмена</string>
+    <string name="cancelled">отменен</string>
+    <string name="card">Карта</string>
+    <string name="cash">Денежные средства</string>
+    <string name="change_network">Пожалуйста, убедитесь, что служба местоположения должна быть с высокой точностью.</string>
+    <string name="check_internet">Пожалуйста, возьмите новую поездку</string>
+    <string name="check_net_connection">Проверьте подключение к Интернету</string>
+    <string name="choose">Выберите файл</string>
+    <string name="choose_an_image">Выберите изображение</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Откройте &lt;b>facebook.com/device&lt;/b> и введите код, показанный выше.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Неожиданная ошибка при скачивании изображения.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">Для входа через WebView необходимо разрешение INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">Ошибка AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Нравится</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Нравится</string>
+    <string gender="unknown" name="com_facebook_loading">Загрузка...</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Отмена</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Войти</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Продолжить с Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Вход через Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Выйти</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Выйти</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Вы вошли как %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Выполнен вход через Facebook</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Отправить</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Поделиться</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">Чтобы привязать ваш аккаунт, откройте приложение Facebook на своем мобильном устройстве и проверьте уведомления.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- ИЛИ -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Не Вы?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Продолжить как %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Подтвердите вход</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Контроль над данными — выберите, какой информацией вы хотите делиться с приложениями.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Включить"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется включить сервисы Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Включите сервисы Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Установить"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется установить сервисы Google Play."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Установите сервисы Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Ошибка сервисов Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Приложению \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" не удается подключиться к сервисам Google Play. Повторите попытку."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"Для работы с приложением \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуются сервисы Google Play. Они не поддерживаются на вашем устройстве."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Обновить"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Чтобы запустить приложение \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", обновите сервисы Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Обновите сервисы Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Сервисы Google Play, необходимые для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", в настоящий момент обновляются."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Открыть на телефоне"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Войти"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Войти через аккаунт Google"</string>
+    <string name="company_name">название компании</string>
+    <string name="completed">Завершенный</string>
+    <string name="confimpswd">Подтвердите Пароль</string>
+    <string name="confirm_call">Вы уверены, что хотите позвонить пассажиру?</string>
+    <string name="confirm_complete">Вы действительно хотите завершить поездку?</string>
+    <string name="confirmation_password_mismatch_with_password">Пароль и пароль подтверждения не совпадают</string>
+    <string name="confirmlogout">Вы действительно хотите выйти?</string>
+    <string name="connect_error">Ошибка сетевого подключения!</string>
+    <string name="current_location">Текущее местоположение</string>
+    <string name="currenttxt">ВАШЕ ТЕКУЩЕЕ МЕСТОПОЛОЖЕНИЕ</string>
+    <string name="date_change">Дата вашего телефона неточна! Отрегулируйте часы и повторите попытку.</string>
+    <string name="decline">СНИЖЕНИЕ</string>
+    <string name="device_not_support_map">Устройство не поддерживает версию карты!</string>
+    <string name="discount">скидка</string>
+    <string name="dist_fare">Стоимость проезда</string>
+    <string name="domain_hint">Введите ключ доступа</string>
+    <string name="done">СДЕЛАННЫЙ</string>
+    <string name="download_from">, Загрузите приложение из:</string>
+    <string name="droploc">Место выключения</string>
+    <string name="droplocnew">Место выключения (необязательно)</string>
+    <string name="earning">Сегодня Заработок</string>
+    <string name="earnings">прибыль</string>
+    <string name="email">Эл. адрес</string>
+    <string name="enable">включить</string>
+    <string name="end_trip">Конец поездки</string>
+    <string name="english">английский</string>
+    <string name="ent_ccard_no">пожалуйста, введите номер своей кредитной карты</string>
+    <string name="ent_chk_ccard">Просьба проверить номер вашей кредитной карты</string>
+    <string name="ent_chk_cvv">Пожалуйста, проверьте свой номер cvv</string>
+    <string name="ent_cvv">Введите свой номер cvv</string>
+    <string name="ent_exp_date">Введите дату истечения срока действия</string>
+    <string name="ent_exp_year_gt">Истекший год должен быть равен и больше, чем в текущем году</string>
+    <string name="enter_dest">Вводное местоположение</string>
+    <string name="enter_mobile_number">Введите номер мобильного телефона</string>
+    <string name="enter_pickup">Введите местоположение пикапа</string>
+    <string name="enter_the_card_number">Введите номер своей карты</string>
+    <string name="enter_the_confirmation_password">Введите пароль для подтверждения</string>
+    <string name="enter_the_email">Пожалуйста, введите свой адрес электронной почты</string>
+    <string name="enter_the_expiry_date">Укажите дату истечения срока действия</string>
+    <string name="enter_the_first_name">Пожалуйста, введите ваше имя</string>
+    <string name="enter_the_last_name">Пожалуйста, введите свою фамилию</string>
+    <string name="enter_the_mobile_number">Введите номер мобильного телефона</string>
+    <string name="enter_the_new_password">Введите новый пароль</string>
+    <string name="enter_the_old_password">Введите старый пароль</string>
+    <string name="enter_the_password">Пожалуйста введите ваш пароль</string>
+    <string name="enter_the_valid_card_number">Введите действительный номер карты</string>
+    <string name="enter_the_valid_email">Введите действующий Email</string>
+    <string name="enter_your_mobile_number">Введите номер мобильного телефона</string>
+    <string name="error_in_color">Ошибка при получении цвета</string>
+    <string name="error_in_getting_gps">Ошибка при получении gps. Проверьте точность gps</string>
+    <string name="error_in_string">Ошибка при получении строки</string>
+    <string name="even_charge">Вечерние сборы</string>
+    <string name="excuse_me_brevity">Извините мою краткость, зарегистрируйтесь с реферальным кодом</string>
+    <string name="f_currsymbol">$</string>
+    <string name="f_float">0.0</string>
+    <string name="f_forgotpwd">Забыли пароль</string>
+    <string name="f_km">Km</string>
+    <string name="f_timetoreach">Время дойти</string>
+    <string name="fare2">123</string>
+    <string name="fare_calculator">Калькулятор цен</string>
+    <string name="fare_details">Сведения о тарифах</string>
+    <string name="farecal">Плата за проезд</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Другое"</string>
+    <string name="fetching_address">Получение адреса</string>
+    <string name="file_upload">Загрузить файлы?</string>
+    <string name="filter">Фильтр</string>
+    <string name="first">Имя</string>
+    <string name="forgotpswd">Забыли пароль ?</string>
+    <string name="frence">Французский</string>
+    <string name="gallery">Галерея</string>
+    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Другое"</string>
+    <string name="german">Deutsch</string>
+    <string name="getting_gps_low">Мы пытаемся получить ваше местоположение с низкой точностью</string>
+    <string name="gps_is_not_enabled">GPS не включен. Вы хотите перейти в меню настроек?</string>
+    <string name="gps_is_settings">Настройки GPS</string>
+    <string name="heading_ongoing">Ожидание пассажира</string>
+    <string name="heading_payuncard">Оплатить незарегистрированной карточкой</string>
+    <string name="help">Помогите</string>
+    <string name="hide">Спрятать</string>
+    <string name="home">Главная</string>
+    <string name="hour">Час</string>
+    <string name="image_failed">Выберите изображение из допустимого пути (папка галереи)</string>
+    <string name="insufficent_amout">Недостаточная сумма</string>
+    <string name="invalid_mobile_number">Недопустимый номер мобильного телефона</string>
+    <string name="invite_email">Эл. адрес</string>
+    <string name="invite_fb">facebook</string>
+    <string name="invite_frdrides">Когда водитель совершает поездку с кодом</string>
+    <string name="invite_friend">Пригласить друзей</string>
+    <string name="invite_sharevia">Отправить по</string>
+    <string name="invite_sms">смс</string>
+    <string name="invite_twitter">щебет</string>
+    <string name="invite_whatsapp">Что нового?</string>
+    <string name="invite_youearn">Вы зарабатываете</string>
+    <string name="invitefriends">Пригласить друзей</string>
+    <string name="ive_arrived">Я приехал</string>
+    <string name="l_fromdate">С даты</string>
+    <string name="l_todate">Встретиться</string>
+    <string name="language_settings">Языковые настройки</string>
+    <string name="last">Фамилия</string>
+    <string name="latitude_longitude"/>
+    <string name="locating_you">Найдите вас ...!</string>
+    <string name="location_disable">Отключенные службы</string>
+    <string name="location_enable">Пожалуйста, включите свою службу местоположения и убедитесь, что она должна быть с высокой точностью.</string>
+    <string name="m_acc">Счет</string>
+    <string name="m_assigned">Назначенный такси</string>
+    <string name="m_help">Помогите</string>
+    <string name="m_home">Главная</string>
+    <string name="m_logout">Выйти</string>
+    <string name="m_me">Профиль</string>
+    <string name="m_ongoing">Постоянная поездка</string>
+    <string name="m_sales">Управление продажами</string>
+    <string name="m_statistics">Статистика</string>
+    <string name="m_target">цель</string>
+    <string name="m_tellfrd">Расскажи другу</string>
+    <string name="m_timer">00.00.00</string>
+    <string name="m_upcoming">Подтвержденные поездки</string>
+    <string name="menu_settings">настройки</string>
+    <string name="message">Сообщение</string>
+    <string name="messenger_send_button_text">Отпр</string>
+    <string name="min">Min</string>
+    <string name="min_fare">Минутный тариф</string>
+    <string name="mins">Min (s)</string>
+    <string name="minutes_travel">Прошедшие минуты</string>
+    <string name="minutestxt">минут</string>
+    <string name="mobile">мобильный</string>
+    <string name="my_status">Мое местонахождение</string>
+    <string name="myjobs">Мои вакансии</string>
+    <string name="name">имя</string>
+    <string name="nit_fare">Ночные сборы</string>
+    <string name="no">нет</string>
+    <string name="no_changes">Никаких изменений не было сделано</string>
+    <string name="no_data">Данные не найдены</string>
+    <string name="no_sufficient_amount">У вас нет достаточного количества!</string>
+    <string name="nodata">Данные не найдены</string>
+    <string name="notes">веха</string>
+    <string name="offline">Не в сети</string>
+    <string name="offtxt">OFF</string>
+    <string name="ok">ОК</string>
+    <string name="old_password_and_newpassword_are_same">Старый пароль и новый пароль одинаковы</string>
+    <string name="ongoing_journey">Поездка в ход</string>
+    <string name="online">В сети</string>
+    <string name="ontxt">НА</string>
+    <string name="otherdiverlist">Список других драйверов</string>
+    <string name="p_cardno">Номер карты **** **** **** ****</string>
+    <string name="p_congrats">Оплата завершена</string>
+    <string name="p_cvv">CVV</string>
+    <string name="p_expiry">Срок годности MM / YY</string>
+    <string name="p_main">Вернуться домой</string>
+    <string name="paid_by">Оплачивается</string>
+    <string name="pass_onboard">Начать поездку</string>
+    <string name="passenger_details">Пассажирские детали</string>
+    <string name="password">пароль</string>
+    <string name="password_min_character">Пароль должен быть не менее 6 символов</string>
+    <string name="past_booking">Прошлые заказы</string>
+    <string name="pay_amount">Сумма к оплате</string>
+    <string name="payment">Оплата</string>
+    <string name="payment_availed">Оплата</string>
+    <string name="payment_mode">Режим оплаты</string>
+    <string name="payment_pending">Запрос платежа в ожидании</string>
+    <string name="payment_request">Запрос платежа в ожидании</string>
+    <string name="paymentby">ОПЛАТА ПО</string>
+    <string name="phone">Мобильный номер</string>
+    <string name="picklocation">Выбрать место</string>
+    <string name="pickup1">Подбирать</string>
+    <string name="pickuploc">Выбрать место</string>
+    <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Удалить поисковый запрос"</string>
+    <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Поиск"</string>
+    <string name="please_check_internet">Пожалуйста, проверьте подключение к интернету</string>
+    <string name="please_choose">Выберите файл</string>
+    <string name="please_choosedate">Выберите правильную дату</string>
+    <string name="please_click_back_again_exit">Повторите попытку, чтобы выйти</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_image">Изображение профиля</string>
+    <string name="promo_code">Промо код</string>
+    <string name="pwd_min">Пароль должен быть не менее 6 символов</string>
+    <string name="pwd_same">Пароль и пароль подтверждения не совпадают</string>
+    <string name="r_fare">Плата за проезд</string>
+    <string name="referal_amount">Сумма реферала</string>
+    <string name="referal_code">Введите код направления поездки</string>
+    <string name="referral">Направления</string>
+    <string name="reject">Отклонено</string>
+    <string name="remarks">замечания</string>
+    <string name="req_model">Запрос на поездку</string>
+    <string name="request_id">ID запроса</string>
+    <string name="round_trip">В обе стороны</string>
+    <string name="russian">русский</string>
+    <string name="s_pass_max">Пароль должен быть не менее 32 символов.</string>
+    <string name="s_signin">Войти в систему</string>
+    <string name="save">Сохранить</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Поиск"</string>
+    <string name="sec">Sec</string>
+    <string name="seconds">00</string>
+    <string name="seconds_to_left">ЛЕВАЯ ПРИНЯТЬ</string>
+    <string name="secondstxt">секунд</string>
+    <string name="select_date_time">Выберите дату</string>
+    <string name="select_language">Выберите язык</string>
+    <string name="sendmail">Отправить письмо</string>
+    <string name="server_error">Пожалуйста, попробуйте еще раз</string>
+    <string name="show">Показать</string>
+    <string name="signin">Войти в систему</string>
+    <string name="spanish">Español</string>
+    <string name="start_trip">Начать поездку</string>
+    <string name="start_waiting">Начать ожидание</string>
+    <string name="statistics">Статистика</string>
+    <string name="status">Положение дел</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="status_details">Сведения о статусе</string>
+    <string name="stop_waiting">Остановить ожидание</string>
+    <string name="street_pickup">Улица</string>
+    <string name="string_tips">Советы</string>
+    <string name="sub_total">Промежуточный итог</string>
+    <string name="submit">Отправить</string>
+    <string name="t_distance">Расстояние</string>
+    <string name="t_droploc">Место выключения</string>
+    <string name="t_droptime">Время выпадения</string>
+    <string name="t_ok">ОК</string>
+    <string name="t_passname">Имя пассажира</string>
+    <string name="t_pickloc">Выбрать место</string>
+    <string name="t_picktime">Время забирать</string>
+    <string name="t_success">УСПЕХ</string>
+    <string name="t_tripduration">Продолжительность поездки</string>
+    <string name="tap_triphistory">Нажмите ссылку истории поездки, чтобы просмотреть текущие и предыдущие сведения о поездке</string>
+    <string name="tax">Налоги (</string>
+    <string name="tax_percent">%)</string>
+    <string name="taxi_assignfrom">Такси с даты</string>
+    <string name="taxi_assignto">Такси на сегодняшний день</string>
+    <string name="taxi_details">Детали такси</string>
+    <string name="taxi_detailsu"><u> Детали такси </u></string>
+    <string name="taxi_model">Модель такси</string>
+    <string name="taxi_number">Номер такси</string>
+    <string name="there_is_no_email_client_installed">Нет установленного почтового клиента.</string>
+    <string name="timedriven">Время, проведенное</string>
+    <string name="today_hdr">Сегодняшняя поездка</string>
+    <string name="total">Всего</string>
+    <string name="total_amount">Всего</string>
+    <string name="total_km">Всего КМ</string>
+    <string name="totalearning">Общая заработная плата</string>
+    <string name="totaltrip">Общая поездка</string>
+    <string name="track_now">Отслеживать сейчас</string>
+    <string name="trackmytrip">Отслеживать мою поездку</string>
+    <string name="transaction_id">ID транзакции</string>
+    <string name="trip">Поездка</string>
+    <string name="trip_Amount">Сумма поездки</string>
+    <string name="trip_amount">Сумма поездки</string>
+    <string name="trip_completed">Поездка завершена</string>
+    <string name="trip_details">Информация о поездке</string>
+    <string name="trip_fare">Стоимость поездки</string>
+    <string name="trip_history">История поездки</string>
+    <string name="trip_id">Идентификатор поездки</string>
+    <string name="tripdetail">Информация о поездке</string>
+    <string name="tripdetails">Информация о поездке</string>
+    <string name="tripprogress">Поездка в ход</string>
+    <string name="trips">8 Поездки</string>
+    <string name="trips1">Путешествия</string>
+    <string name="turkey">Türk</string>
+    <string name="uncard">Новая карта</string>
+    <string name="up_coming">В движении</string>
+    <string name="upload_your_image">Загрузите файл</string>
+    <string name="vehicle_dist">Стоимость проезда автомобиля</string>
+    <string name="vehicle_min">Минимальная стоимость автомобиля</string>
+    <string name="vehicle_wait">Время ожидания автомобиля</string>
+    <string name="version_up_later">Позже</string>
+    <string name="version_up_message">Существует новая версия Taximobility, эта версия больше не поддерживается.</string>
+    <string name="version_up_now">Обновить сейчас</string>
+    <string name="version_up_title">Обновить</string>
+    <string name="waiting">ждущий</string>
+    <string name="waiting_cost">Стоимость ожидания</string>
+    <string name="waiting_tcost">Стоимость ожидания (1 час)</string>
+    <string name="waiting_time">время ожидания</string>
+    <string name="waiting_time_txt">Время ожидания</string>
+    <string name="waitingpassenger">Ожидание пассажира</string>
+    <string name="wallet">Бумажник</string>
+    <string name="wallet_amount">Количество использованного кошелька</string>
+    <string name="wallet_history">История изъятия</string>
+    <string name="with_draw">Вы действительно хотите снять</string>
+    <string name="withdraw">Изымать</string>
+    <string name="withdraw_amount">Сумма снятия</string>
+    <string name="withdraw_view">Просмотр запроса на снятие средств</string>
+    <string name="withdrawu">Изымать</string>
+    <string name="yes">да</string>
+    <string name="you">Вы</string>
+    <string name="you_are_here">Вы здесь!</string>
+    <string name="you_are_in_trip">Ты уже в поездке!</string>
+    <string name="z_datetime">Дата &amp; Время</string>
+    <string name="z_history">История изъятия</string>
+    <string name="z_req_date">Запрошенная дата</string>
+    <string name="z_status">Положение дел</string>
+    <string name="z_view">Посмотреть</string>
+    <string name="zero">0</string>
+</resources>

@@ -1,0 +1,397 @@
+/*
+ * Copyright (C) 2017 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.cabi.driver.location;
+
+import android.app.ActivityManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.location.Location;
+import android.util.Log;
+
+import com.cabi.driver.service.LocationUpdate;
+import com.cabi.driver.utils.SessionSave;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.SphericalUtil;
+
+import java.util.List;
+
+import static com.cabi.driver.service.LocationUpdate.startLocationService;
+
+/**
+ * Receiver for handling location updates.
+ * <p>
+ * For apps targeting API level O
+ * {@link android.app.PendingIntent#getBroadcast(Context, int, Intent, int)} should be used when
+ * requesting location updates. Due to limits on background services,
+ * {@link android.app.PendingIntent#getService(Context, int, Intent, int)} should not be used.
+ * <p>
+ * Note: Apps running on "O" devices (regardless of targetSdkVersion) may receive updates
+ * less frequently than the interval specified in the
+ * {@link com.google.android.gms.location.LocationRequest} when the app is no longer in the
+ * foreground.
+ */
+public class LocationUpdatesBroadcastReceiver extends BroadcastReceiver {
+    private static final String TAG = "LUBroadcastReceiver";
+
+    public static final String ACTION_PROCESS_UPDATES = "com.cabi.driver.location.action.PROCESS_UPDATES";
+    private Context context;
+    public static boolean firstConnect = false;/*
+    private double lastlatitude1 = 0.0, lastlongitude1 = 0.0;
+    private double lastlatitude = 0.0;
+    private double lastlongitude = 0.0;
+    private double slabDistance = 250;*/
+    private static boolean ROUTE_EXPIRED_TODAY = true;
+    public static final String CUSTOM_ACTION = "YOUR_CUSTOM_ACTION";
+    Intent bintent = new Intent(CUSTOM_ACTION);
+
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        this.context = context;
+        if (intent != null) {
+            final String action = intent.getAction();
+            if (ACTION_PROCESS_UPDATES.equals(action)) {
+                LocationResult result = LocationResult.extractResult(intent);
+                if (result != null) {
+                    firstConnect = true;
+                    // System.out.println("resultresult" + result);
+                    List<Location> locations = result.getLocations();
+                    double speed = locations.get(locations.size() - 1).getSpeed();
+                    double accuray = locations.get(locations.size() - 1).getAccuracy();
+                    //  System.out.println("resultresult" + "speed..+..accuray" + speed + "........." + accuray);
+                    //   System.out.println("resultresult" + "status" + SessionSave.getSession("status", context));
+
+                    if (SessionSave.getSession("status", context).equalsIgnoreCase("F")
+                            || SessionSave.getSession("status", context).equalsIgnoreCase("B")) {
+                        if (accuray <= 200) {
+                            LocationResultHelper locationResultHelper = new LocationResultHelper(
+                                    context, locations);
+                            locationResultHelper.saveResults();
+                        }
+
+                    } else {
+
+                        if (speed > 2 && accuray <= 100) {
+                            LocationResultHelper locationResultHelper = new LocationResultHelper(
+                                    context, locations);
+                            locationResultHelper.saveResults();
+                        }
+
+                    }
+
+
+                    if (context != null && SessionSave.getSession("shift_status", context).equals("IN") && !SessionSave.getSession("Id", context).equals("")) {
+
+
+                        if (SessionSave.getSession("status", context).equalsIgnoreCase("A")) {
+                            if (speed > 2 && accuray <= 100) {
+
+                                if (!SessionSave.getSession("lastlatitude1", context).equalsIgnoreCase("") && !SessionSave.getSession("lastlongitude1", context).equalsIgnoreCase("")) {
+                                    haversine(Double.valueOf(SessionSave.getSession("lastlatitude1", context)), Double.valueOf(SessionSave.getSession("lastlongitude1", context)),
+                                            locations.get(locations.size() - 1).getLatitude(), locations.get(locations.size() - 1).getLongitude());
+                                }
+
+                                SessionSave.saveSession("lastlatitude1", "" + locations.get(locations.size() - 1).getLatitude(), context);
+                                SessionSave.saveSession("lastlongitude1", "" + locations.get(locations.size() - 1).getLongitude(), context);
+                            }
+                        } else {
+                            SessionSave.saveSession("lastlatitude1", "", context);
+                            SessionSave.saveSession("lastlongitude1", "", context);
+                        }
+
+                        Intent i = new Intent("broadCastName");
+                        // Data you need to pass to activity
+                        i.putExtra("latitude", locations.get(locations.size() - 1).getLatitude());
+                        i.putExtra("longitude", locations.get(locations.size() - 1).getLongitude());
+                        i.putExtra("speed", locations.get(locations.size() - 1).getSpeed());
+                        i.putExtra("accuracy", locations.get(locations.size() - 1).getAccuracy());
+                        i.putExtra("provider", locations.get(locations.size() - 1).getProvider());
+                        context.sendBroadcast(i);
+
+                    }
+
+                    if (context != null && !isMyServiceRunning(LocationUpdate.class) && (SessionSave.getSession("shift_status", context).equals("IN"))) {
+                       // context.startService(new Intent(context, LocationUpdate.class));
+                        startLocationService(context);
+                    }
+                }
+            }
+        }
+    }
+
+
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        if (context != null) {
+            ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+            for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+                if (serviceClass.getName().equals(service.service.getClassName())) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * This Function is used for calculate the distance travelled
+     */
+    public synchronized void haversine(double lat1, double lon1, double lat2, double lon2) {
+        // TODO Auto-generated method stub
+        //Getting both the coordinates
+        LatLng from = new LatLng(lat1, lon1);
+        LatLng to = new LatLng(lat2, lon2);
+        //Calculating the distance in meters
+        Log.e("distance", " from : " + from + " To : " + to);
+        double distance = (float) SphericalUtil.computeDistanceBetween(from, to) / 1000;
+        if (SessionSave.getSession("Metric", context).trim().equalsIgnoreCase("Miles"))
+            distance = distance / 1.60934;
+
+        /*if ((distance * 1000) > slabDistance) {
+            new FindApproxDistance(from, to);
+            //  DistanceHandler.postDelayed(distanceRunnable, 2000);
+            lastlatitude1 = 0.0;
+            lastlongitude1 = 0.0;
+        } else {*/
+
+        distance += SessionSave.getDistance(context);
+        SessionSave.setDistance(distance, context);
+        // System.out.println("Haversine Distance**" + (distance));
+        SessionSave.saveSession("lastknowlats", "" + to.latitude, context);
+        SessionSave.saveSession("lastknowlngs", "" + to.longitude, context);
+
+        SessionSave.saveGoogleWaypoints(from, to, "google", distance, "", context);
+        SessionSave.saveWaypoints(from, to, "haversine", distance, "" + "___", context);
+
+       /* }*/
+    }
+
+   /* public class FindApproxDistance implements APIResult {
+        int type;
+        LatLng pick = null;
+        LatLng drop = null;
+
+        public FindApproxDistance(LatLng from, LatLng to) {
+            //Toast.makeText(LocationUpdate.this, "Calling Google", Toast.LENGTH_SHORT).show();
+            ArrayList<LatLng> points = new ArrayList<>();
+            pick = from;
+            drop = to;
+            points.add(pick);
+            points.add(drop);
+            String url  = new Route().GetDistanceTime(context, points, "en", false);
+            if (url != null && !url.equals("")) {
+                *//*if (ROUTE_EXPIRED_TODAY) {*//*
+                url = "google_geocoding";
+                JSONObject j = new JSONObject();
+                try {
+                    j.put("origin", from.latitude + "," + from.longitude);
+                    j.put("destination", to.latitude + "," + to.longitude);
+                    j.put("type", "3");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                new APIService_Retrofit_JSON_NoProgress(context, this, j, false, url, false).execute();
+               *//* } else
+
+                    //https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=Washington,DC&destinations=New+York+City,NY&key=YOUR_API_KEY
+                    new APIService_Retrofit_JSON_NoProgress(context, this, null, true, url, true).execute();
+*//*
+                System.out.println("carmodel" + url);
+            }
+
+        }
+
+
+        @Override
+        public void getResult(boolean isSuccess, String result) {
+
+            if (isSuccess) {
+                try {
+                    System.out.println("carmodel" + result.replaceAll("\\s", ""));
+                    JSONObject data = new JSONObject(result);
+                    if (!data.getString("status").equalsIgnoreCase("OK")) {
+                        if (result != null && data.getString("status").equalsIgnoreCase("OVER_QUERY_LIMIT") && !ROUTE_EXPIRED_TODAY) {
+                            ROUTE_EXPIRED_TODAY = true;
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    new FindApproxDistance(pick, drop);
+                                }
+                            }, 2000);
+
+                        } else {
+                            double distance = (float) SphericalUtil.computeDistanceBetween(pick, drop) / 1000;
+                            if (SessionSave.getSession("Metric", context).trim().equalsIgnoreCase("miles"))
+                                distance = distance / 1.60934;
+                            System.out.println("Haversine Distance" + (distance));
+                            distance += SessionSave.getGoogleDistance(context);
+                            SessionSave.setGoogleDistance(distance, context);
+                            System.out.println("googledistanceee " + "1_" + pick.latitude + "__" + pick.longitude + "_____" + drop.latitude + "__" + drop.longitude);
+                            SessionSave.saveGoogleWaypoints(pick, drop, "haversine", distance, "UNKNOWN" + result, context);
+                            SessionSave.saveSession("lastknowlats", "" + drop.latitude, context);
+                            SessionSave.saveSession("lastknowlngs", "" + drop.longitude, context);
+                            SessionSave.saveWaypoints(pick, drop, "haversine", distance, "" + "___" + LocationUpdate.startID, context);
+                            LocalBroadcastManager.getInstance(context).sendBroadcast(bintent);
+                        }
+                    } else {
+                        if (new JSONObject(result).getJSONArray("rows").length() != 0) {
+                            JSONObject obj = new JSONObject(result).getJSONArray("rows").getJSONObject(0).getJSONArray("elements").getJSONObject(0);
+                            JSONObject ds = obj.getJSONObject("distance");
+                            String dis = ds.getString("value");
+
+                            double dist = Double.parseDouble(dis) / 1000;
+                            if (SessionSave.getSession("Metric", context).trim().equalsIgnoreCase("miles"))
+                                dist = dist / 1.60934;
+                            SessionSave.setGoogleDistance(SessionSave.getGoogleDistance(context) + dist, context);
+                            System.out.println("googledistanceee" + "eluchecking " + dist);
+                            SessionSave.saveGoogleWaypoints(pick, drop, "google", dist, "", context);
+
+                            //  System.out.println("broad__________" + dist + "__" + "__" + SessionSave.getGoogleDistance(context));
+
+                            SessionSave.saveSession("lastknowlats", "" + drop.latitude, context);
+                            SessionSave.saveSession("lastknowlngs", "" + drop.longitude, context);
+//                            lastlatitude1 = drop.latitude;
+//                            lastlongitude1 = drop.longitude;
+//                            SessionSave.saveLastLng(new LatLng(drop.latitude, drop.longitude), LocationUpdate.this);
+//                            lastlatitude1 = SessionSave.getLastLng(LocationUpdate.this).latitude;
+//                            lastlongitude1 = SessionSave.getLastLng(LocationUpdate.this).longitude;
+//                            Handler mHandler = new Handler(Looper.getMainLooper()) {
+//                                @Override
+//                                public void handleMessage(Message message) {
+//                                    // This is where you do your work in the UI thread.
+//                                    // Your worker tells you in the message what to do.
+//                                    //  Toast.makeText(LocationUpdate.this, "" + SessionSave.getDistance(LocationUpdate.this) + "Accuracy " + mLastLocation.getAccuracy() + " Speed  " + speed + "  Google speed" + SessionSave.getGoogleDistance(LocationUpdate.this), Toast.LENGTH_SHORT).show();
+//                                    String savingTripDetail = "";
+//                                    savingTripDetail += SessionSave.getSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", LocationUpdate.this) + "\n\n\n<br><br>" + "&nbsp;&nbsp;Time&nbsp;" + DateFormat.getTimeInstance().format(new Date()) +
+//                                            "&nbsp;&nbsp;old&nbsp;&nbsp;" + lastlatitude1 + "&nbsp;" + lastlongitude1 + "***";
+//                                    SessionSave.saveSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", savingTripDetail, LocationUpdate.this);
+//
+//
+//                                }
+//                            };
+//                            mHandler.sendEmptyMessage(0);
+                            SessionSave.saveWaypoints(pick, drop, "haversine", dist, "server" + "___" + LocationUpdate.startID, context);
+                            LocalBroadcastManager.getInstance(context).sendBroadcast(bintent);
+                        }
+                    }
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    if (NetworkStatus.isOnline(context)) {
+                        if (!ROUTE_EXPIRED_TODAY) {
+                            ROUTE_EXPIRED_TODAY = true;
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    new FindApproxDistance(pick, drop);
+                                }
+                            }, 2000);
+                        } else {
+                            double distance = (float) SphericalUtil.computeDistanceBetween(pick, drop) / 1000;
+                            if (SessionSave.getSession("Metric", context).trim().equalsIgnoreCase("miles"))
+                                distance = distance / 1.60934;
+                            System.out.println("Haversine Distance" + (distance));
+                            distance += SessionSave.getGoogleDistance(context);
+                            SessionSave.setGoogleDistance(distance, context);
+                            System.out.println("googledistanceee " + "3_" + pick.latitude + "__" + pick.longitude + "_____" + drop.latitude + "__" + drop.longitude);
+                            SessionSave.saveGoogleWaypoints(pick, drop, "haversine", distance, e.getLocalizedMessage(), context);
+
+
+                            SessionSave.saveSession("lastknowlats", "" + drop.latitude, context);
+                            SessionSave.saveSession("lastknowlngs", "" + drop.longitude, context);
+                            SessionSave.saveWaypoints(pick, drop, "haversine" + "___" + LocationUpdate.startID, distance, e.getLocalizedMessage(), context);
+//                            Handler mHandler = new Handler(Looper.getMainLooper()) {
+//                                @Override
+//                                public void handleMessage(Message message) {
+//                                    // This is where you do your work in the UI thread.
+//                                    // Your worker tells you in the message what to do.
+//                                    //  Toast.makeText(LocationUpdate.this, "" + SessionSave.getDistance(LocationUpdate.this) + "Accuracy " + mLastLocation.getAccuracy() + " Speed  " + speed + "  Google speed" + SessionSave.getGoogleDistance(LocationUpdate.this), Toast.LENGTH_SHORT).show();
+//                                    String savingTripDetail = "";
+//                                    savingTripDetail += SessionSave.getSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", LocationUpdate.this) + "\n\n\n<br><br>" + "&nbsp;&nbsp;Time&nbsp;" + DateFormat.getTimeInstance().format(new Date()) +
+//                                            "&nbsp;&nbsp;old&nbsp;&nbsp;" + lastlatitude1 + "&nbsp;" + lastlongitude1 + "**";
+//                                    SessionSave.saveSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", savingTripDetail, LocationUpdate.this);
+////                                    lastlatitude1 = drop.latitude;
+////                                    lastlongitude1 = drop.longitude;
+////                                    SessionSave.saveLastLng(new LatLng(drop.latitude, drop.longitude), LocationUpdate.this);
+////                                    lastlatitude1 = SessionSave.getLastLng(LocationUpdate.this).latitude;
+////                                    lastlongitude1 = SessionSave.getLastLng(LocationUpdate.this).longitude;
+//
+//                                }
+//                            };
+//                            mHandler.sendEmptyMessage(0);
+                            //LocalBroadcastManager.getInstance(LocationUpdate.this).sendBroadcast(bintent);
+
+
+                        }
+
+                    } else {
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                new FindApproxDistance(pick, drop);
+                            }
+                        }, 2000);
+
+
+                    }
+
+
+                }
+
+
+            } else {
+                double distance = (float) SphericalUtil.computeDistanceBetween(pick, drop) / 1000;
+                if (SessionSave.getSession("Metric", context).trim().equalsIgnoreCase("miles"))
+                    distance = distance / 1.60934;
+                System.out.println("Haversine Distance" + (distance));
+                distance += SessionSave.getGoogleDistance(context);
+                SessionSave.setGoogleDistance(distance, context);
+                System.out.println("googledistanceee " + "4_" + pick.latitude + "__" + pick.longitude + "_____" + drop.latitude + "__" + drop.longitude);
+                SessionSave.saveGoogleWaypoints(pick, drop, "haversine", distance, "error" + result, context);
+
+                SessionSave.saveSession("lastknowlats", "" + drop.latitude, context);
+                SessionSave.saveSession("lastknowlngs", "" + drop.longitude, context);
+                SessionSave.saveWaypoints(pick, drop, "haversine", distance, "error" + "___" + LocationUpdate.startID, context);
+//                Handler mHandler = new Handler(Looper.getMainLooper()) {
+//                    @Override
+//                    public void handleMessage(Message message) {
+//                        // This is where you do your work in the UI thread.
+//                        // Your worker tells you in the message what to do.
+//                        //  Toast.makeText(LocationUpdate.this, "" + SessionSave.getDistance(LocationUpdate.this) + "Accuracy " + mLastLocation.getAccuracy() + " Speed  " + speed + "  Google speed" + SessionSave.getGoogleDistance(LocationUpdate.this), Toast.LENGTH_SHORT).show();
+//                        String savingTripDetail = "";
+//                        savingTripDetail += SessionSave.getSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", LocationUpdate.this) + "\n\n\n<br><br>" + "&nbsp;&nbsp;Time&nbsp;" + DateFormat.getTimeInstance().format(new Date()) +
+//                                "&nbsp;&nbsp;old&nbsp;&nbsp;" + lastlatitude1 + "&nbsp;" + lastlongitude1 + "*";
+//                        SessionSave.saveSession(SessionSave.getSession("trip_id", LocationUpdate.this) + "data", savingTripDetail, LocationUpdate.this);
+////                        lastlatitude1 = drop.latitude;
+////                        lastlongitude1 = drop.longitude;
+////                        SessionSave.saveLastLng(new LatLng(drop.latitude, drop.longitude), LocationUpdate.this);
+////                        lastlatitude1 = SessionSave.getLastLng(LocationUpdate.this).latitude;
+////                        lastlongitude1 = SessionSave.getLastLng(LocationUpdate.this).longitude;
+//
+//                    }
+//                };
+//                mHandler.sendEmptyMessage(0);
+                // LocalBroadcastManager.getInstance(LocationUpdate.this).sendBroadcast(bintent);
+            }
+
+
+        }
+    }*/
+}

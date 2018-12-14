@@ -1,0 +1,736 @@
+package com.cabi.driver.service;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.Service;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.graphics.drawable.BitmapDrawable;
+import android.location.Location;
+import android.location.LocationManager;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Looper;
+import android.os.PowerManager;
+import android.provider.Settings;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.NotificationCompat;
+import android.util.Log;
+
+import com.cabi.driver.CanceltripAct;
+import com.cabi.driver.FarecalcAct;
+import com.cabi.driver.JobdoneAct;
+import com.cabi.driver.MainActivity;
+import com.cabi.driver.MyStatus;
+import com.cabi.driver.NotificationAct;
+import com.cabi.driver.OngoingAct;
+import com.cabi.driver.R;
+import com.cabi.driver.UserLoginAct;
+import com.cabi.driver.data.CommonData;
+import com.cabi.driver.location.LocationResultHelper;
+import com.cabi.driver.utils.CL;
+import com.cabi.driver.utils.LocationDb;
+import com.cabi.driver.utils.NC;
+import com.cabi.driver.utils.NetworkStatus;
+import com.cabi.driver.utils.PaymentCompleted;
+import com.cabi.driver.utils.SessionSave;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Field;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+
+/**
+ * getting gps status without location manager
+ * This class helps to get the driver current location using location client. It
+ * Keep on updating driver location to server with certain time interval (Every
+ * 5sec). In this class,Driver gets the new request notification and trip cancel
+ * notifications.
+ */
+@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+public class LocationUpdate extends Service {
+    //    private ScheduledExecutorService mTimer = Executors.newSingleThreadScheduledExecutor();
+    private final Timer mTimer = new Timer();
+    public static double latitude1 = 0.0;
+    public static double longitude1 = 0.0;
+    private double lastlatitude = 0.0;
+    private double lastlongitude = 0.0;
+    private String sLocation = "";
+    public static String oLocation = "";
+    private String updateLocation = "";
+    int locationUpdate = 1000 * 5;
+    String historyValues = "";
+    int historyCount = 0;
+    private Handler mhandler;
+    public ArrayList<String> wayPoint = new ArrayList<String>();
+    private String Reg_ID;
+    Notification notification;
+    private static int Notification_ID = 1;
+    private static NotificationManager notificationManager;
+    public static double speed;
+    LocationDb LocDB;
+    private double haverdistance = 0.0;
+    public static double HTotdistanceKM = 0.0;
+    public static final double Rad = 6372.8;
+    //public static String distanceKM = "";
+    private static final int TWO_MINUTES = 1000 * 60 * 2;
+    private int connectionCheck = 0;
+    private int avoidLatLng = 0;
+    int tempKMVariable = 0;
+    private double tempLat = 0.0;
+    private double tempLng = 0.0;
+    File file;
+    private InputStream in;
+    public static LocationUpdate instance;
+    Handler requestHandler = new Handler(Looper.getMainLooper());
+    private boolean wallet_status = false;
+
+    private boolean dont_encode;
+    public final int UPDATE_INTERVAL_IN_TRIP = 0;
+    Intent intent;
+    public Location previousBestLocation = null;
+    public static final String BROADCAST_ACTION = "DropMe";
+    Call<ResponseBody> coreResponse = null;
+    public static int startID;
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.e("", "Location update service started Start");
+        startID = startId;
+
+        return super.onStartCommand(intent, flags, startId);
+        // return Service.START_NOT_STICKY;
+    }
+
+
+    @SuppressWarnings("deprecation")
+    @SuppressLint("Wakelock")
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        intent = new Intent(BROADCAST_ACTION);
+        instance = this;
+        mhandler = new Handler();
+        if (startService(new Intent(this, ForegroundEnablingService.class)) == null)
+            throw new RuntimeException("Couldn't find " + ForegroundEnablingService.class.getSimpleName());
+        //  mTimer.
+        mTimer.scheduleAtFixedRate(new LocationUpdateTask(), UPDATE_INTERVAL_IN_TRIP, locationUpdate);
+        if (startService(new Intent(this, ForegroundEnablingService.class)) == null)
+            throw new RuntimeException("Couldn't find " + ForegroundEnablingService.class.getSimpleName());
+
+    }
+
+    private class LocationUpdateTask extends TimerTask {
+        @Override
+        public void run() {
+            try {
+
+                if (coreResponse != null) {
+                    coreResponse.cancel();
+                }
+
+                if (!LocationResultHelper.getSavedLocationResult(LocationUpdate.this).isEmpty()) {
+                    sLocation = LocationResultHelper.getSavedLocationResult(LocationUpdate.this);
+
+                }
+                System.out.println("NetworkStatus " + NetworkStatus.isOnline(LocationUpdate.this) + " sLocation " + sLocation + " updateLocation " + updateLocation +
+                        " saved location " + LocationResultHelper.getSavedLocationResult(LocationUpdate.this));
+
+                //  System.out.println("elumalai_check1 " + SessionSave.getGoogleDistance(LocationUpdate.this));
+                //  System.out.println("elumalai_check2 " + SessionSave.getDistance(LocationUpdate.this));
+                //  System.out.println("elumalai_check " + (SessionSave.getDistance(LocationUpdate.this) + SessionSave.getGoogleDistance(LocationUpdate.this)));
+
+                if (SessionSave.getSession("status", LocationUpdate.this).equalsIgnoreCase("F")) {
+                    if (NetworkStatus.isOnline(LocationUpdate.this) && !sLocation.equalsIgnoreCase("")) {
+                        DriverStatusUpdate(SessionSave.getSession("Id", LocationUpdate.this), SessionSave.getSession("status", LocationUpdate.this), "");
+                    }
+                } else {
+                    if (NetworkStatus.isOnline(LocationUpdate.this) && !sLocation.equalsIgnoreCase("") && updateLocation.equalsIgnoreCase("")) {
+                        DriverStatusUpdate(SessionSave.getSession("Id", LocationUpdate.this), SessionSave.getSession("status", LocationUpdate.this), "");
+                    }
+
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            } catch (ExceptionInInitializerError in) {
+                in.printStackTrace();
+            }
+
+
+        }
+    }
+
+
+    @Override
+    public IBinder onBind(final Intent intent) {
+        return null;
+    }
+
+    public void cancelNotify() {
+        if (notificationManager != null) {
+            notificationManager.cancelAll();
+        }
+    }
+
+    private StringBuilder inputStreamToString(final InputStream is) {
+        String rLine = "";
+        final StringBuilder answer = new StringBuilder();
+        final BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+        try {
+            while ((rLine = rd.readLine()) != null)
+                answer.append(rLine);
+        } catch (final IOException e) {
+            e.printStackTrace();
+        }
+        return answer;
+    }
+
+
+    @Override
+    public void onDestroy() {
+
+
+        super.onDestroy();
+    }
+
+
+    private synchronized void getAndStoreStringValues(String result) {
+        try {
+
+
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+//        Document doc = dBuilder.parse(result);
+            InputStream is = new ByteArrayInputStream(result.getBytes("UTF-8"));
+            Document doc = dBuilder.parse(is);
+            Element element = doc.getDocumentElement();
+            element.normalize();
+
+            NodeList nList = doc.getElementsByTagName("*");
+
+            int chhh = 0;
+            for (int i = 0; i < nList.getLength(); i++) {
+
+                Node node = nList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    chhh++;
+
+                    Element element2 = (Element) node;
+                    NC.nfields_byName.put(element2.getAttribute("name"), element2.getTextContent());
+
+                }
+            }
+            getValueDetail();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    synchronized void getValueDetail() {
+        Field[] fieldss = R.string.class.getDeclaredFields();
+        for (int i = 0; i < fieldss.length; i++) {
+            int id = getResources().getIdentifier(fieldss[i].getName(), "string", getPackageName());
+            if (NC.nfields_byName.containsKey(fieldss[i].getName())) {
+                NC.fields.add(fieldss[i].getName());
+                NC.fields_value.add(getResources().getString(id));
+                NC.fields_id.put(fieldss[i].getName(), id);
+
+            } else {
+                //System.out.println("Imissedthepunchrefree" + fieldss[i].getName());
+            }
+        }
+
+
+        for (Map.Entry<String, String> entry : NC.nfields_byName.entrySet()) {
+            String h = entry.getKey();
+            String value = entry.getValue();
+            NC.nfields_byID.put(NC.fields_id.get(h), NC.nfields_byName.get(h));
+            // do stuff
+        }
+
+    }
+
+
+    synchronized void getColorValueDetail() {
+        Field[] fieldss = R.color.class.getDeclaredFields();
+        // fields =new int[fieldss.length];
+        for (int i = 0; i < fieldss.length; i++) {
+            int id = getResources().getIdentifier(fieldss[i].getName(), "color", getPackageName());
+            if (CL.nfields_byName.containsKey(fieldss[i].getName())) {
+                CL.fields.add(fieldss[i].getName());
+                CL.fields_value.add(getResources().getString(id));
+                CL.fields_id.put(fieldss[i].getName(), id);
+
+            } else {
+            }
+        }
+
+        for (Map.Entry<String, String> entry : CL.nfields_byName.entrySet()) {
+            String h = entry.getKey();
+            String value = entry.getValue();
+            CL.nfields_byID.put(CL.fields_id.get(h), CL.nfields_byName.get(h));
+            // do stuff
+        }
+
+    }
+
+    private double convertSpeed(double speed) {
+        return ((speed * 3600) * 0.001);
+    }
+
+    private double roundDecimal(double value, final int decimalPlace) {
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(decimalPlace, RoundingMode.HALF_UP);
+        value = bd.doubleValue();
+        return value;
+    }
+
+    public class Gcmupdate extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(final Void... params) {
+
+            System.out.println("NetworkStatus " + NetworkStatus.isOnline(LocationUpdate.this) + " sLocation " + sLocation + " updateLocation " + updateLocation);
+            if (NetworkStatus.isOnline(LocationUpdate.this) && !sLocation.equalsIgnoreCase("") && updateLocation.equalsIgnoreCase("")) {
+                DriverStatusUpdate(SessionSave.getSession("Id", LocationUpdate.this), SessionSave.getSession("status", LocationUpdate.this), "");
+            }
+
+            return null;
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    @SuppressLint("Wakelock")
+    public String DriverStatusUpdate(final String id, final String status, final String gcmid) {
+        String r_message = "";
+
+        try {
+
+            System.out.println("DriverStatusUpdate  sLocation " + sLocation);
+            if (NetworkStatus.isOnline(LocationUpdate.this)) {
+                updateLocation = sLocation;
+                SessionSave.saveSession("Driver_locations", updateLocation, LocationUpdate.this);
+                if (!SessionSave.getSession("status", LocationUpdate.this).equalsIgnoreCase("F")) {
+                    sLocation = "";
+                }
+                ServiceGenerator.API_BASE_URL = SessionSave.getSession("base_url", LocationUpdate.this);
+                if (!SessionSave.getSession("wholekey", LocationUpdate.this).trim().equals("")) {
+                    if (NC.getString(R.string.ok) == null) {
+                        getAndStoreStringValues(SessionSave.getSession("wholekey", LocationUpdate.this));
+                        getAndStoreColorValues(SessionSave.getSession("wholekeyColor", LocationUpdate.this));
+                    }
+                }
+
+                JSONObject j = new JSONObject();
+                j.put("driver_id", SessionSave.getSession("Id", LocationUpdate.this));
+                j.put("trip_id", SessionSave.getSession("trip_id", LocationUpdate.this));
+                j.put("locations", SessionSave.getSession("Driver_locations", LocationUpdate.this).replace("null", ""));// SessionSave.getSession("Driver_locations",
+                j.put("status", SessionSave.getSession("status", LocationUpdate.this));
+                j.put("travel_status", SessionSave.getSession("travel_status", LocationUpdate.this));
+                j.put("device_token", Settings.Secure.getString(LocationUpdate.this.getContentResolver(), Settings.Secure.ANDROID_ID));
+                j.put("device_type", "1");
+                j.put("above_min_km", "" + CommonData.km_calc);
+                j.put("actual_distance", SessionSave.getDistance(LocationUpdate.this) + SessionSave.getGoogleDistance(LocationUpdate.this));
+                System.out.println("request json" + j);
+//                new UpdateLocation(j, "type=driver_location_history");
+
+
+                CoreClient client = new ServiceGenerator(LocationUpdate.this, dont_encode).createService(CoreClient.class);
+                RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), j.toString());
+
+                coreResponse = client.updateUser(ServiceGenerator.COMPANY_KEY, body, "driver_location_history", ServiceGenerator.DYNAMIC_AUTH_KEY, SessionSave.getSession("Lang", LocationUpdate.this));
+                coreResponse.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, retrofit2.Response<ResponseBody> response) {
+                        String data = null;
+                        coreResponse = null;
+                        JSONObject json = null;
+                        //  System.out.println("ssssss__ ____ ___ ___" + response.body());
+                        try {
+                            freeMemory();
+                            try {
+                                data = response.body().string();
+                                if (response.body() != null) {
+                                    json = new JSONObject(data);
+                                    System.out.println("checking____ ___ ___" + json.toString());
+                                    if (json.has("wallet_notification_status")) {
+
+                                        SessionSave.saveSession("wallet_notification_status", json.getString("wallet_notification_status"), getApplicationContext());
+                                        SessionSave.saveSession("wallet_notification_msg", json.getString("wallet_notification_msg"), getApplicationContext());
+                                    }
+                                    if (json.getInt("status") == 1) {
+                                        System.out.println("testing ____ ___ ___" + data.toString());
+                                        updateLocation = "";
+                                        // SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                                        // System.out.println("checking____ test ____ ___ ___" + SessionSave.getSession("status", LocationUpdate.this));
+                                        if (SessionSave.getSession("status", LocationUpdate.this).equals("A")) {
+                                            CommonData.travel_km = json.getDouble("distance");
+
+                                            try {
+                                                CommonData.DISTANCE_FARE = json.getString("trip_fare");
+                                                System.out.print("checking trip fare" + CommonData.DISTANCE_FARE);
+                                            } catch (JSONException e) {
+                                                e.printStackTrace();
+                                            }
+                                        } else {
+                                            CommonData.travel_km = 0;
+                                            CommonData.DISTANCE_FARE = "";
+                                            SessionSave.saveSession("DISTANCE_FARE", "", LocationUpdate.this);
+                                            SessionSave.saveSession("waiting_local_fare", "", LocationUpdate.this);
+
+                                            SessionSave.setDistance(0f, LocationUpdate.this);
+                                        }
+
+                                    } else if (json.getInt("status") == 5) {
+                                        Intent intent = new Intent();
+                                        intent.putExtra("message", data);
+                                        intent.setAction(Intent.ACTION_MAIN);
+                                        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                                        ComponentName cn = new ComponentName(LocationUpdate.this, NotificationAct.class);
+                                        intent.setComponent(cn);
+                                        startActivity(intent);
+                                    } else if (json.getInt("status") == 7 || json.getInt("status") == 10) {
+                                        System.out.println("VVVVVVVVVVv" + json.getInt("status"));
+                                        final JSONObject jsons = json;
+                                        mhandler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                try {
+                                                    String cancelmsg = "";
+                                                    generateNotifications(LocationUpdate.this, jsons.getString("message"), MyStatus.class, true);
+                                                    cancelmsg = jsons.getString("message");
+                                                    MainActivity.mMyStatus.setStatus("F");
+                                                    SessionSave.saveSession("status", "F", LocationUpdate.this);
+                                                    MainActivity.mMyStatus.settripId("");
+                                                    SessionSave.saveSession("trip_id", "", LocationUpdate.this);
+                                                    MainActivity.mMyStatus.setOnstatus("");
+                                                    MainActivity.mMyStatus.setOnPassengerImage("");
+                                                    MainActivity.mMyStatus.setOnpassengerName("");
+                                                    MainActivity.mMyStatus.setOndropLocation("");
+                                                    MainActivity.mMyStatus.setOnpickupLatitude("");
+                                                    MainActivity.mMyStatus.setOnpickupLongitude("");
+                                                    MainActivity.mMyStatus.setOndropLatitude("");
+                                                    MainActivity.mMyStatus.setOndropLongitude("");
+                                                    MainActivity.mMyStatus.setOndriverLatitude("");
+                                                    MainActivity.mMyStatus.setOndriverLongitude("");
+                                                    Intent cancelIntent = new Intent();
+                                                    Bundle bun = new Bundle();
+                                                    bun.putString("message", cancelmsg);
+                                                    cancelIntent.putExtras(bun);
+                                                    cancelIntent.setAction(Intent.ACTION_MAIN);
+                                                    cancelIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+                                                    cancelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                                                    ComponentName cn = new ComponentName(getApplicationContext(), CanceltripAct.class);
+                                                    cancelIntent.setComponent(cn);
+                                                    startActivity(cancelIntent);
+                                                } catch (JSONException e) {
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        }, 100);
+                                    } else if (json.getInt("status") == 15 || json.getInt("status") == -15) {
+                                        System.out.println("logout_____" + json);
+                                        LocationUpdate.this.stopSelf();
+                                        int length = CommonData.mActivitylist.size();
+                                        if (length != 0) {
+                                            for (int i = 0; i < length; i++) {
+                                                CommonData.mActivitylist.get(i).finish();
+                                            }
+                                        }
+
+                                        try {
+                                            SessionSave.saveSession("status", "", LocationUpdate.this);
+                                            SessionSave.saveSession("Id", "", LocationUpdate.this);
+                                            SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                                            SessionSave.saveSession("driver_id", "", LocationUpdate.this);
+                                            SessionSave.saveSession("Name", "", LocationUpdate.this);
+                                            SessionSave.saveSession("company_id", "", LocationUpdate.this);
+                                            SessionSave.saveSession("bookedby", "", LocationUpdate.this);
+                                            SessionSave.saveSession("p_image", "", LocationUpdate.this);
+                                            SessionSave.saveSession("Email", "", LocationUpdate.this);
+                                            SessionSave.saveSession("trip_id", "", LocationUpdate.this);
+                                            SessionSave.saveSession("phone_number", "", LocationUpdate.this);
+                                            SessionSave.saveSession("driver_password", "", LocationUpdate.this);
+
+                                        } catch (Exception e) {
+                                            // TODO: handle exception
+                                            e.printStackTrace();
+                                        }
+                                        Intent intent = new Intent();
+                                        Bundle bun = new Bundle();
+                                        bun.putString("alert_message", json.getString("message"));
+                                        intent.putExtras(bun);
+                                        intent.setAction(Intent.ACTION_MAIN);
+                                        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                                        ComponentName cn = new ComponentName(LocationUpdate.this, UserLoginAct.class);
+                                        intent.setComponent(cn);
+                                        startActivity(intent);
+                                    }
+
+                                    // For getting SMS From Passenger
+                                    else if (json.getInt("status") == 11) {
+                                        cancelNotify();
+                                        //  System.out.println("service" + json.getString("message"));
+                                        generateNotifications(LocationUpdate.this, json.getString("message"), OngoingAct.class, false);
+                                        Intent ongoing = new Intent();
+                                        Bundle extras = new Bundle();
+                                        String logoutlmsg = "";
+                                        logoutlmsg = json.getString("message");
+                                        extras.putString("alert_message", logoutlmsg);
+                                        extras.putString("status", json.getString("status"));
+                                        ongoing.putExtras(extras);
+//                                      ongoing.setAction(Intent.ACTION_MAIN);
+//                                      ongoing.addCategory(Intent.CATEGORY_LAUNCHER);
+                                        ongoing.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                                        ComponentName cn = new ComponentName(LocationUpdate.this, OngoingAct.class);
+                                        ongoing.setComponent(cn);
+                                        getApplication().startActivity(ongoing);
+                                    } else if (json.getInt("status") == 12) {
+                                        LocationUpdate.this.stopSelf();
+                                        String logoutlmsg = "";
+                                        generateNotifications(LocationUpdate.this, json.getString("message"), PaymentCompleted.class, false);
+                                        logoutlmsg = json.getString("message");
+                                        Intent intent = new Intent();
+                                        intent.putExtra("message", logoutlmsg);
+                                        intent.putExtra("status", json.getInt("status"));
+                                        intent.setAction(Intent.ACTION_MAIN);
+                                        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                                        ComponentName cn = new ComponentName(LocationUpdate.this, PaymentCompleted.class);
+                                        intent.setComponent(cn);
+                                        startActivity(intent);
+                                        //finish();
+                                    } else if (json.getInt("status") == 16) {
+                                        LocationUpdate.this.stopSelf();
+                                        String logoutlmsg = "";
+                                        generateNotifications(LocationUpdate.this, json.getString("message"), CanceltripAct.class, false);
+                                        logoutlmsg = json.getString("message");
+                                        Intent intent = new Intent();
+                                        intent.putExtra("message", logoutlmsg);
+                                        intent.putExtra("status", json.getInt("status"));
+                                        intent.setAction(Intent.ACTION_MAIN);
+                                        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET | Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                                        ComponentName cn = new ComponentName(LocationUpdate.this, CanceltripAct.class);
+                                        intent.setComponent(cn);
+                                        startActivity(intent);
+                                    } else if (json.getInt("status") == -4 || json.getInt("status") == -3) {
+
+                                        updateLocation = "";
+                                        SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                                    } else if (json.getInt("status") == -1) {
+
+                                        updateLocation = "";
+                                        SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                                    }
+                                } else {
+                                    updateLocation = "";
+                                    SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                                }
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                updateLocation = "";
+                                SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                            }
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+//                            updateLocation = "";
+                            SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        updateLocation = "";
+                        coreResponse = null;
+                        SessionSave.saveSession("Driver_locations", "", LocationUpdate.this);
+
+                    }
+                });
+
+            }
+
+            SessionSave.saveSession("status", SessionSave.getSession("status", LocationUpdate.this), LocationUpdate.this);
+            if (SessionSave.getSession("base_url", LocationUpdate.this).trim().equals("")) {
+                ServiceGenerator.API_BASE_URL = SessionSave.getSession("base_url", LocationUpdate.this);
+                getAndStoreStringValues(SessionSave.getSession("wholekey", LocationUpdate.this));
+                getAndStoreColorValues(SessionSave.getSession("wholekeyColor", LocationUpdate.this));
+            }
+        } catch (final Exception e) {
+            e.printStackTrace();
+
+        }
+
+        return r_message;
+    }
+
+
+    private boolean servicesConnected() {
+        // Check that Google Play services is available
+        final int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+        // If Google Play services is available
+        if (ConnectionResult.SUCCESS == resultCode) {
+
+            return true;
+            // Google Play services was not available for some reason
+        } else
+            // Display an error dialog
+            return false;
+    }
+
+
+    public void generateNotifications(Context context, String message, Class<?> class1, boolean cancelable) {
+        notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        Notification notification = new Notification(R.drawable.ic_launcher, message, System.currentTimeMillis());
+        // String title = context.getString(R.string.app_name);
+        String title = message;
+        Intent notificationIntent = new Intent(this, class1);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+        //notification.setLatestEventInfo(context, title, message, pendingIntent);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+
+        builder.setAutoCancel(true);
+        builder.setTicker("Topii");
+        builder.setContentTitle(title);
+        builder.setContentText(message);
+        builder.setSmallIcon(R.drawable.ic_launcher);
+        builder.setContentIntent(pendingIntent);
+        builder.setOngoing(true);
+        builder.setLargeIcon(((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap());
+        //builder.setSubText("This is subtext...");   //API level 16
+        builder.setNumber(100);
+        builder.build();
+
+        Notification myNotication = builder.getNotification();
+
+
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+        notificationManager.notify(Notification_ID, myNotication);
+        Uri notification1 = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        try {
+            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification1);
+            r.play();
+        } catch (NullPointerException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private boolean GPSEnabled(Context mContext) {
+        LocationManager locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+    }
+
+
+    private synchronized void getAndStoreColorValues(String result) {
+        try {
+
+
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            InputStream is = new ByteArrayInputStream(result.getBytes("UTF-8"));
+            Document doc = dBuilder.parse(is);
+            Element element = doc.getDocumentElement();
+            element.normalize();
+
+            NodeList nList = doc.getElementsByTagName("*");
+
+            System.out.println("lislength" + nList.getLength());
+            for (int i = 0; i < nList.getLength(); i++) {
+
+                Node node = nList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element element2 = (Element) node;
+                    CL.nfields_byName.put(element2.getAttribute("name"), element2.getTextContent());
+
+                }
+            }
+            getColorValueDetail();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void freeMemory() {
+        System.runFinalization();
+        Runtime.getRuntime().gc();
+        System.gc();
+    }
+
+
+    public void showdialog() {
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                getApplicationContext());
+
+        alertDialogBuilder.setTitle("Your Title");
+
+        alertDialogBuilder
+                .setMessage("Click yes to exit!")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // if this button is clicked, close
+                        // current activity
+                        dialog.cancel();
+                    }
+                });
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+
+
+    }
+
+
+}
+

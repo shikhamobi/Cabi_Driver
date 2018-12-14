@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360349873513",
+    "firebase_url": "https://cabi-driver-194410.firebaseio.com",
+    "project_id": "cabi-driver-194410",
+    "storage_bucket": "cabi-driver-194410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360349873513:android:6f09b38da678d6db",
+        "android_client_info": {
+          "package_name": "com.cabi.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360349873513-fqeiu44qeit4uv249g2693stgvosuvs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsU4BDXKeS2tS0lgXUolH56fouhEskvRw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

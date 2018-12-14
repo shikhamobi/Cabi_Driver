@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_buildversion">Versión</string>
+    <string name="english">Inglés</string>
+    <string name="russian">русский</string>
+    <string name="arabic">العربية</string>
+    <string name="turkey">Türk</string>
+    <string name="frence">French</string>
+    <string name="german">Deutsch</string>
+    <string name="app_name">cabi</string>
+    <string name="app_namemanifest">Cabi Driver</string>
+    <string name="connect_error">Error en la conexión con la red!</string>
+    <string name="c_tryagain"> Intenta nuevamente! </string>
+    <string name="back">Atrás</string>
+    <string name="nodata">No se encuentran los datos</string>
+
+    <!-- Splash Act -->
+    <string name="check_net_connection">Revisa tu conexión a internet</string>
+    <string name="gps_is_settings">Configuración de GPS</string>
+    <string name="gps_is_not_enabled">El GPS no está habilitado. Quieres ir al menú de configuración?</string>
+    <string name="location_disable">Servicio de ubicación no disponible</string>
+    <string name="enable">Habilitar</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="cancel"> Cancelar </string>
+
+    <!-- Login Act -->
+    <string name="phone"> Número de celular </string>
+    <string name="password"> Contraseña </string>
+    <string name="forgotpswd"> Olvidaste tu contraseña? </string>
+    <string name="done"> HECHO </string>
+    <string name="signin"> REGISTRATE</string>
+    <string name="enter_your_mobile_number">Por favor ingresa tu número de celular</string>
+    <string name="check_internet">Please Take New Ride</string>
+    <string name="t_ok"> De acuerdo </string>
+    <string name="t_success"> EXITO </string>
+    <string name="enter_mobile_number">Por favor ingresa tu número de celular</string>
+    <string name="enter_the_password">Por favor ingresa tu contraseña</string>
+    <string name="pwd_min">La contraseña tiene que tener un mínimo de 6 caracteres</string>
+    <string name="confirmlogout">Estás seguro de que quieres salir?</string>
+    <string name="confirm_complete">Estás seguro de que quieres completar el viaje?</string>
+
+    <!-- HomeActivity -->
+    <string name="trackmytrip">Rastrear mi taxi</string>
+    <string name="m_me"> Perfil </string>
+    <string name="myjobs">Mis trabajos</string>
+    <string name="locating_you">Localizándote....!</string>
+    <string name="currenttxt">TU UBICACION ACTUAL</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="total">Total de trabajos completados</string>
+    <string name="reject"> Rechazados </string>
+    <string name="timedriven">Tiempo manejando </string>
+    <string name="earning">Ganancia de hoy  </string>
+    <string name="language_settings">Configuración del lenguaje</string>
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="choose_an_image">Elige una imagen</string>
+    <string name="gallery">Galería</string>
+    <string name="camera">Cámara</string>
+    <string name="cancelled">Cancelado</string>
+    <string name="totalearning">Ganancia total</string>
+    <string name="totaltrip">Total del viaje</string>
+
+    <!-- Profile Act -->
+    <string name="m_logout">Cerrar sesión</string>
+    <string name="submit"> Enviar </string>
+    <string name="pwd_same">La contraseña y la confirmación de contraseña no coinciden</string>
+    <string name="cancell"> Cancelar </string>
+    <string name="image_failed">Por favor seleccione una imagen (Galería)</string>
+    <!-- Failed to get file, Please try again! -->
+    <string name="first"> Nombre</string>
+    <string name="last"> Apellido</string>
+    <string name="email">Email </string>
+    <string name="mobile">Celular</string>
+    <string name="confimpswd"> Confirme la contraseña </string>
+    <string name="bankstmt">El número de cuenta bancaria es usado para pagar la comisión</string>
+    <string name="bankcomm"><nowiki>*</nowiki></string>
+    <string name="no_changes">No se han realizado cambios!</string>
+
+    <!-- My Status Act -->
+    <string name="my_status">Mi ubicación</string>
+    <string name="you_are_here">Tú estás aquií!</string>
+    <string name="current_location">Ubicación actuak</string>
+
+    <!-- JobsAct -->
+    <string name="trip_history">Historial de viajes</string>
+    <string name="trip_details">Detalles de viaje</string>
+    <string name="past_booking">Reservaciones pasadas</string>
+
+    <!-- Notification Act -->
+    <string name="name">Nombre</string>
+    <string name="accept_time">QUEDAN 30 SEGUNDOS PARA ACEPTAR</string>
+    <string name="min">Min</string>
+    <string name="sec">Seg</string>
+    <string name="minutestxt">Minuto</string>
+    <string name="mins">Minutos</string>
+    <string name="secondstxt">Segundos</string>
+    <string name="accept"> ACEPTAR </string>
+    <string name="decline"> RECHAZAR </string>
+    <string name="Trip_Request">Solicitud de viaje</string>
+    <string name="seconds_to_left">RESTANTES PARA ACEPTAR</string>
+
+    <!-- Ongoing Act -->
+    <string name="device_not_support_map">El dispositivo no es compatible con la versión del mapa!</string>
+    <string name="invalid_mobile_number">Número de celular no válido</string>
+    <string name="stop_waiting">Detener la espera</string>
+    <string name="start_waiting">Comenzar la espera</string>
+    <string name="heading_ongoing">Esperar al pasajero</string>
+    <string name="pass_onboard">Comenzar el viaje</string>
+    <string name="ongoing_journey">Viaje en progreso</string>
+    <string name="waiting_time_txt">Comenzar la espera</string>
+    <string name="arvd_destination">Finalizar viaje</string>
+    <string name="ive_arrived">He llegado</string>
+    <string name="you_are_in_trip">Tu ya estás en un viaje!</string>
+    <string name="address_output_string">%1$s %2$s %3$s</string>
+    <string name="pickuploc"> Origen</string>
+    <string name="droploc"> Destino </string>
+    <string name="picklocation"> Origen</string>
+    <string name="notes">Punto de referencia</string>
+    <string name="you">Tú</string>
+    <string name="waiting_time">Tiempo de espera</string>
+    <string name="total_km">Total de KM</string>
+
+    <!-- Fare calculator -->
+    <string name="actual_distance">Distancia total</string>
+    <string name="waiting_cost"> Costo de tiempo de espera</string>
+    <string name="Tax"> Impuesto(0%) </string>
+    <string name="tax"> Impuesto( </string>
+    <string name="tax_percent"> %) </string>
+    <string name="total_amount">Total</string>
+    <string name="paymentby"> Tipo de pago </string>
+    <string name="cash"> Efectivo </string>
+    <string name="card"> Tarjeta </string>
+    <string name="uncard"> Nueva tarjeta </string>
+    <string name="fare_calculator">Calculadora de tarifa</string>
+    <string name="wallet_amount">Cantidad usada de la cartera</string>
+    <string name="pay_amount">Cantidad por pagar</string>
+
+
+    <!-- Job Done Act -->
+    <string name="trip_completed">Viaje completado</string>
+
+    <string name="trip_id">Registro del viaje</string>
+    <string name="p_congrats"> Pago completo</string>
+    <string name="p_main">Regresar a la página principal </string>
+
+    <!-- payuncard_lay -->
+    <string name="p_cardno"> Número de tarjeta  **** **** **** **** </string>
+    <string name="p_expiry"> Expira en MM/AA </string>
+    <string name="p_cvv"> Código</string>
+
+    <!-- trip details -->
+    <string name="amount"> Cantidad </string>
+    <string name="payment"> Pago </string>
+    <string name="t_passname">Nombre del pasajero</string>
+    <string name="t_pickloc">Origen</string>
+    <string name="t_picktime">Tiempo de llegada al origen</string>
+    <string name="t_droploc">Destino</string>
+    <string name="t_droptime">Tiempo de llegada al destino</string>
+    <string name="t_distance">Distancia</string>
+    <string name="t_tripduration">Duración del trayecto</string>
+
+    <!-- pay uncard -->
+    <string name="heading_payuncard">Pagar con una tarjeta no registrada</string>
+    <string name="ent_ccard_no">Por favor ingrese el número de su tarjeta de crédito</string>
+    <string name="ent_chk_ccard">Por favor revise su número de tarjeta de crédito</string>
+    <string name="ent_exp_date">Por favor ingrese la fecha de vencimiento</string>
+    <string name="ent_exp_year_gt">El año de vencimiento debe ser igual o más alto al año actual</string>
+    <string name="ent_cvv">Por favor ingresa el CVV</string>
+    <string name="ent_chk_cvv">Revisa el código CVV</string>
+    <string name="message"> Mensaje </string>
+    <string name="ok">OK</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="discount">Descontar(</string>
+    <string name="trip_fare">Tarifa del viaje</string>
+    <string name="enter_the_first_name">Por favor ingresa tu nombre</string>
+    <string name="enter_the_last_name">Por favor ingresa tu apellido</string>
+    <string name="enter_the_card_number">Por favor ingresa el número de tu tarjeta</string>
+    <string name="enter_the_valid_card_number">Por favor ingresa un número de tarjeta válido</string>
+    <string name="enter_the_expiry_date">Por favor ingresa la fecha de vencimiento</string>
+    <string name="enter_the_email">Por favor ingresa tu correo electrónico</string>
+    <string name="enter_the_valid_email">Por favor ingresa un correo electrónico válido</string>
+
+    <!-- Ongoing Trip Act -->
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="cancel_in_going_trip">Estás seguro de que quieres cancelar el viaje?</string>
+    <!-- If you cancel the trip, cancellation fee will be detected from your card ! -->
+
+
+    <!-- Dashboard Act -->
+    <string name="please_click_back_again_exit">Por favor, pulsa de nuevo atrás para salir</string>
+    <string name="m_upcoming">Viajes confirmados</string>
+    <string name="m_statistics"> Estadísticas </string>
+    <string name="m_assigned"> Taxi asignado </string>
+    <string name="m_ongoing"> Ongoing Trip </string>
+
+    <!-- UpcomingtripAct -->
+
+    <!-- AssignTaxi Act -->
+    <string name="upload_your_image"> Subir tu archivo </string>
+    <string name="file_upload">	Subir archivo?</string>
+    <string name="choose">Elige archivo</string>
+    <string name="please_choose">Por favor elige un archivo</string>
+    <string name="call_passeneger">Llamada</string>
+    <string name="taxi_details">Detalles del taxi</string>
+    <string name="taxi_model">Modelo del taxi</string>
+    <string name="taxi_number">Número del taxi</string>
+    <string name="taxi_assignfrom">Taxi desde la fecha</string>
+    <string name="taxi_assignto">Taxi hasta la fecha</string>
+    <!-- Cancel Trip Act -->
+
+
+    <!-- Statistics Act -->
+
+    <string name="help"> Ayuda </string>
+
+    <!-- Below Strings are maximum unused -->
+
+    <!-- signin -->
+    <string name="s_signin"> Iniciar sesión </string>
+    <string name="s_pass_max">La contraseña no debe tener menos de 32 caracteres</string>
+    <string name="otherdiverlist">Lista de otros conductores</string>
+    <string name="remarks">Observaciones</string>
+
+    <!-- tell friend -->
+
+    <!-- streetride_lay -->
+    <string name="r_fare"> Tarifa </string>
+
+    <!-- salestarget_lay -->
+
+    <!-- recordact_lay -->
+
+    <!-- paymentcash_popup -->
+
+    <!-- forgot_popup -->
+    <string name="f_timetoreach">Tiempo de llegada</string>
+    <string name="f_forgotpwd"> Olvidé la contraseña </string>
+
+    <!-- changepass_lay -->
+    <string name="c_oldpwd"> Vieja contraseña</string>
+    <string name="c_newpwd">Nueva contraseña</string>
+    <string name="c_conpwd">Confirme contraseña</string>
+    <string name="c_chnpwd"> Cambiar contraseña</string>
+
+    <!-- menu -->
+    <string name="m_acc"> Cuenta </string>
+    <string name="m_home"> Casa </string>
+    <string name="m_sales">Manejo de ventas </string>
+    <string name="m_target"> Objetivo </string>
+    <string name="m_tellfrd">Cuéntale a un amigo </string>
+    <string name="m_help"> Ayuda </string>
+    <string name="m_timer">00.00.00</string>
+
+    <!-- signup -->
+
+    <!-- paymentoption lay -->
+    <!-- about us lay -->
+
+    <!-- manage salaes lay -->
+    <string name="zero"> 0 </string>
+
+    <!-- me lay -->
+
+    <!-- notifiaction lay -->
+    <string name="Colon"> : </string>
+    <string name="seconds">00</string>
+
+    <!-- farecalculator lay -->
+    <string name="farecal"> Tarifa </string>
+    <string name="string_tips">Propina</string>
+    <string name="round_trip"> Viaje redondo </string>
+    <string name="f_km"> Km </string>
+    <string name="f_float"> 0.0 </string>
+    <string name="f_currsymbol"> $ </string>
+
+    <color name="block">#000000</color>
+
+    <!-- Street Job -->
+
+    <!-- Latitude, longitude format -->
+    <string name="latitude_longitude"></string>
+
+    <!-- Labels -->
+
+    <!-- Messages -->
+
+    <string name="enter_the_old_password">Por favor ingresa tu vieja contraseña</string>
+    <string name="enter_the_new_password">Por favor ingresa tu nueva contraseña</string>
+    <string name="enter_the_confirmation_password">Por favor ingresa tu confirmación de contraseña</string>
+    <string name="password_min_character"> La contraseña debe tener un mínimo de 6 caracteres </string>
+    <string name="confirmation_password_mismatch_with_password">La contraseña y la confirmación de contraseña no coinciden</string>
+    <string name="old_password_and_newpassword_are_same">La vieja contraseña y la nueva contraseña son iguales</string>
+
+    <!-- version upadte -->
+    <string name="version_up_message">Hay una nueva version de Cabi disponible, esta versión ya no será compatible.</string>
+    <string name="version_up_title">Actualizar</string>
+    <string name="version_up_now">Actualizar ahora</string>
+    <string name="version_up_later">Más tarde</string>
+
+    <!-- add newly -->
+    <string name="hide">Ocultar</string>
+    <string name="show">Mostrar</string>
+
+
+    <!-- add newly on 4.5.2016-->
+
+    <string name="spanish">Español</string>
+
+
+
+
+    <!-- invite friend -->
+
+    <string name="invite_sms">Invitar por SMS</string>
+    <string name="invite_email">Invitar vía Email</string>
+    <string name="invite_fb">Facebook</string>
+    <string name="invite_whatsapp">Whatsapp</string>
+    <string name="invite_twitter">Twitter</string>
+    <string name="invite_sharevia">Compartir vía</string>
+    <string name="invite_frdrides">Cuando un amigo viaja con tu código</string>
+    <string name="invite_youearn">Tú ganas</string>
+
+
+
+    <string name="invite_friend">Invitar amigos</string>
+
+
+    <string name="sendmail">Enviar correo</string>
+    <string name="there_is_no_email_client_installed">No hay cliente de correo electrónico instalado</string>
+    <string name="add">Añadir</string>
+
+    <string name="ontxt">en</string>
+    <string name="offtxt">fuera</string>
+    <string name="z_req_date">Fecha solicitada</string>
+    <string name="z_status">Estado</string>
+    <string name="z_history">retirar Historia</string>
+    <string name="z_view">Ver</string>
+    <string name="z_datetime">Fecha y hora</string>
+    <string name="withdraw">Retirarse</string>
+    <string name="withdrawu">Retirar </string>
+    <string name="with_draw">¿Seguro desea retirar </string>
+    <string name="invitefriends">Invitar Amigos</string>
+    <string name="save">Salvar</string>
+    <string name="pickup1"> Recoger </string>
+    <string name="passenger_details">detalles del pasajero</string>
+    <string name="wallet_history">retirar Historia</string>
+    <string name="no_data">Datos no encontrados</string>
+    <string name="back_home">Volver a inicio</string>
+    <string name="enter_the_mobile_number">Por favor, introduzca su número de móvil</string>
+    <string name="taxi_detailsu"><u> Taxi - Detalles </u></string>
+
+
+    <!-- Referal Code -->
+    <string name="referal_code">Introduce el código de referencia viaje</string>
+    <string name="Hreferal"> código de referencia </string>
+    <string name="referal_amount">Monto Referal</string>
+    <string name="trip_amount">Cantidad de viaje</string>
+    <string name="payment_pending">solicitud de pago en pendiente-</string>
+    <string name="referral">referencias</string>
+    <string name="trip">Viaje</string>
+
+    <!-- Withdraw view -->
+    <string name="withdraw_view">Ver solicitud de retirar</string>
+    <string name="request_id">ID de solicitud</string>
+    <string name="brand_type">Tipo Marca</string>
+    <string name="company_name">nombre de empresa</string>
+    <string name="withdraw_amount">retirar Cantidad</string>
+    <string name="waiting_tcost">Tiempo de espera de costes (1 hora)</string>
+    <string name="status_details">Detalles de estado</string>
+    <string name="status">Estado</string>
+    <string name="payment_mode">Modo de pago</string>
+    <string name="transaction_id">ID de transacción</string>
+    <string name="Comments">comentarios</string>
+
+    <string name="Referalwithdraw_request">Retirar Referal Solicitud</string>
+    <string name="payment_availed">El pago hecho uso</string>
+    <string name="payment_request">Solicitud de pago en Pendiente</string>
+
+
+    <string name="above">Über</string>
+    <string name="and_earn">und verdienen</string>
+    <string name="below">Unten</string>
+    <string name="call">Anruf</string>
+    <string name="confirm_call">Sind Sie sicher, Sie wollen Passagiere anrufen?</string>
+    <string name="dist_fare">Entfernung</string>
+    <string name="download_from">.Download der Anwendung von:</string>
+    <string name="droplocnew">Ablageort (optional)</string>
+    <string name="earnings">Ganancias</string>
+    <string name="end_trip">Endfahrt</string>
+    <string name="enter_dest">Ziel eingeben</string>
+    <string name="enter_pickup">Geben Sie Pickup</string>
+    <string name="Estimated">Geschätzter Betrag</string>
+    <string name="even_charge">Abendgebühren</string>
+    <string name="excuse_me_brevity">Entschuldigen Sie meine Kürze, melden Sie sich mit dem Referral-Code</string>
+ <!--   <string name="facebook_app_id">1571712899825293</string>
+    <string name="facebook_app_name">Taximobilität</string>-->
+    <string name="fare2">123</string>
+    <string name="fare_details">Fahrpreisdetails</string>
+    <string name="fetching_address">Abrufen der Adresse</string>
+    <string name="filter">Filter</string>
+    <string name="home">Zuhause</string>
+    <string name="hour">Stunde</string>
+    <string name="l_fromdate">Ab Datum</string>
+    <string name="l_todate">Miteinander ausgehen</string>
+    <string name="Last2trip">Letzte 2 Trips</string>
+    <string name="Last3trip">Últimos 3 viajes</string>
+    <string name="Lasttrip">Letzte Reise</string>
+    <string name="min_fare">Min Fahrpreis</string>
+    <string name="nit_fare">Nacht Gebühren</string>
+    <string name="offline">Desconectado</string>
+    <string name="online">En línea</string>
+    <string name="paid_by">Bezahlt von</string>
+    <string name="please_check_internet">Bitte überprüfe deine Internetverbindung</string>
+    <string name="please_choosedate">Bitte wählen Sie das richtige Datum aus</string>
+    <string name="profile">Profil</string>
+    <string name="promo_code">Gutscheincode</string>
+    <!--<string name="promo_code_empty">Sie don \'t gelten alle Promo-Code</string>-->
+    <string name="select_date_time">Wählen Sie Datum Uhrzeit</string>
+    <string name="start_trip">Start Fahrt</string>
+    <string name="street_pickup">Recogida en la calle</string>
+    <string name="sub_total">Gesamtsumme</string>
+    <string name="track_now">Jetzt abonnieren</string>
+    <string name="trip_Amount">Monto del viaje</string>
+    <string name="tripdetail">Detalle del viaje</string>
+    <string name="tripdetails">Detalle del viaje</string>
+    <string name="tripprogress">Fahrt in Bearbeitung</string>
+    <string name="trips">8 Fahrten</string>
+    <string name="trips1">Excursiones</string>
+    <string name="up_coming">Bevorstehende</string>
+    <string name="vehicle_dist">Fahrstrecke</string>
+    <string name="vehicle_min">Fahrzeug Min \'s Fare</string>
+    <string name="vehicle_wait">Wartezeit des Fahrzeugs</string>
+    <string name="waiting">Warten</string>
+    <string name="waitingpassenger">Warten auf Beifahrer</string>
+    <string name="wallet">Brieftasche</string>
+    <string name="Week">Diese Woche</string>
+
+    <string name="domain_hint">Introduzca su subdominio</string>
+    <string name="server_error">Error de conexión del servidor</string>
+
+    <string name="insufficent_amout">Cantidad insuficiente</string>
+    <string name="no_sufficient_amount">¡No tienes suficiente cantidad!</string>
+    <string name="minutes_travel">Minutos recorridos</string>
+
+    <string-array name="Status">
+        <item>Aún no aprobado</item>
+        <item>Aprobado</item>
+        <item>Negar / rechazar</item>
+    </string-array>
+
+
+    <string name="today_hdr">El viaje de hoy</string>
+    <string name="tap_triphistory">Toque en el enlace de historial de viaje para ver los detalles de su viaje en curso y pasados</string>
+
+
+    <string name="location_enable">Por favor, habilite su configuración de gps y asegúrese de que debe ser de alta precisión.</string>
+    <string name="change_network">Cerciórese de por favor que el servicio de la localización debe estar en alta exactitud.</string>
+
+    <string name="completed">Terminado</string>
+    <string name="date_change">¡La fecha de su teléfono es inexacta! Ajuste el reloj e inténtelo de nuevo.</string>
+    <string name="error_in_string">Error al obtener cadena</string>
+    <string name="error_in_color">Error al obtener color</string>
+    <string name="error_in_getting_gps">Error al obtener gps. Compruebe la exactitud de su gps</string>
+    <string name="getting_gps_low">Estamos tratando de obtener su ubicación en baja exactitud</string>
+    <string name="address_cant_fetch">Lo siento, no podemos obtener su ubicación actual</string>
+    <string name="req_model">Viaje solicitado</string>
+
+    <!-- <string name="promo">Promoción</string>
+     <string name="skip_favourite">Saltar favorito</string>
+     <string name="skip_popular">Skip Popular</string>
+     <string name="capacity">Capacidad</string>
+     <string name="droploc_c">Ubicación de la gota?</string>
+     <string name="tap_to_edit">Toca para editar la ubicación de recogida o de retirada</string>
+     <string name="move_map_to">Mover mapa para ajustar la recolección</string>
+     <string name="confirm_pickup_to">Confirme su recolección en</string>
+     <string name="confirm_pickup">Confirmar la recogida</string>
+     <string name="skip_fav_on">La opción Omitir favorito está activada</string>
+     <string name="skip_fav_off">La opción Saltar favorito está desactivada</string>
+     <string name="skip_fav">Saltar favorito</string>
+     <string name="skip_drop_location">Saltar ubicación de la gota</string>
+     <string name="date_change">¡La fecha de su teléfono es inexacta! Ajuste el reloj e inténtelo de nuevo.</string>-->
+</resources>

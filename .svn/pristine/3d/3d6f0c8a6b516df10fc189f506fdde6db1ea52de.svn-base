@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="req_model">Için talep edilen yolculuk</string>
+    <string name="english">English</string>
+    <string name="russian">русский</string>
+    <string name="arabic">العربية</string>
+    <string name="turkey">Türk</string>
+    <string name="frence">French</string>
+    <string name="german">Deutsch</string>
+    <string name="app_name">Cabi</string>
+    <string name="app_namemanifest">cabi Sürücü</string>
+    <string name="connect_error">Network bağlantı hatası</string>
+    <string name="c_tryagain">Tekrar dene!</string>
+    <string name="back">Geri</string>
+    <string name="nodata"> Hiçbir veri bulunamadı </string>
+    <string name="invite_friend">Arkadaş davet etmek</string>
+    <!-- SplashAct -->
+    <string name="check_net_connection">İnternet bağlantınızı kontrol edin</string>
+    <string name="gps_is_settings">Gps ayarlanıyor</string>
+    <string name="gps_is_not_enabled">GPS etkin değil. Ayarlar menüsüne gitmek ister misin?</string>
+    <string name="confirmlogout">Eger ikis yapmak istediğinizden emin misiniz?</string>
+    <string name="confirm_complete">Gezi tamamlamak istediğinden emin misin?</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="cancel">İptal</string>
+    <string name="phone">Cep tel numarası</string>
+    <string name="password">Şifre</string>
+    <string name="forgotpswd">Şifremi unuttum?</string>
+    <string name="done">Tamam</string>
+    <string name="signin">Giriş</string>
+    <string name="enter_your_mobile_number">Telefon numarası gir</string>
+    <string name="check_internet">Sunucu bağlantı zamanı doldu</string>
+    <string name="t_ok">TAMAM</string>
+    <string name="t_success">BAŞARI</string>
+    <string name="enter_mobile_number">Telefon numarası gir</string>
+    <string name="enter_the_password">Şifreyi gir</string>
+    <string name="pwd_min">Şifrenin en az 6 karakter olması gerekir</string>
+    <string name="trackmytrip">My Gezisi izle</string>
+    <string name="m_me">Profil</string>
+    <string name="myjobs">My İşler</string>
+    <string name="locating_you">Seni Yerini ...!</string>
+    <string name="currenttxt">SİZİN CARİ YER</string>
+    <string name="statistics">İstatistikler</string>
+    <string name="total">Toplam</string>
+    <string name="reject">Reddedildi </string>
+    <string name="cancelled">İptal</string>
+    <string name="totalearning">Toplam kazanç</string>
+    <string name="totaltrip">Toplam yolculuk</string>
+
+    <string name="cancel_in_going_trip">Emin gezisi iptal etmek istiyor musunuz.</string>
+    <string name="yes">evet</string>
+    <string name="no">hayır</string>
+    <string name="timedriven">Sürülen Zaman</string>
+    <string name="earning">Bu gün kazanılan</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="m_logout">Çıkış Yap</string>
+    <string name="submit">ONAY</string>
+    <string name="pwd_same">Şifre ve onay şifresi eşleşmiyor</string>
+    <string name="profile_image">Profil resmi</string>
+    <string name="choose_an_image">Bir fotoğraf seçin</string>
+    <string name="gallery">Galeri </string>
+    <string name="camera">Kamera</string>
+    <string name="no_changes">Hiçbir Değişiklik yapılan</string>
+    <string name="cancell">İptal</string>
+    <string name="image_failed">Resim yüklenemedi, Yeniden deneyin!</string>
+    <string name="first">İlk</string>
+    <string name="last">Son </string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobil</string>
+    <string name="confimpswd">Şifreyi onayla</string>
+    <string name="bankstmt">Banka H/K komisyon ödemek için kullanılır</string>
+    <string name="bankcomm"><nowiki>*</nowiki></string>
+    <string name="my_status">Konumum</string>
+    <string name="you_are_here">Buradasınız!</string>
+    <string name="current_location">Mevcut konum</string>
+    <string name="trip_history">Seyehat geçmişi</string>
+    <string name="trip_details">Seyehat detayları</string>
+    <string name="past_booking">geçmiş Rezervasyon</string>
+    <string name="name">İsim </string>
+    <string name="accept_time">Kabul etmek için 30 sn kaldı</string>
+    <string name="min">Dk</string>
+    <string name="sec">Saniye</string>
+    <string name="minutestxt">dakika</string>
+    <string name="mins">dk</string>
+    <string name="secondstxt">saniye</string>
+    <string name="accept">KABUL ET</string>
+    <string name="decline">AZALMA</string>
+    <string name="Trip_Request">Seyahat talebi</string>
+    <string name="seconds_to_left">Kabul için kalan saniye</string>
+    <string name="device_not_support_map">Cihaz harita versiyonunu desteklemiyor</string>
+    <string name="invalid_mobile_number">Geçersiz telefon numarası</string>
+    <string name="stop_waiting">Beklemeyi durdur</string>
+    <string name="start_waiting">Beklemeyi başlat</string>
+    <string name="heading_ongoing">Yolcuyu bekleme</string>
+    <string name="pass_onboard">Geziyi Başla</string>
+    <string name="ongoing_journey">Devam eden seyahat</string>
+    <string name="waiting_time_txt">Beklemeyi başlat</string>
+    <string name="arvd_destination">Seyahati sonlandır</string>
+    <string name="ive_arrived">ULAŞTIM</string>
+    <string name="you_are_in_trip">Seyahattesinizi</string>
+    <string name="pickuploc">Alış Konum</string>
+    <string name="droploc">Bırakılacak Konum</string>
+    <string name="picklocation">Alış Konum</string>
+    <string name="notes">işaret</string>
+    <string name="you">You</string>
+    <string name="actual_distance">Toplam Mesafe</string>
+    <string name="waiting_cost">Bekleme süresi ücreti</string>
+    <string name="Tax">Vergi(0%)</string>
+    <string name="tax">Vergi(</string>
+    <string name="tax_percent">%)</string>
+    <string name="total_amount">Toplam</string>
+    <string name="wallet_amount">Cüzdan miktarı, kullanılan</string>
+    <string name="pay_amount">Tutar ödeme</string>
+    <string name="paymentby">İLE ÖDEME</string>
+    <string name="cash">Nakit</string>
+    <string name="card">Kart </string>
+    <string name="uncard">Yeni Kart</string>
+    <string name="fare_calculator">Ücret Hesaplayıcısı</string>
+    <string name="trip_completed">Seyehat tamamlandı</string>
+    <string name="trip_id">Seyehat ID:</string>
+    <string name="p_congrats">Ödeme tamamlandı</string>
+    <string name="p_main">Eve Dönüş</string>
+    <string name="p_cardno">Kart numarasi**** **** **** XXXX</string>
+    <string name="p_expiry">Geçerlilik AA/YY</string>
+    <string name="p_cvv">Cvv 3 Digit</string>
+    <string name="amount"> Miktar </string>
+    <string name="payment"> Ödeme </string>
+    <string name="t_passname">Yolcu Adı</string>
+    <string name="t_pickloc">pikap Yer</string>
+    <string name="t_picktime">pikap Zaman</string>
+    <string name="t_droploc">Bırak Yeri</string>
+    <string name="t_droptime">Bırak Zaman</string>
+    <string name="t_distance">mesafe</string>
+    <string name="t_tripduration">Seyahat Süresi</string>
+    <string name="referal_amount">yönlendirilmesi Tutar</string>
+    <string name="trip_amount">Seyahat Miktarı</string>
+    <string name="payment_pending">Bekleyen ödeme isteği</string>
+    <!-- pay uncard -->
+    <string name="heading_payuncard">Kayıt dışı kartı ile ödeme</string>
+    <string name="ent_ccard_no">Geçerli kart numarasını gir</string>
+    <string name="ent_chk_ccard">Lütfen kredi kartı numaranızı kontrol edin</string>
+    <string name="ent_exp_date">Geçerlilik tarihini gir</string>
+    <string name="ent_exp_year_gt">Süresi geçmiş yıl cari yıl eşit ve daha büyük olmalı</string>
+    <string name="ent_cvv">Cvv (güvenlik kodu) girin</string>
+    <string name="ent_chk_cvv">Geçerli CVV girin</string>
+    <string name="message"> Mesaj </string>
+    <string name="ok">TAMAM</string>
+    <string name="waiting_time">Bekleme süresi</string>
+    <string name="upload_your_image">Resim Yükleyin</string>
+    <string name="file_upload">Dosya yükleyin?</string>
+    <string name="choose">Görüntü seçin</string>
+    <string name="call_passeneger">ÇAĞRI</string>
+    <string name="discount">indirim(</string>
+    <string name="trip_fare">Seyahat Fare</string>
+    <string name="total_km">Toplam KM</string>
+    <string name="taxi_details">Taksi Detayları</string>
+    <string name="taxi_detailsu"><u>Taksi Detayları</u></string>
+    <string name="taxi_model">Taksi Modeli</string>
+    <string name="taxi_number">Taksi sayısı</string>
+    <string name="taxi_assignfrom">Taksi Tarihinden İtibaren Atanan</string>
+    <string name="taxi_assignto">Taksi Tarihi Atanan</string>
+
+
+    <!-- invite friend -->
+    <string name="invite_sms">SMS ile davet</string>
+    <string name="invite_email">E-posta ile davet et</string>
+    <string name="invite_fb">Facebook</string>
+    <string name="invite_whatsapp">Whatsapp</string>
+    <string name="invite_twitter">heyecan</string>
+    <string name="invite_sharevia">Hisse Via</string>
+    <string name="invite_frdrides">Bir arkadaşınız koduyla sürmek zaman</string>
+    <string name="invite_youearn">Kazanırsın</string>
+
+
+    <!-- add newly -->
+    <string name="hide">gizlemek</string>
+    <string name="show">göstermek</string>
+    <string name="ontxt">AÇIK</string>
+    <string name="offtxt">KAPALI</string>
+    <string name="z_req_date">Talep edilen tarih</string>
+    <string name="z_status">durum</string>
+    <string name="z_history">Geçmişten çek</string>
+    <string name="z_view">Görünüm</string>
+    <string name="z_datetime">Tarih ve Saat</string>
+    <string name="withdraw">Çekilmek</string>
+    <string name="withdrawu">Çekilmek</string>
+    <string name="with_draw">Emin çekilmek istiyor musunuz</string>
+    <string name="invitefriends">Arkadaşları davet etmek</string>
+    <string name="save">Kayıt etmek</string>
+    <string name="pickup1"> Toplamak </string>
+    <string name="passenger_details">yolcu Detayları</string>
+    <string name="wallet_history">Geçmiş çekiniz</string>
+    <string name="no_data">Veri bulunamadı</string>
+    <string name="back_home">Eve geri dön</string>
+    <string name="enter_the_mobile_number">Cep telefonu numaranızı girin</string>
+
+    <string name="referral">Referans</string>
+    <string name="trip">gezi</string>
+
+    <!-- Withdraw view -->
+    <string name="withdraw_view">Вывод Просмотреть запрос</string>
+    <string name="request_id">Идентификатор запроса</string>
+    <string name="brand_type">Марка Тип</string>
+    <string name="company_name">название компании</string>
+    <string name="withdraw_amount">Сумма снятия</string>
+    <string name="waiting_tcost">Время ожидания Стоимость (1 час)</string>
+    <string name="status_details">Сведения о состоянии</string>
+    <string name="status">Положение дел</string>
+    <string name="payment_mode">Режим оплаты</string>
+    <string name="transaction_id">ID транзакции</string>
+    <string name="Comments">Комментарии</string>
+
+    <string name="Referalwithdraw_request">Реферала Аннулировать запрос</string>
+    <string name="payment_availed">Оплата воспользовалось</string>
+    <string name="payment_request">Запрос оплаты в отложенное</string>
+
+    <string name="location_enable">Lütfen GPS ayarlarınızı etkinleştirin ve yüksek doğrulukta olmasını sağlayın.</string>
+    <string name="change_network">Lütfen Konum servisinin yüksek doğrulukta olmasına dikkat edin.</string>
+
+
+    <string name="above">Yukarıdaki</string>
+    <string name="add">Eklemek</string>
+    <string name="and_earn">ve kazan</string>
+    <string name="app_buildversion">Sürüm</string>
+    <string name="below">Altında</string>
+    <string name="c_chnpwd">Şifre değiştir</string>
+    <string name="c_conpwd">Şifreyi Onayla</string>
+    <string name="c_newpwd">Yeni Şifre</string>
+    <string name="c_oldpwd">eski şifre</string>
+    <string name="call">Çağrı</string>
+    <string name="Colon">:</string>
+    <string name="confirm_call">Yolcu arayacağınıdan emin misin?</string>
+    <string name="confirmation_password_mismatch_with_password">Şifre ve Onay şifresi eşleşmiyor</string>
+    <string name="dist_fare">Mesafeli Ücret</string>
+    <string name="download_from">. Uygulamayı şu adresten indirebilirsiniz:</string>
+    <string name="droplocnew">Bırakma yeri (isteğe bağlı)</string>
+    <string name="earnings">Kazanç</string>
+    <string name="enable">etkinleştir</string>
+    <string name="end_trip">Geziyi Sona Erdir</string>
+    <string name="enter_dest">Hedefi Gir</string>
+    <string name="enter_pickup">Pickup\'ı gir</string>
+    <string name="enter_the_card_number">Lütfen kart numaranızı giriniz</string>
+    <string name="enter_the_confirmation_password">Lütfen onay şifrenizi girin</string>
+    <string name="enter_the_email">Lütfen E-postanızı girin</string>
+    <string name="enter_the_expiry_date">Lütfen son kullanım tarihini giriniz</string>
+    <string name="enter_the_first_name">Lütfen isminizi giriniz</string>
+    <string name="enter_the_last_name">Lütfen soyadınızı giriniz</string>
+    <string name="enter_the_new_password">Lütfen yeni şifrenizi giriniz</string>
+    <string name="enter_the_old_password">Lütfen eski şifrenizi girin</string>
+    <string name="enter_the_valid_card_number">Lütfen geçerli kart numarası girin</string>
+    <string name="enter_the_valid_email">Lütfen geçerli e-posta adresini girin</string>
+    <string name="Estimated">Tahmini miktar</string>
+    <string name="even_charge">Akşam Ücretleri</string>
+    <string name="excuse_me_brevity">Kısaca özür dile, Tavsiye koduyla kayıt ol</string>
+    <string name="f_currsymbol">$</string>
+    <string name="f_float">0.0</string>
+    <string name="f_forgotpwd">Parolanızı mı unuttunuz</string>
+    <string name="f_km">Km</string>
+    <string name="f_timetoreach">Ulaşım Süresi</string>
+    <!--    <string name="facebook_app_id">1571712899825293</string>
+        <string name="facebook_app_name">taksi dolaşımı</string>-->
+    <string name="fare2">123</string>
+    <string name="fare_details">Ücret Ayrıntıları</string>
+    <string name="farecal">ücret</string>
+    <string name="fetching_address">Adres Alınırken</string>
+    <string name="filter">filtre</string>
+    <string name="help">yardım et</string>
+    <string name="home">Ev</string>
+    <string name="hour">Saat</string>
+    <string name="Hreferal">Yönlendirme Kodu</string>
+    <string name="l_fromdate">İtibaren</string>
+    <string name="l_todate">Bugüne kadar</string>
+    <string name="Last2trip">Son 2 Gezi</string>
+    <string name="Last3trip">Son 3 Gezi</string>
+    <string name="Lasttrip">Son gezi</string>
+    <string name="location_disable">Konum Hizmetleri Devre Dışı</string>
+    <string name="m_acc">hesap</string>
+    <string name="m_assigned">Atanmış Taksi</string>
+    <string name="m_help">yardım et</string>
+    <string name="m_home">Ev</string>
+    <string name="m_ongoing">Devam eden Gezi</string>
+    <string name="m_sales">Satışları Yönetin</string>
+    <string name="m_statistics">İstatistik</string>
+    <string name="m_target">Hedef</string>
+    <string name="m_tellfrd">Arkadaşına Tavsiye Et</string>
+    <string name="m_timer">00.00.00</string>
+    <string name="m_upcoming">Onaylanan Geziler</string>
+    <string name="min_fare">Minimum ücret</string>
+    <string name="nit_fare">Gece Ücretleri</string>
+    <string name="offline">çevrimdışı</string>
+    <string name="old_password_and_newpassword_are_same">Eski şifre ve yeni şifre aynı</string>
+    <string name="online">İnternet üzerinden</string>
+    <string name="otherdiverlist">Diğer Sürücüler Listesi</string>
+    <string name="paid_by">Ödenen</string>
+    <string name="password_min_character">Şifre en az 6 karakter olmalıdır</string>
+    <string name="please_check_internet">Lütfen internet bağlantınızı kontrol edin</string>
+    <string name="please_choose">Lütfen dosyanızı seçin</string>
+    <string name="please_choosedate">Lütfen doğru tarihi seçin</string>
+    <string name="please_click_back_again_exit">Çıkmak için lütfen tekrar geri tıklayınız</string>
+    <string name="profile">Profil</string>
+    <string name="promo_code">Promosyon kodu</string><!--
+    <string name="promo_code_empty">Promosyon kodunu hiç kullanmıyorsun</string>-->
+    <string name="r_fare">ücret</string>
+    <string name="referal_code">Seyahat yönlendirme kodu girin</string>
+    <string name="remarks">Uyarılar</string>
+    <string name="round_trip">Gidiş</string>
+    <string name="s_pass_max">Parola 32 karakterden az olmalı</string>
+    <string name="s_signin">Oturum aç</string>
+    <string name="seconds">00</string>
+    <string name="select_date_time">Tarihi Saati Seç</string>
+    <string name="select_language">Dil Seçin</string>
+    <string name="sendmail">Posta göndermek</string>
+    <string name="spanish">Español</string>
+    <string name="start_trip">Geziyi Başla</string>
+    <string name="street_pickup">Sokak Alımı</string>
+    <string name="string_tips">İpuçları</string>
+    <string name="sub_total">Alt Toplam</string>
+    <string name="there_is_no_email_client_installed">Hiçbir e-posta istemcisi yüklü değil</string>
+    <string name="track_now">Şimdi izle</string>
+    <string name="trip_Amount">Yolculuk Tutarı</string>
+    <string name="tripdetail">Gezi Ayrıntıları</string>
+    <string name="tripdetails">Gezi Ayrıntıları</string>
+    <string name="tripprogress">Gezi Devam Ediyor</string>
+    <string name="trips">8 Gezi</string>
+    <string name="trips1">Geziler</string>
+    <string name="up_coming">yaklaşan</string>
+    <string name="vehicle_dist">Araç Mesafesi Ücreti</string>
+    <string name="vehicle_min">Araba Min \ \'si Ücreti</string>
+    <string name="vehicle_wait">Araç Bekleme Süresi</string>
+    <string name="version_up_later">Sonra</string>
+    <string name="version_up_message">Cabi\'in yeni bir sürümü mevcut, bu sürüm artık desteklenmiyor.</string>
+    <string name="version_up_now">Şimdi güncelle</string>
+    <string name="version_up_title">Güncelleştirme</string>
+    <string name="waiting">bekliyor</string>
+    <string name="waitingpassenger">Yolcu Bekliyor</string>
+    <string name="wallet">Cüzdan</string>
+    <string name="Week">Bu hafta</string>
+    <string name="zero">0</string>
+
+    <string name="domain_hint">Alt alanınızı girin</string>
+    <string name="server_error">Sunucu bağlantısı hatası</string>
+
+
+    <!--Duplicate-->
+
+    <color name="block">#000000</color>
+
+    <string name="latitude_longitude"></string>
+
+    <string-array name="Status">
+        <item>Henüz onaylanmamış</item>
+        <item>onaylandı</item>
+        <item>Reddet / Reddet</item>
+    </string-array>
+
+    <string name="insufficent_amout">Yetersiz miktarda</string>
+    <string name="minutes_travel">Seyahat Edilen Dakika</string>
+
+    <string name="address_output_string">%1$s %2$s %3$s</string>
+
+    <string name="today_hdr">Bugünkü Seyahat</string>
+    <string name="no_sufficient_amount">Yeterli miktarda yok!</string>
+    <string name="tap_triphistory">Devam eden ve geçmiş yolculuk detaylarınızı görmek için yolculuk geçmişi bağlantısına dokunun.</string>
+
+
+    <string name="completed">Tamamlandı</string>
+    <string name="date_change">Telefon tarihiniz yanlış! Saatinizi ayarlayın ve tekrar deneyin.</string>
+    <string name="error_in_string">Dize alma hatası</string>
+    <string name="error_in_color">Renk alma hatası</string>
+    <string name="error_in_getting_gps">GPS almakta hata. GPS doğruluğunu kontrol et</string>
+    <string name="getting_gps_low">Konumunuzu düşük doğrulukla almaya çalışıyoruz</string>
+    <string name="address_cant_fetch">Üzgünüz, mevcut konumunuzu alamıyoruz.</string>
+
+    <!--<string name="promo" translatable="false">Promo</string>
+    <string name="skip_favourite" translatable="false">Favoriyi Atla</string>
+    <string name="skip_popular" translatable="false">Popüler Git</string>
+    <string name="capacity">Kapasite</string>
+    <string name="droploc_c">Bırak yerini?</string>
+    <string name="tap_to_edit">Pikap veya bırak konumunu düzenlemek için hafifçe dokunun</string>
+    <string name="move_map_to">Pikap ayarlamak için haritayı taşı</string>
+    <string name="confirm_pickup_to">Adresinden ulaştığını onayla</string>
+    <string name="confirm_pickup">Alma teyidini onayla</string>
+    <string name="skip_fav_on">Favoriyi Atla seçeneği etkin</string>
+    <string name="skip_fav_off">Favori Atla seçeneği devre dışı</string>
+    <string name="skip_fav">Favoriyi Atla</string>
+    <string name="skip_drop_location">Damla Yerini Atla</string>
+    <string name="date_change">Telefon tarihiniz yanlış! Saatinizi ayarlayın ve tekrar deneyin.</string>-->
+</resources>
